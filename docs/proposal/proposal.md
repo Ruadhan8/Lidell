@@ -35,7 +35,7 @@
 
 > Describe the general area covered by the project.
 
-    For our 4th year project we have decided to create a Wordle type game for guessing county GAA players. This will be a guessing game where hints are given based on attributes of the players that you guess. For example if you guess Dean Rock and the player you're trying to guess plays for a county in Leinster that field will show up green.
+  For our 4th year project we have decided to create a Wordle type game for guessing county GAA players. This will be a guessing game where hints are given based on attributes of the players that you guess. For example if you guess Dean Rock and the player you're trying to guess plays for a county in Leinster that field will show up green.
 
 ### Outline
 

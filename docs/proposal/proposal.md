@@ -9,12 +9,12 @@
 
 |                     |                   |
 |---------------------|-------------------|
-|Project Title:       | GAAdle          |
-|Student 1 Name:      | Ruadhan McCloskey            |
-|Student 1 ID:        | xxxxxx            |
-|Student 2 Name:      | Daniel McCartney            |
-|Student 2 ID:        | 19395186         |
-|Project Supervisor:  | Renaat Verbruggen        |
+|Project Title:       | GAAdle            |
+|Student 1 Name:      | Ruadhan McCloskey |
+|Student 1 ID:        | 19444786          |
+|Student 2 Name:      | Daniel McCartney  |
+|Student 2 ID:        | 19395186          |
+|Project Supervisor:  | Renaat Verbruggen |
 
 > Ensure that the Supervisor formally agrees to supervise your project; this is only recognised once the
 > Supervisor assigns herself/himself via the project Dashboard.

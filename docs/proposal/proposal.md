@@ -47,7 +47,7 @@
 
 > Where did the ideas come from?
 
- Throughout Summer we started playing Wordle which is a game where you try to guess a 5 letter word. If you guess a word that has a letter or letters in common with the required word the letter will show up in one of two colours. Yellow if it's in the word but in the wrong place and green if the letter is in the correct place in the word. This gave us the idea to create a similar game where you guess players instead of words. We also wanted to do GAA players as GAA is a very important part of the culture in Ireland.
+ Throughout Summer we started playing Wordle which is a game where you try to guess a 5 letter word. If you guess a word that has a letter or letters in common with the required word the letter will show up in one of two colours. Yellow if it's in the word but in the wrong place and green if the letter is in the correct place in the word. This gave us the idea to create a similar game where you guess players instead of words. We also wanted to do GAA players as GAA is a very important part of the culture in Ireland  and we are both very familiar with the teams and players.
 
 ### Achievements
 
@@ -83,7 +83,7 @@
 
 > List the main new things (technologies, languages, tools, etc) that you will have to learn.
 
- Neither of us have a lot of experience in working with a fully functioning backend so that will be a challenge for us.
+ Neither of us have a lot of experience in working with a fully functioning backend so that will be a challenge for us. Also the gamification of the app will be a challenge.
 
 ### Breakdown of work
 

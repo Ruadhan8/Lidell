@@ -1,0 +1,81 @@
+.image-wrapper {
+  background-size: cover;
+  height: 100vh;
+}
+
+.displayTable {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.displayTableCell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.authBlock {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formControl {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btnPrimary {
+  background-color: #4caf50;
+  color: white;
+}
+
+.googleBtn {
+  background-color: #dd4b39;
+  color: white;
+}
+
+.forgotPassword {
+  text-align: right;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.redirectToLogin {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.redirect {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+

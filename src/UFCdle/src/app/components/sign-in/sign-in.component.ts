@@ -9,6 +9,5 @@ import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 })
 export class SignInComponent implements OnInit {
   faGoogle = faGoogle;
-  constructor(public authService: AuthService) {}
   ngOnInit() {}
 }

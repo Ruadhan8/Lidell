@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire/compat';
@@ -15,6 +14,7 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { AuthService } from "./shared/services/auth.service";
+
 
 @NgModule({
   declarations: [
@@ -33,7 +33,6 @@ import { AuthService } from "./shared/services/auth.service";
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule,
-    
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

@@ -1,18 +1,28 @@
 import { Component, OnInit } from '@angular/core';
-import  db  from "/db.json" 
+import fighters from '../../db.json';
 
 @Component({
   selector: 'app-board',
   templateUrl: './board.component.html',
-  styleUrls: ['./board.component.scss']
+  styleUrls: ['./board.component.scss'],
 })
 export class BoardComponent implements OnInit {
+  fighterList = fighters;
+  constructor() {}
 
-  constructor() { }
-
-  fighterList:{fighterName: string, Division:string, Age: string, FighterReach:number, HomeTown: string, FightStyle: string, Record: string, Ranking: string}[]=db
+  // fighterList: {
+  //   fighterName: string;
+  //   Division: string;
+  //   Age: number;
+  //   FighterReach: any;
+  //   HomeTown: string;
+  //   FightStyle: string;
+  //   Record: string;
+  //   Photo: any;
+  //   Ranking: string;
+  // }[] = fighters;
 
   ngOnInit(): void {
+    console.log(this.fighterList);
   }
-
 }

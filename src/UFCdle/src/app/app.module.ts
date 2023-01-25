@@ -15,6 +15,9 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { AuthService } from "./shared/services/auth.service";
 import { BoardComponent } from './board/board.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DxNumberBoxModule, DxCheckBoxModule, DxSelectBoxModule } from 'devextreme-angular';
+
 
 
 @NgModule({
@@ -35,6 +38,10 @@ import { BoardComponent } from './board/board.component';
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule,
+    BrowserAnimationsModule,
+    DxNumberBoxModule,
+    DxCheckBoxModule,
+    DxSelectBoxModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

@@ -1,3 +1,11 @@
-<!-- <div>  
-    <p *ngFor="let item of fighterList"> {{item}}</p>
-</div> -->
+<dx-select-box
+  [dataSource]="this.list.fighters"
+  displayExpr="fighterName"
+  valueExpr="ID"
+  [searchMode]="searchModeOption"
+  [searchExpr]="searchExprOption"
+  [searchTimeout]="searchTimeoutOption"
+  [minSearchLength]="minSearchLengthOption"
+  [searchEnabled]="true"
+  [showDataBeforeSearch]="showDataBeforeSearchOption"
+></dx-select-box>

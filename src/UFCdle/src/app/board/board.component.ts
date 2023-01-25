@@ -7,22 +7,18 @@ import fighters from '../../db.json';
   styleUrls: ['./board.component.scss'],
 })
 export class BoardComponent implements OnInit {
-  fighterList = fighters;
+  list = fighters;
+  searchModeOption = 'contains';
+  searchExprOption: any = 'fighterName';
+  searchTimeoutOption = 200;
+  minSearchLengthOption = 1;
+  showDataBeforeSearchOption = false;
+
   constructor() {}
 
-  // fighterList: {
-  //   fighterName: string;
-  //   Division: string;
-  //   Age: number;
-  //   FighterReach: any;
-  //   HomeTown: string;
-  //   FightStyle: string;
-  //   Record: string;
-  //   Photo: any;
-  //   Ranking: string;
-  // }[] = fighters;
-
   ngOnInit(): void {
-    console.log(this.fighterList);
+    for (let i = 0; i < this.list.fighters.length; i++) {
+      console.log(this.list.fighters[i].fighterName);
+    }
   }
 }

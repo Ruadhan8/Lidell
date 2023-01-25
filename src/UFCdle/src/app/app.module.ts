@@ -22,7 +22,6 @@ import { BoardComponent } from './components/board/board.component';
 import { ModalModule } from './components/modal/modal.module';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,

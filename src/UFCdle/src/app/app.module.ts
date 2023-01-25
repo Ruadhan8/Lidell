@@ -14,11 +14,12 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { AuthService } from "./shared/services/auth.service";
-import { BoardComponent } from './board/board.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DxNumberBoxModule, DxCheckBoxModule, DxSelectBoxModule } from 'devextreme-angular';
 
 
+import { BoardComponent } from './components/board/board.component';
+import { ModalModule } from './components/modal/modal.module';
 
 
 @NgModule({
@@ -29,7 +30,9 @@ import { DxNumberBoxModule, DxCheckBoxModule, DxSelectBoxModule } from 'devextre
     SignUpComponent,
     ForgotPasswordComponent,
     VerifyEmailComponent,
-    BoardComponent
+    BoardComponent,
+
+
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { DxNumberBoxModule, DxCheckBoxModule, DxSelectBoxModule } from 'devextre
     BrowserAnimationsModule,
     DxNumberBoxModule,
     DxCheckBoxModule,
-    DxSelectBoxModule
+    DxSelectBoxModule,
+    ModalModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

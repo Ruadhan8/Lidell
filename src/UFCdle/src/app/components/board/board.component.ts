@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import fighters from '../../db.json';
+import fighters from '../../../db.json';
+import { ModalService } from '../modal/modal.service';
+
 
 @Component({
   selector: 'app-board',
@@ -8,7 +10,8 @@ import fighters from '../../db.json';
 })
 export class BoardComponent implements OnInit {
   fighterList = fighters;
-  constructor() {}
+
+  constructor(public modalService: ModalService){}
 
   // fighterList: {
   //   fighterName: string;

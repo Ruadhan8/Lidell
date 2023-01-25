@@ -14,7 +14,8 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { AuthService } from "./shared/services/auth.service";
-import { BoardComponent } from './board/board.component';
+import { BoardComponent } from './components/board/board.component';
+import { ModalModule } from './components/modal/modal.module';
 
 
 @NgModule({
@@ -25,7 +26,9 @@ import { BoardComponent } from './board/board.component';
     SignUpComponent,
     ForgotPasswordComponent,
     VerifyEmailComponent,
-    BoardComponent
+    BoardComponent,
+
+
   ],
   imports: [
     BrowserModule,
@@ -35,6 +38,7 @@ import { BoardComponent } from './board/board.component';
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule,
+    ModalModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

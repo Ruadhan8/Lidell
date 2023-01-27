@@ -4,15 +4,15 @@
 
 <!-- Calling SignOut() Api from AuthService -->
 
-<style>h1 {
-  text-align: center;
-}
+<div class="topnav">
+  <div class="btn">
+    <a (click)="modalService.open('modal-1');">How To Play</a>
+    </div>
+    <div class="logo">
+      <img src="https://i.ibb.co/RPwBhY7/UFClogo.png" alt="UFC logo" width="50" height="32">      
+      </div>
+</div>
 
-</style>
-
-<div class="btn">
-  <p><button (click)="modalService.open('modal-1');">How To Play</button></p>
-  </div>
 <jw-modal id="modal-1">
   <h1>Guess the mystery fighter</h1>
   <li>You are trying to guess a fighter who is currently on the UFC roster</li>
@@ -23,3 +23,10 @@
 
   <p><button (click)="modalService.close('modal-1');">Close</button></p>
 </jw-modal>
+
+
+<div class="header">
+  <h1>UFCDLE</h1>
+  <h4>UFC FIGHTER GUESSING GAME</h4>
+</div>
+

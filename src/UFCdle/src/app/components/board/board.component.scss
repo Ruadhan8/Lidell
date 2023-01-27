@@ -1,29 +1,86 @@
-#host{
-    width: 90px;
-    height: 50px;
-    overflow: hidden;
-  }
-  #control{
-    position: relative;    
-    z-index: 10000; /*It does not help*/
-  }
-
-h1 {
-  position: center;
-  color: black;
-  background-color: gold;
-  font: 700 16px Open Sans;
-  top: 10px;
-  margin: 10px;
-  padding: 10px;
-  text-transform: uppercase;
+/* Add styles for the topnav */
+.topnav {
+  background-color: black !important;
+  overflow: hidden;
+  text-align: center;
 }
 
-.btn {
-  width: 100%;
-  padding: 14px 20px;
-  margin: 8px 0;
+/* Add styles for the topnav button */
+.topnav .btn {
+  float: right;
+}
+
+/* Add styles for the topnav button's link */
+.topnav .btn a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Add hover effect for the topnav button's link */
+.topnav .btn a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add styles for the modal */
+jw-modal {
+  background-color: white;
+  color: black;
+  padding: 20px;
+
+  border: 2px solid #F44336; /* red */
+}
+
+/* Add styles for the modal's title */
+jw-modal h1 {
+  font-size: 30px;
+  color: #F44336; /* red */
+}
+
+/* Add styles for the modal's list items */
+jw-modal li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Add styles for the modal's close button */
+jw-modal button {
+  background-color: #F44336; /* red */
+  color: white;
+  padding: 10px 20px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
+}
+
+/* Add hover effect for the modal's close button */
+jw-modal button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add styles for the header */
+.header {
+  color: black !important;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Add styles for the header's title and subtitle */
+.header h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-style: oblique;
+}
+
+.header h4 {
+  font-size: 30px;
+  font-style: oblique;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

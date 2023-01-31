@@ -13,12 +13,20 @@ export class BoardComponent implements OnInit {
   searchTimeoutOption = 200;
   minSearchLengthOption = 1;
   showDataBeforeSearchOption = false;
+  currentFighter: any = {};
 
   constructor() {}
 
+  onValueChanged(e: any) {
+  this.currentFighter = e.itemData
+  console.log(this.currentFighter);
+  
+  
+  }
+
   ngOnInit(): void {
     for (let i = 0; i < this.list.fighters.length; i++) {
-      console.log(this.list.fighters[i].fighterName);
+      console.log(this.list.fighters[i]);
     }
   }
 }

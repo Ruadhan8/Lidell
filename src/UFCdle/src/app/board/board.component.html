@@ -2,10 +2,12 @@
   [dataSource]="this.list.fighters"
   displayExpr="fighterName"
   valueExpr="ID"
+  [value]="this.currentFighter"
   [searchMode]="searchModeOption"
   [searchExpr]="searchExprOption"
   [searchTimeout]="searchTimeoutOption"
   [minSearchLength]="minSearchLengthOption"
   [searchEnabled]="true"
   [showDataBeforeSearch]="showDataBeforeSearchOption"
+  (onItemClick)="onValueChanged($event)"
 ></dx-select-box>

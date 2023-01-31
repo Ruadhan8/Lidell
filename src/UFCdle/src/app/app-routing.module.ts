@@ -5,7 +5,7 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
-import { BoardComponent } from './board/board.component';
+import { BoardComponent } from './components/board/board.component';
 import { AuthGuard } from './shared/guard/auth.guard';
 
 const routes: Routes = [

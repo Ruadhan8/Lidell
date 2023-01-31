@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import fighters from '../../db.json';
+import fighters from '../../../db.json';
+import { ModalService } from '../modal/modal.service';
+
 
 @Component({
   selector: 'app-board',
@@ -15,7 +17,9 @@ export class BoardComponent implements OnInit {
   showDataBeforeSearchOption = false;
   currentFighter: any = {};
 
-  constructor() {}
+  fighterList = fighters;
+
+  constructor(public modalService: ModalService){}
 
   onValueChanged(e: any) {
   this.currentFighter = e.itemData

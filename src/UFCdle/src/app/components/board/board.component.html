@@ -30,3 +30,17 @@
   <h4>UFC FIGHTER GUESSING GAME</h4>
 </div>
 
+<dx-select-box
+  [dataSource]="this.list.fighters"
+  displayExpr="fighterName"
+  valueExpr="ID"
+  [value]="this.currentFighter"
+  [searchMode]="searchModeOption"
+  [searchExpr]="searchExprOption"
+  [searchTimeout]="searchTimeoutOption"
+  [minSearchLength]="minSearchLengthOption"
+  [searchEnabled]="true"
+  [showDataBeforeSearch]="showDataBeforeSearchOption"
+  (onItemClick)="onValueChanged($event)"
+></dx-select-box>
+

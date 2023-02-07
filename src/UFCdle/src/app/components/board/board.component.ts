@@ -1,36 +1,44 @@
-import { Component, OnInit } from '@angular/core';
-import fighters from '../../../db.json';
-import { ModalService } from '../modal/modal.service';
+import { Component } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { FighterService } from '../../fighter.service';
+import { fighter } from './fighter';
+import { ModalService } from '../modal';
 
 
 @Component({
   selector: 'app-board',
   templateUrl: './board.component.html',
-  styleUrls: ['./board.component.scss'],
+  styleUrls: ['./board.component.scss']
 })
-export class BoardComponent implements OnInit {
-  list = fighters;
-  searchModeOption = 'contains';
-  searchExprOption: any = 'fighterName';
-  searchTimeoutOption = 200;
-  minSearchLengthOption = 1;
-  showDataBeforeSearchOption = false;
-  currentFighter: any = {};
+export class BoardComponent {
+  data: any;
+  fighters: fighter[] = [];
+  list!: any;
+  currentFighter = {};
+  currentFighterList: any = [];
+  searchBox = ""
 
-  fighterList = fighters;
+  constructor(private fightersService: FighterService, public modalService: ModalService) {
+  }
 
-  constructor(public modalService: ModalService){}
+  ngOnInit(){
+    this.fightersService.getFighters().subscribe((results: any) => 
+    this.list = results
+    )
+    console.log(this.list);
+    
+  }
+
+  value(e: any){
+    this.currentFighter = e.itemData;
+    this.currentFighterList.push(this.currentFighter)
+    console.log(this.currentFighterList);
+      
+  }
+
 
   onValueChanged(e: any) {
-  this.currentFighter = e.itemData
-  console.log(this.currentFighter);
-  
-  
-  }
-
-  ngOnInit(): void {
-    for (let i = 0; i < this.list.fighters.length; i++) {
-      console.log(this.list.fighters[i]);
-    }
+    // notify(`The value is changed to: "${e.value}"`);
   }
 }
+

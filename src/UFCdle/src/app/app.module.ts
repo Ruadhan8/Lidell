@@ -18,11 +18,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DxNumberBoxModule, DxCheckBoxModule, DxSelectBoxModule } from 'devextreme-angular';
 import { BoardComponent } from './components/board/board.component';
 import { ModalModule } from './components/modal/modal.module';
-import { TestComponent } from './components/test/test.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatSelectModule } from '@angular/material/select';
-import { MatButtonModule } from '@angular/material/button';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import {HttpClientModule } from '@angular/common/http'
+
 
 @NgModule({
   declarations: [
@@ -33,7 +31,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     ForgotPasswordComponent,
     VerifyEmailComponent,
     BoardComponent,
-    TestComponent,
+    HomePageComponent,
 
 
   ],
@@ -50,11 +48,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     DxCheckBoxModule,
     DxSelectBoxModule,
     ModalModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MatSelectModule,
-    MatButtonModule,
-    MatFormFieldModule,
+    HttpClientModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

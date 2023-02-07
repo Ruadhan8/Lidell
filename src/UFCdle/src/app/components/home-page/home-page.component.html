@@ -1,0 +1,55 @@
+<div class="topnav">
+  <div class="btn">
+    <a (click)="modalService.open('modal-1')">How To Play</a>
+  </div>
+  <div class="logo">
+    <img
+      src="https://i.ibb.co/RPwBhY7/UFClogo.png"
+      alt="UFC logo"
+      width="50"
+      height="32"
+    />
+  </div>
+  <div class="btn">
+    <a href="/stats/">Stats</a>
+  </div>
+  <div class="btn">
+    <a href="/dashboard/">Profile</a>
+  </div>
+</div>
+
+<jw-modal id="modal-1">
+  <h1>Guess the mystery fighter</h1>
+  <li>You are trying to guess a fighter who is currently on the UFC roster</li>
+  <li>Enter the name of the fighter that you wish to guess</li>
+  <li>Green in any column indicates a match</li>
+  <li>
+    Yellow in the Fighter Reach or Fighter Height column indicates that you are
+    within 2 inches of the fighters reach or height
+  </li>
+  <li>
+    Yellow in the age column indicates that you are within 2 years of the
+    fighters age
+  </li>
+
+  <p><button (click)="modalService.close('modal-1')">Close</button></p>
+</jw-modal>
+
+<div class="header">
+  <h1>UFCDLE</h1>
+  <h4>UFC FIGHTER GUESSING GAME</h4>
+</div>
+
+<div class="buttons">
+  <button class="daily" onclick="window.location.href = '/board/'">
+    Daily
+  </button>
+
+  <button class="unlimited" onclick="window.location.href = '/board/'">
+    Unlimited
+  </button>
+
+  <button class="versus" onclick="window.location.href = '/board/'">
+    Versus
+  </button>
+</div>

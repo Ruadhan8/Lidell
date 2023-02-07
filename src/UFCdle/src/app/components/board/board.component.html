@@ -1,23 +1,22 @@
-<!-- <div>  
-    <div *ngFor="let item of fighterList"> {{item}}</div>
-</div> -->
-
-<!-- Calling SignOut() Api from AuthService -->
-
+<!-- Top navigation -->
 <div class="topnav">
   <div class="btn">
-    <a (click)="modalService.open('modal-1')">How To Play</a>
-  </div>
-  <div class="logo">
-    <img
-      src="https://i.ibb.co/RPwBhY7/UFClogo.png"
-      alt="UFC logo"
-      width="50"
-      height="32"
-    />
-  </div>
-</div>
+    <a (click)="modalService.open('modal-1');">How To Play</a>
+    </div>
+    <div class="logo">
+      <img src="https://i.ibb.co/RPwBhY7/UFClogo.png" alt="UFC logo" width="50" height="32">      
+      </div>
 
+    <div class="btn">
+      <a href="/stats/">Stats</a>
+    </div>
+    <div class="btn">
+      <a href="/dashboard/">Profile</a>
+    </div>
+<div class="btn">
+  <a href="/home/">Home</a>
+</div>
+</div>
 <jw-modal id="modal-1">
   <h1>Guess the mystery fighter</h1>
   <li>You are trying to guess a fighter who is currently on the UFC roster</li>
@@ -35,29 +34,42 @@
   <div><button (click)="modalService.close('modal-1')">Close</button></div>
 </jw-modal>
 
+
+
 <div class="header">
   <h1>UFCDLE</h1>
-  <h4>UFC FIGHTER GUESSING GAME</h4>
+  <h4>Guess the Fighter</h4>
+
+</div>
+<div class="selectBox">
+<div class="dx-fieldset">
+  <div class="dx-field">
+    <div class="dx-field-value">
+      <dx-select-box
+        [items]="list"
+        displayExpr="fighterName"
+        placeholder="Choose Fighter"
+        [showClearButton]="false"
+        [searchEnabled]="true"
+        [minSearchLength]="1"
+        (onItemClick)="value($event)"
+        [showDropDownButton]="false"
+      ></dx-select-box>
+    </div>
+  </div>
+</div>
 </div>
 
-<dx-select-box
-  [dataSource]="this.list.fighters"
-  displayExpr="fighterName"
-  valueExpr="ID"
-  [value]="this.currentFighterList"
-  [searchMode]="searchModeOption"
-  [searchExpr]="searchExprOption"
-  [searchTimeout]="searchTimeoutOption"
-  [minSearchLength]="minSearchLengthOption"
-  [searchEnabled]="true"
-  [showDataBeforeSearch]="showDataBeforeSearchOption"
-  (onItemClick)="onValueChanged($event)"
-></dx-select-box>
-
-
-
-
 <div class="board">
+  <div class="fighter" *ngIf="this.currentFighterList[0]">
+    <div class="name"><h3>NAME</h3></div>
+    <div class="age"><h3>AGE</h3></div>
+    <div class="reach"><h3>REACH</h3></div>
+    <div class="hometown"><h3>HOMETOWN</h3></div>
+    <div class="division"><h3>DIVISION</h3></div>
+    <div class="ranking"><h3>RANKING</h3></div>
+    <div class="record"><h3>RECORD</h3></div>
+  </div>
   <div class="fighter" *ngIf="this.currentFighterList[0]">
     <div class="name">{{ currentFighterList[0].fighterName }}</div>
     <div class="age">{{ currentFighterList[0].Age }}</div>

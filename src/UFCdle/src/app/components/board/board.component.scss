@@ -30,13 +30,13 @@ jw-modal {
   color: black;
   padding: 20px;
 
-  border: 2px solid #F44336; /* red */
+  border: 2px solid #f44336; /* red */
 }
 
 /* Add styles for the modal's title */
 jw-modal h1 {
   font-size: 30px;
-  color: #F44336; /* red */
+  color: #f44336; /* red */
 }
 
 /* Add styles for the modal's list items */
@@ -47,7 +47,7 @@ jw-modal li {
 
 /* Add styles for the modal's close button */
 jw-modal button {
-  background-color: #F44336; /* red */
+  background-color: #f44336; /* red */
   color: white;
   padding: 10px 20px;
   border: none;
@@ -91,14 +91,11 @@ jw-modal button:hover {
   margin: auto;
   height: 30vh;
   width: 80vw;
-  border-bottom: 2vh;
-  border-color: black;
   .fighter {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: red;
-
     .name {
       background-color: grey;
       // box-sizing: border-box;

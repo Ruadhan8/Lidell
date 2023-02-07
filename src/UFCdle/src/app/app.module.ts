@@ -20,6 +20,8 @@ import { DxNumberBoxModule, DxCheckBoxModule, DxSelectBoxModule } from 'devextre
 
 import { BoardComponent } from './components/board/board.component';
 import { ModalModule } from './components/modal/modal.module';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import {HttpClientModule } from '@angular/common/http'
 
 
 @NgModule({
@@ -31,6 +33,7 @@ import { ModalModule } from './components/modal/modal.module';
     ForgotPasswordComponent,
     VerifyEmailComponent,
     BoardComponent,
+    HomePageComponent,
 
 
   ],
@@ -46,7 +49,8 @@ import { ModalModule } from './components/modal/modal.module';
     DxNumberBoxModule,
     DxCheckBoxModule,
     DxSelectBoxModule,
-    ModalModule
+    ModalModule,
+    HttpClientModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

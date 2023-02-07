@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IDropdownSettings } from 'ng-multiselect-dropdown';
 import fighters from '../../../db.json';
 import { ModalService } from '../modal/modal.service';
 
@@ -15,22 +16,36 @@ export class BoardComponent implements OnInit {
   searchTimeoutOption = 200;
   minSearchLengthOption = 1;
   showDataBeforeSearchOption = false;
-  currentFighter: any = {};
-
+  currentFighterList: any = [];
+  currentFighter = {}
+  selectedItems = [];
+  dropdownSettings = {};
+  
   fighterList = fighters;
-
+  searchTerm: string = "";
+  
   constructor(public modalService: ModalService){}
 
   onValueChanged(e: any) {
-  this.currentFighter = e.itemData
-  console.log(this.currentFighter);
-  
-  
+  this.currentFighter = e.itemData;
+  this.currentFighterList.push(this.currentFighter)
+  this.currentFighter = {}
+  console.log(this.currentFighter);  
   }
+
+  
+
+  onItemSelect(e: any) {
+    this.currentFighter = e.itemData;
+    this.currentFighterList.push(this.currentFighter)
+    console.log(e);
+  }
+
 
   ngOnInit(): void {
     for (let i = 0; i < this.list.fighters.length; i++) {
-      console.log(this.list.fighters[i]);
+      console.log(this.currentFighter);
     }
+    this.currentFighterList = []
   }
 }

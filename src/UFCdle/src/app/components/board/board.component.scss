@@ -30,13 +30,13 @@ jw-modal {
   color: black;
   padding: 20px;
 
-  border: 2px solid #F44336; /* red */
+  border: 2px solid #f44336; /* red */
 }
 
 /* Add styles for the modal's title */
 jw-modal h1 {
   font-size: 30px;
-  color: #F44336; /* red */
+  color: #f44336; /* red */
 }
 
 /* Add styles for the modal's list items */
@@ -47,7 +47,7 @@ jw-modal li {
 
 /* Add styles for the modal's close button */
 jw-modal button {
-  background-color: #F44336; /* red */
+  background-color: #f44336; /* red */
   color: white;
   padding: 10px 20px;
   border: none;
@@ -84,3 +84,111 @@ jw-modal button:hover {
   top: 0;
   left: 0;
 }
+
+.board {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 30vh;
+  width: 80vw;
+  .fighter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: red;
+    .name {
+      background-color: grey;
+      // box-sizing: border-box;
+      height: 10vh;
+      width: 10vw;
+      
+    }
+    .age {
+      height: 10vh;
+      background-color: grey;
+      width: 10vw;
+    }
+    .reach {
+      background-color: grey;
+      height: 10vh;
+      width: 10vw;
+    }
+    .hometown {
+      background-color: grey;
+      height: 10vh;
+      width: 10vw;
+    }
+    .division {
+      background-color: grey;
+      height: 10vh;
+      width: 10vw;
+    }
+    .ranking {
+      background-color: grey;
+      height: 10vh;
+      width: 10vw;
+    }
+    .record {
+      background-color: grey;
+      height: 10vh;
+      width: 10vw;
+    }
+    // .name, .age, .reach, .hometown, .division, .ranking, .record {
+    //   height: 5vh;
+    // }
+  }
+}
+
+
+
+// ::ng-deep
+//   .dx-dropdownlist-popup-wrapper
+//   .dx-list:not(.dx-list-select-decorator-enabled)
+//   .dx-list-item-content {
+//   padding-left: 7px;
+//   padding-right: 7px;
+// // }
+
+// ::ng-deep .custom-item {
+//   position: relative;
+//   min-height: 30px;
+// }
+
+// ::ng-deep .dx-dropdowneditor-input-wrapper .custom-item > img {
+//   padding-left: 8px;
+// }
+
+// ::ng-deep .custom-item .product-name {
+//   display: inline-block;
+//   padding-left: 50px;
+//   text-indent: 0;
+//   line-height: 30px;
+//   font-size: 15px;
+//   width: 100%;
+// }
+
+// ::ng-deep .custom-item > img {
+//   left: 1px;
+//   position: absolute;
+//   top: 50%;
+//   margin-top: -15px;
+// }
+
+// ::ng-deep
+//   .dx-theme-material
+//   #custom-templates
+//   .dx-texteditor-buttons-container {
+//   display: none;
+// }
+
+// ::ng-deep .current-value {
+//   padding: 10px 0;
+// }
+
+// ::ng-deep .current-value > span {
+//   font-weight: bold;
+// }
+
+// ::ng-deep .dx-theme-material .dx-selectbox-container .product-name {
+//   padding-left: 58px;
+// }

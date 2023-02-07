@@ -16,11 +16,13 @@ import { VerifyEmailComponent } from './components/verify-email/verify-email.com
 import { AuthService } from "./shared/services/auth.service";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DxNumberBoxModule, DxCheckBoxModule, DxSelectBoxModule } from 'devextreme-angular';
-
-
 import { BoardComponent } from './components/board/board.component';
 import { ModalModule } from './components/modal/modal.module';
-
+import { TestComponent } from './components/test/test.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import { ModalModule } from './components/modal/modal.module';
     ForgotPasswordComponent,
     VerifyEmailComponent,
     BoardComponent,
+    TestComponent,
 
 
   ],
@@ -46,7 +49,12 @@ import { ModalModule } from './components/modal/modal.module';
     DxNumberBoxModule,
     DxCheckBoxModule,
     DxSelectBoxModule,
-    ModalModule
+    ModalModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatSelectModule,
+    MatButtonModule,
+    MatFormFieldModule,
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

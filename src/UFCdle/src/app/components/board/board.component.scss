@@ -84,3 +84,74 @@ jw-modal button:hover {
   top: 0;
   left: 0;
 }
+
+.board {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 30vh;
+  width: 80vw;
+  border-bottom: 2vh;
+  border-color: black;
+  .fighter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: red;
+
+    .name {
+      background-color: grey;
+      // box-sizing: border-box;
+      height: 10vh;
+      width: 10vw;
+      
+      
+    }
+    .age {
+      height: 10vh;
+      background-color: grey;
+      width: 10vw;
+    }
+    .reach {
+      background-color: grey;
+      height: 10vh;
+      width: 10vw;
+    }
+    .hometown {
+      background-color: grey;
+      height: 10vh;
+      width: 10vw;
+    }
+    .division {
+      background-color: grey;
+      height: 10vh;
+      width: 10vw;
+    }
+    .ranking {
+      background-color: grey;
+      height: 10vh;
+      width: 10vw;
+    }
+    .record {
+      background-color: grey;
+      height: 10vh;
+      width: 10vw;
+    }
+
+  }
+}
+
+.selectBox{
+  display: flex;
+  justify-content: center;
+  .dx-fieldset{
+    .dx-field{
+      ::ng-deep .dx-field-value{
+          width: 20vw;
+          ::ng-deep .dx-selectbox{
+            background-color: red;
+          }
+      }
+    }
+  }
+}

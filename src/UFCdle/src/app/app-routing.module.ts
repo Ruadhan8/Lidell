@@ -17,7 +17,8 @@ const routes: Routes = [
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'verify-email-address', component: VerifyEmailComponent },
   { path: 'board', component: BoardComponent},
-  { path: 'home', component: HomePageComponent}
+  { path: 'home', component: HomePageComponent},
+
 ];
 
 

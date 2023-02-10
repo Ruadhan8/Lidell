@@ -98,9 +98,11 @@ jw-modal button:hover {
   .fighter {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
     background: #edeae5;
-    border: 1px solid #f5f2ec;
+    // border: 1px solid #f5f2ec;
+    border: 1px solid black;
+
 
     .topName,
     .topAge,
@@ -113,7 +115,7 @@ jw-modal button:hover {
       justify-content: center;
       align-items: center;
       height: 5vh;
-      width: 10vw;
+      width: 11.4285714286vw;
       margin-top: 2vh;
       color: black;
     }
@@ -166,26 +168,55 @@ jw-modal button:hover {
       align-items: center;
       background: #edeae5;
       height: 10vh;
-      width: 10vw;
-      margin: auto;
-
-      .correctAge {
+      width: 11.4285714286vw;
+      // margin: auto;
+      border: 1px solid black;
+      // .correctName {
+      //   display: flex;
+      //   justify-content: center;
+      //   align-items: center;
+      //   background: #37be75;
+      //   color: white;
+      //   height: 9.8vh;
+      //   width: 11.3vw;
+      //   margin: auto;
+      // }
+      // .correctAge {
+      //   display: flex;
+      //   justify-content: center;
+      //   align-items: center;
+      //   background: #37be75;
+      //   color: white;
+      //   height: 9.8vh;
+      //   width: 11.3vw;
+      //   margin: auto;
+      // }
+      // .closeAge {
+      //   display: flex;
+      //   justify-content: center;
+      //   align-items: center;
+      //   background: #eadd65;
+      //   height: 9.8vh;
+      //   width: 11.3vw;
+      //   margin: auto;
+      // }
+      .correct{
         display: flex;
         justify-content: center;
         align-items: center;
         background: #37be75;
         color: white;
-        height: 10vh;
-        width: 10vw;
+        height: 9.8vh;
+        width: 11.3vw;
         margin: auto;
       }
-      .closeAge {
+      .close{
         display: flex;
         justify-content: center;
         align-items: center;
         background: #eadd65;
-        height: 10vh;
-        width: 10vw;
+        height: 9.8vh;
+        width: 11.3vw;
         margin: auto;
       }
     }

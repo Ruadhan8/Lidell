@@ -39,13 +39,11 @@ export class BoardComponent {
     Ranking: '',
   };
 
-  showUpArrow = false;
-  showDownArrow = false;
-  showButton: boolean = true;
-  correctAge: boolean = false;
-  closeAge: boolean = false;
   faArrowUp = faArrowUp;
   faArrowDown = faArrowDown;
+  showButton: boolean = true;
+  splitRandomFighterHometown: string[] = []
+  splitCurrentFighterHometown: string[] = []
 
 
   constructor(
@@ -57,8 +55,7 @@ export class BoardComponent {
     this.fightersService
       .getFighters()
       .subscribe((results: any) => (this.list = results));
-      console.log(this.closeAge, this.correctAge);
-      
+    
   }
 
   generateRandomFighter() {
@@ -67,8 +64,8 @@ export class BoardComponent {
   }
 
   startGame() {
-    this.showButton = false;
     this.generateRandomFighter();
+    this.showButton = false;
     console.log(this.randomFighter);
   }
 
@@ -76,41 +73,12 @@ export class BoardComponent {
     this.currentFighter = e.itemData;
     this.compareFighters();
     this.currentFighterList.push(this.currentFighter);
-    console.log(this.randomFighter);
-    console.log(this.currentFighterList);
-    console.log(this.closeAge, this.correctAge);
-
+    console.log(this.splitCurrentFighterHometown);
   }
 
   compareFighters() {
-    if (this.randomFighter === this.currentFighter) {
-      console.log('you win');
-    }
-    if (this.currentFighter.Age === this.randomFighter.Age) {
-      this.correctAge = true;
-      this.closeAge = true;
-      
-    }
-    if (
-      this.randomFighter.Age - 2 === this.currentFighter.Age ||
-      this.randomFighter.Age - 1 === this.currentFighter.Age
-    ) {
-      this.closeAge = true;
-      this.showDownArrow = true;
-      console.log("age is down");
-      
-    }
-    if (
-      this.randomFighter.Age + 2 === this.currentFighter.Age ||
-      this.randomFighter.Age + 1 === this.currentFighter.Age
-    ) {
-      this.closeAge = true;
-      this.showUpArrow = true;
-      console.log("age is up");
-      
-    }
-    // this.closeAge = false;
-    // this.correctAge = false;
-
+    this.splitCurrentFighterHometown = (this.currentFighter.HomeTown.split(','))
+    // let currentSplit = this.currentFighter.HomeTown.split(',');
+    // this.splitCurrentFighterHometown.push(currentSplit)
   }
 }

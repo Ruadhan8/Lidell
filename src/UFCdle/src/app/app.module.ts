@@ -14,7 +14,15 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { AuthService } from "./shared/services/auth.service";
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DxNumberBoxModule, DxCheckBoxModule, DxSelectBoxModule } from 'devextreme-angular';
+
+
+import { BoardComponent } from './components/board/board.component';
+import { ModalModule } from './components/modal/modal.module';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import {HttpClientModule } from '@angular/common/http'
+
 
 @NgModule({
   declarations: [
@@ -23,7 +31,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SignInComponent,
     SignUpComponent,
     ForgotPasswordComponent,
-    VerifyEmailComponent
+    VerifyEmailComponent,
+    BoardComponent,
+    HomePageComponent,
+
+
   ],
   imports: [
     BrowserModule,
@@ -33,7 +45,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule,
-    FontAwesomeModule,
+    BrowserAnimationsModule,
+    DxNumberBoxModule,
+    DxCheckBoxModule,
+    DxSelectBoxModule,
+    ModalModule,
+    HttpClientModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

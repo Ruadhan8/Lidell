@@ -1,0 +1,157 @@
+/* Add styles for the topnav */
+.topnav {
+  background-color: black !important;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Add styles for the topnav button */
+.topnav .btn {
+  float: right;
+}
+
+/* Add styles for the topnav button's link */
+.topnav .btn a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Add hover effect for the topnav button's link */
+.topnav .btn a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add styles for the modal */
+jw-modal {
+  background-color: white;
+  color: black;
+  padding: 20px;
+
+  border: 2px solid #F44336; /* red */
+}
+
+/* Add styles for the modal's title */
+jw-modal h1 {
+  font-size: 30px;
+  color: #F44336; /* red */
+}
+
+/* Add styles for the modal's list items */
+jw-modal li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Add styles for the modal's close button */
+jw-modal button {
+  background-color: #F44336; /* red */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Add hover effect for the modal's close button */
+jw-modal button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add styles for the header */
+.header {
+  color: black !important;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Add styles for the header's title and subtitle */
+.header h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-style: oblique;
+}
+
+.header h4 {
+  font-size: 30px;
+  font-style: oblique;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 30vh;
+  width: 80vw;
+  border-bottom: 2vh;
+  border-color: black;
+  .fighter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: red;
+
+    .name {
+      background-color: grey;
+      // box-sizing: border-box;
+      height: 10vh;
+      width: 10vw;
+      
+      
+    }
+    .age {
+      height: 10vh;
+      background-color: grey;
+      width: 10vw;
+    }
+    .reach {
+      background-color: grey;
+      height: 10vh;
+      width: 10vw;
+    }
+    .hometown {
+      background-color: grey;
+      height: 10vh;
+      width: 10vw;
+    }
+    .division {
+      background-color: grey;
+      height: 10vh;
+      width: 10vw;
+    }
+    .ranking {
+      background-color: grey;
+      height: 10vh;
+      width: 10vw;
+    }
+    .record {
+      background-color: grey;
+      height: 10vh;
+      width: 10vw;
+    }
+
+  }
+}
+
+.selectBox{
+  display: flex;
+  justify-content: center;
+  .dx-fieldset{
+    .dx-field{
+      ::ng-deep .dx-field-value{
+          width: 20vw;
+          ::ng-deep .dx-selectbox{
+            background-color: red;
+          }
+      }
+    }
+  }
+}

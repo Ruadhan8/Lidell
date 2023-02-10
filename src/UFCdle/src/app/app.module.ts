@@ -16,12 +16,11 @@ import { VerifyEmailComponent } from './components/verify-email/verify-email.com
 import { AuthService } from "./shared/services/auth.service";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DxNumberBoxModule, DxCheckBoxModule, DxSelectBoxModule } from 'devextreme-angular';
-
-
 import { BoardComponent } from './components/board/board.component';
 import { ModalModule } from './components/modal/modal.module';
 import { HomePageComponent } from './components/home-page/home-page.component';
-import {HttpClientModule } from '@angular/common/http'
+import {HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 
 @NgModule({
@@ -50,7 +49,8 @@ import {HttpClientModule } from '@angular/common/http'
     DxCheckBoxModule,
     DxSelectBoxModule,
     ModalModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

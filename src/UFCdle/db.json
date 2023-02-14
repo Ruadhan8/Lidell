@@ -1,60 +1,6 @@
 {
   "fighters": [
-    {
-      "fighterName": "Josiane Nunes",
-      "Division": "Women's Featherweight Division",
-      "Age": 29,
-      "FighterReach": 67,
-      "HomeTown": "Curitiba, Brazil",
-      "FightStyle": "null",
-      "Record": "10-1-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2023-01/NUNES_JOSIANE_L.png?itok=Ar43T0Sg",
-      "Ranking": "Women's Featherweight Division"
-    },
-    {
-      "fighterName": "Mayra Bueno Silva",
-      "Division": "Women's Bantamweight Division",
-      "Age": 31,
-      "FighterReach": 66.5,
-      "HomeTown": "Uberlândia, Brazil",
-      "FightStyle": "null",
-      "Record": "9-2-1 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-01/BUENO_MAYRA_L_10-16.png?itok=YwRktIb_",
-      "Ranking": "#14\n        Women's Bantamweight Division"
-    },
-    {
-      "fighterName": "Norma Dumont",
-      "Division": "Women's Featherweight Division",
-      "Age": 31,
-      "FighterReach": "null",
-      "HomeTown": "Belo Horizonte, Brazil",
-      "FightStyle": "null",
-      "Record": "7-2-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-09/DUMONT_NORMA_L_09-10.png?itok=cVlAKMN9",
-      "Ranking": "Women's Featherweight Division"
-    },
-    {
-      "fighterName": "Lina Lansberg",
-      "Division": "Women's Bantamweight Division",
-      "Age": 40,
-      "FighterReach": 65.5,
-      "HomeTown": "Karlstad, Sweden",
-      "FightStyle": "null",
-      "Record": "10-7-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-04/LANSBERG_LINA_L_04-16.png?itok=S0Xar2Bg",
-      "Ranking": "#12\n        Women's Bantamweight Division"
-    },
-    {
-      "fighterName": "Julia Avila",
-      "Division": "Women's Bantamweight Division",
-      "Age": 33,
-      "FighterReach": "null",
-      "HomeTown": "Los Angeles, United States",
-      "FightStyle": "null",
-      "Record": "9-2-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-06/68397%252Fprofile-galery%252Ffullbodyleft-picture%252FAVILA_JULIA_L_06-26.png?itok=mith1taf",
-      "Ranking": "#11\n        Women's Bantamweight Division"
-    },
+
     {
       "fighterName": "Miesha Tate",
       "Division": "Women's Flyweight Division",
@@ -64,7 +10,7 @@
       "FightStyle": "Grappler",
       "Record": "19-9-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-07/TATE_MIESHA_L_07-17.png?itok=l3ajmGkB",
-      "Ranking": "Women's Flyweight Division"
+      "Ranking": "Unranked"
     },
     {
       "fighterName": "Karol Rosa",
@@ -72,43 +18,21 @@
       "Age": 27,
       "FighterReach": 67.5,
       "HomeTown": "Vila Velha, Brazil",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "16-4-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-10/68454%252Fprofile-galery%252Ffullbodyleft-picture%252FROSA_KAROL_L_10-02.png?itok=D8BnZuS9",
-      "Ranking": "#9\n        Women's Bantamweight Division"
+      "Ranking": "#9"
     },
     {
       "fighterName": "Macy Chiasson",
       "Division": "Women's Bantamweight Division",
       "Age": 31,
       "FighterReach": 72,
-      "HomeTown": "United States",
+      "HomeTown": "New Orleans, United States",
       "FightStyle": "MMA",
       "Record": "9-2-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-07/71431%252Fprofile-galery%252Ffullbodyleft-picture%252FCHIASSON_MACY_L_07-24.png?itok=66bvrHjS",
-      "Ranking": "#8\n        Women's Bantamweight Division"
-    },
-    {
-      "fighterName": "Pannie Kianzad",
-      "Division": "Women's Bantamweight Division",
-      "Age": 30,
-      "FighterReach": 68,
-      "HomeTown": "Sweden",
-      "FightStyle": "MMA",
-      "Record": "17-6-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-06/68970%252Fprofile-galery%252Ffullbodyleft-picture%252FKIANZAD_PANNIE_L_06-12.png?VersionId=null&amp;itok=EGDHwo3x",
-      "Ranking": "#7\n        Women's Bantamweight Division"
-    },
-    {
-      "fighterName": "Yana Santos",
-      "Division": "Women's Bantamweight Division",
-      "Age": 33,
-      "FighterReach": 68.5,
-      "HomeTown": "Russia",
-      "FightStyle": "MMA",
-      "Record": "14-6-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-07/KUNITSKAYA_YANA_L_07-10.png?itok=kvBLp0qZ",
-      "Ranking": "#6\n        Women's Bantamweight Division"
+      "Ranking": "#8"
     },
     {
       "fighterName": "Irene Aldana",
@@ -116,21 +40,10 @@
       "Age": 34,
       "FighterReach": 68.5,
       "HomeTown": "Culiacán, Mexico",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "14-6-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-09/ALDANA_IRENE_L_09-10.png?itok=hJ7TdHt7",
-      "Ranking": "#5\n        Women's Bantamweight Division"
-    },
-    {
-      "fighterName": "Cynthia Calvillo",
-      "Division": "Women's Flyweight Division",
-      "Age": 35,
-      "FighterReach": 64,
-      "HomeTown": "San Jose, United States",
-      "FightStyle": "Freestyle",
-      "Record": "9-5-1 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-11/CALVILLO_CYNTHIA_L_09-25.png?itok=xi4jMSHp",
-      "Ranking": "#14\n        Women's Flyweight Division"
+      "Ranking": "#5"
     },
     {
       "fighterName": "Tracy Cortez",
@@ -138,10 +51,10 @@
       "Age": 28,
       "FighterReach": 65.5,
       "HomeTown": "Phoenix, United States",
-      "FightStyle": "null",
+      "FightStyle": "Weapon",
       "Record": "10-1-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-05/bc4fa7a0-48a8-4e41-a781-7017b65b8695%252FCORTEZ_TRACY_L_05-07.png?itok=iIMSCAYH",
-      "Ranking": "#13\n        Women's Flyweight Division"
+      "Ranking": "#13"
     },
     {
       "fighterName": "Maycee Barber",
@@ -152,7 +65,7 @@
       "FightStyle": "Freestyle",
       "Record": "11-2-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/4aa54ee5-e1f0-4915-98a6-7ecc571c1b7c%252FBARBER_MAYCEE_L_07-02.png?itok=1hOIFacz",
-      "Ranking": "#12\n        Women's Flyweight Division"
+      "Ranking": "#12"
     },
     {
       "fighterName": "Casey O'Neill",
@@ -163,29 +76,18 @@
       "FightStyle": "MMA",
       "Record": "9-0-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-06/71718%252Fprofile-galery%252Ffullbodyleft-picture%252FONEILL_CASEY_L_06-19.png?VersionId=null&amp;itok=7ocyMu5k",
-      "Ranking": "#11\n        Women's Flyweight Division"
+      "Ranking": "#11"
     },
     {
       "fighterName": "Erin Blanchfield",
       "Division": "Women's Flyweight Division",
       "Age": 23,
       "FighterReach": 66,
-      "HomeTown": "United States",
-      "FightStyle": "null",
+      "HomeTown": "New Jersey, United States",
+      "FightStyle": "Weapon",
       "Record": "10-1-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-11/BLANCHFIELD_ERIN_L_11-12.png?itok=BfgMB_iF",
-      "Ranking": "#10\n        Women's Flyweight Division"
-    },
-    {
-      "fighterName": "Andrea Lee",
-      "Division": "Women's Flyweight Division",
-      "Age": 33,
-      "FighterReach": 69.5,
-      "HomeTown": "Atlanta, United States",
-      "FightStyle": "Muay Thai",
-      "Record": "13-6-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-05/69617%252Fprofile-galery%252Ffullbodyleft-picture%252FLEE_ANDREA_L_05-15.png?VersionId=null&amp;itok=2AEe7a5K",
-      "Ranking": "#9\n        Women's Flyweight Division"
+      "Ranking": "#10"
     },
     {
       "fighterName": "Jennifer Maia",
@@ -193,10 +95,10 @@
       "Age": 34,
       "FighterReach": 64,
       "HomeTown": "Curitiba, Brazil",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "20-9-1 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-11/MAIA_JENNIFER_L_11_19.png?itok=SSpXN88-",
-      "Ranking": "#8\n        Women's Flyweight Division"
+      "Ranking": "#8"
     },
     {
       "fighterName": "Viviane Araújo",
@@ -204,10 +106,10 @@
       "Age": 35,
       "FighterReach": 68,
       "HomeTown": "Brasília, Brazil",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "11-4-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-06/ARAUJO_VIVIANE_L_05-15.png?VersionId=null&amp;itok=4W9qlukR",
-      "Ranking": "#7\n        Women's Flyweight Division"
+      "Ranking": "#7"
     },
     {
       "fighterName": "Lauren Murphy",
@@ -218,7 +120,7 @@
       "FightStyle": "MMA",
       "Record": "16-6-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2023-01/MURPHY_LAUREN_L_01-19.png?itok=Hs7WZu6o",
-      "Ranking": "#4\n        Women's Flyweight Division"
+      "Ranking": "#4"
     },
     {
       "fighterName": "Alexa Grasso",
@@ -229,51 +131,7 @@
       "FightStyle": "MMA",
       "Record": "15-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-10/GRASSO_ALEXA_L_10-15.png?itok=RyIWekm_",
-      "Ranking": "#4\n        Women's Flyweight Division"
-    },
-    {
-      "fighterName": "Polyana Viana",
-      "Division": "Women's Strawweight Division",
-      "Age": 30,
-      "FighterReach": 67,
-      "HomeTown": "State of Pará, Brazil",
-      "FightStyle": "null",
-      "Record": "13-5-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-05/4d4a8964-7b90-4e4d-9c1f-579894ceb631%252FVIANA_POLYANA_L_05-21.png?itok=jAsQC1tE",
-      "Ranking": "#15\n        Women's Strawweight Division"
-    },
-    {
-      "fighterName": "Emily Ducote",
-      "Division": "Women's Strawweight Division",
-      "Age": 28,
-      "FighterReach": 63,
-      "HomeTown": "San Jose, United States",
-      "FightStyle": "null",
-      "Record": "12-7-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/DUCOTE_EMILY_L_07-16.png?itok=H2DILtKc",
-      "Ranking": "#14\n        Women's Strawweight Division"
-    },
-    {
-      "fighterName": "Luana Pinheiro",
-      "Division": "Women's Strawweight Division",
-      "Age": 29,
-      "FighterReach": 62.5,
-      "HomeTown": "João Pessoa, Brazil",
-      "FightStyle": "null",
-      "Record": "10-1-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-05/71666%252Fprofile-galery%252Ffullbodyleft-picture%252FPINHEIRO_LUANA_L_05-01.png?VersionId=null&amp;itok=HemyO-83",
-      "Ranking": "#13\n        Women's Strawweight Division"
-    },
-    {
-      "fighterName": "Angela Hill",
-      "Division": "Women's Strawweight Division",
-      "Age": 37,
-      "FighterReach": 64.5,
-      "HomeTown": "Clinton, United States",
-      "FightStyle": "null",
-      "Record": "15-12-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-08/67345%252Fprofile-galery%252Ffullbodyleft-picture%252FHILL_ANGELA_L_08-07.png?itok=1t_qO60X",
-      "Ranking": "#12\n        Women's Strawweight Division"
+      "Ranking": "#4"
     },
     {
       "fighterName": "Michelle Waterson-Gomez",
@@ -284,7 +142,7 @@
       "FightStyle": "Karate",
       "Record": "18-10-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/WATERSON-GOMEZ_MICHELLE_L_07-16.png?itok=vlltUuJ4",
-      "Ranking": "#11\n        Women's Strawweight Division"
+      "Ranking": "#11"
     },
     {
       "fighterName": "Virna Jandiroba",
@@ -292,43 +150,21 @@
       "Age": 33,
       "FighterReach": 64,
       "HomeTown": "Serrinha, Brazil",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "17-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-06/69468%252Fprofile-galery%252Ffullbodyleft-picture%252FJANDIROBA_VIRNA_L_06-19.png?VersionId=null&amp;itok=kF8AeAaP",
-      "Ranking": "#10\n        Women's Strawweight Division"
-    },
-    {
-      "fighterName": "Amanda Ribas",
-      "Division": "Women's Flyweight Division",
-      "Age": 29,
-      "FighterReach": 66,
-      "HomeTown": "Varginha, Brazil",
-      "FightStyle": "null",
-      "Record": "11-3-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-08/7b0e0ab3-5969-4d1f-b537-a07b1a9bc4a4%252FRIBAS_AMANDA_L_05-14.png?itok=EGYxYfmE",
-      "Ranking": "#15\n        Women's Flyweight Division"
-    },
-    {
-      "fighterName": "Tecia Torres",
-      "Division": "Women's Strawweight Division",
-      "Age": 32,
-      "FighterReach": 60.5,
-      "HomeTown": "Fall River, United States",
-      "FightStyle": "Kickboxer",
-      "Record": "13-6-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-08/69341%252Fprofile-galery%252Ffullbodyleft-picture%252FTORRES_TECIA_L_08-07.png?itok=c6kfUByt",
-      "Ranking": "#8\n        Women's Strawweight Division"
+      "Ranking": "#10"
     },
     {
       "fighterName": "Mackenzie Dern",
       "Division": "Women's Strawweight Division",
       "Age": 29,
       "FighterReach": 63,
-      "HomeTown": "Brazil",
+      "HomeTown": "Sao Paulo, Brazil",
       "FightStyle": "Brazilian Jiu-Jitsu",
       "Record": "12-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-06/DERN_MACKENZIE_L_04-10.png?itok=rr3aWMaE",
-      "Ranking": "#7\n        Women's Strawweight Division"
+      "Ranking": "#7"
     },
     {
       "fighterName": "Xiaonan Yan",
@@ -339,29 +175,18 @@
       "FightStyle": "Striker",
       "Record": "16-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-05/69520%252Fprofile-galery%252Ffullbodyleft-picture%252FXIAONAN_YAN_L_05-22.png?VersionId=null&amp;itok=BJK1MMcm",
-      "Ranking": "#6\n        Women's Strawweight Division"
+      "Ranking": "#6"
     },
     {
       "fighterName": "Ketlen Vieira",
       "Division": "Women's Bantamweight Division",
       "Age": 31,
       "FighterReach": 68,
-      "HomeTown": "State of Amazonas, Brazil",
-      "FightStyle": "null",
+      "HomeTown": "Amazonas, Brazil",
+      "FightStyle": "MMA",
       "Record": "13-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2023-01/VIEIRA_KETLEN_L_01-14.png?itok=RL2TTs13",
-      "Ranking": "#4\n        Women's Bantamweight Division"
-    },
-    {
-      "fighterName": "Katlyn Chookagian",
-      "Division": "Women's Flyweight Division",
-      "Age": 33,
-      "FighterReach": 68,
-      "HomeTown": "Quakertown, United States",
-      "FightStyle": "MMA",
-      "Record": "18-5-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-05/fd6b4555-64bc-4a5f-8bb2-11a10b3eb5bb%252FCHOOKAGIAN_KATLYN_L_05-14.png?itok=tyYVBiDU",
-      "Ranking": "#3\n        Women's Flyweight Division"
+      "Ranking": "#4"
     },
     {
       "fighterName": "Raquel Pennington",
@@ -372,7 +197,7 @@
       "FightStyle": "Freestyle",
       "Record": "15-9-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-11/PENNINGTON_RAQUEL_L_09-18.png?itok=035fsF-h",
-      "Ranking": "#2\n        Women's Bantamweight Division"
+      "Ranking": "#2"
     },
     {
       "fighterName": "Manon Fiorot",
@@ -380,10 +205,10 @@
       "Age": 32,
       "FighterReach": 65,
       "HomeTown": "Nice, France",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "10-1-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-06/71739%252Fprofile-galery%252Ffullbodyleft-picture%252FFIOROT_MANON_L_06-05.png?VersionId=null&amp;itok=plHyzQtk",
-      "Ranking": "#1\n        Women's Flyweight Division"
+      "Ranking": "#1"
     },
     {
       "fighterName": "Holly Holm",
@@ -394,7 +219,7 @@
       "FightStyle": "Kickboxer",
       "Record": "14-6-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-05/eb047275-366a-4dc9-9996-2e019a719775%252FHOLM_HOLLY_L_05-21.png?itok=EoChOkYK",
-      "Ranking": "#3\n        Women's Bantamweight Division"
+      "Ranking": "#3"
     },
     {
       "fighterName": "Taila Santos",
@@ -402,10 +227,10 @@
       "Age": 29,
       "FighterReach": 68,
       "HomeTown": "Jaraguá do Sul, Brazil",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "19-2-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/8eb303a9-d887-4541-905b-e3e7461ed95e%252FSANTOS_TAILA_L_06-11.png?itok=UuRKEMr9",
-      "Ranking": "#2\n        Women's Flyweight Division"
+      "Ranking": "#2"
     },
     {
       "fighterName": "Amanda Lemos",
@@ -416,18 +241,18 @@
       "FightStyle": "Boxing",
       "Record": "13-2-1 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-04/8d2e2ccd-45be-44c4-a29f-14f59d6c5ed2%252FLEMOS_AMANDA_L_04-23.png?itok=lMJKWFYy",
-      "Ranking": "#3\n        Women's Strawweight Division"
+      "Ranking": "#3"
     },
     {
       "fighterName": "Marina Rodriguez",
       "Division": "Women's Strawweight Division",
       "Age": 35,
       "FighterReach": 65,
-      "HomeTown": "State of Rio Grande do Sul, Brazil",
-      "FightStyle": "null",
+      "HomeTown": "Rio Grande do Sul, Brazil",
+      "FightStyle": "MMA",
       "Record": "16-2-2 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-11/RODRIGUEZ_MARINA_L_11-05.png?itok=uLi00BWC",
-      "Ranking": "#5\n        Women's Strawweight Division"
+      "Ranking": "#5"
     },
     {
       "fighterName": "Jessica Andrade",
@@ -438,7 +263,7 @@
       "FightStyle": "Muay Thai",
       "Record": "24-9-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-06/9e1322ed-8b10-40f2-b0fc-575fb206c20c%252FANDRADE_JESSICA_L_04-23.png?itok=3jTE7pkP",
-      "Ranking": "#6\n        Women's Flyweight Division"
+      "Ranking": "#6"
     },
     {
       "fighterName": "Carla Esparza",
@@ -446,10 +271,10 @@
       "Age": 35,
       "FighterReach": 63,
       "HomeTown": "Los Angeles, United States",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "20-7-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-11/ESPARZA_CARLA_L_05-07.png?itok=xPLhERYN",
-      "Ranking": "#1\n        Women's Strawweight Division"
+      "Ranking": "#1"
     },
     {
       "fighterName": "Rose Namajunas",
@@ -460,7 +285,7 @@
       "FightStyle": "MMA",
       "Record": "12-5-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-08/69149%252Fprofile-galery%252Ffullbodyleft-picture%252FNAMAJUNAS_ROSE_L_04-24.png?itok=kpkn1178",
-      "Ranking": "#2\n        Women's Strawweight Division"
+      "Ranking": "#2"
     },
     {
       "fighterName": "Julianna Peña",
@@ -471,7 +296,7 @@
       "FightStyle": "Jiu-Jitsu",
       "Record": "12-5-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-08/PENA_JULIANNA_L_12-11.png?itok=c8sJBl6M",
-      "Ranking": "#1\n        Women's Bantamweight Division"
+      "Ranking": "#1"
     },
     {
       "fighterName": "Zhang Weili",
@@ -479,10 +304,10 @@
       "Age": 33,
       "FighterReach": 63,
       "HomeTown": "Hebei, China",
-      "FightStyle": "null",
+      "FightStyle": "Muay Thai",
       "Record": "23-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-11/WEILI_ZHANG_L_BELT_04-24.png?itok=0uk4920t",
-      "Ranking": "Women's Strawweight Division"
+      "Ranking": "CHAMPION"
     },
     {
       "fighterName": "Valentina Shevchenko",
@@ -490,32 +315,10 @@
       "Age": 34,
       "FighterReach": 66.5,
       "HomeTown": "Bishkek, Kyrgyzstan",
-      "FightStyle": "null",
+      "FightStyle": "Muay Thai",
       "Record": "23-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/%5Bdate%3Acustom%3AY%5D-%5Bdate%3Acustom%3Am%5D/SHEVCHENKO_VALENTINA_L_BELT_04-24.png?VersionId=null&amp;itok=KpjlJhRW",
-      "Ranking": "Women's Flyweight Division"
-    },
-    {
-      "fighterName": "Shamil Abdurakhimov",
-      "Division": "Heavyweight Division",
-      "Age": 41,
-      "FighterReach": 76,
-      "HomeTown": "Dagestan Republic, Russia",
-      "FightStyle": "Grappler",
-      "Record": "20-8-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2023-01/ABDURAKHIMOV_SHAMIL_L_01-19.png?itok=SKH7KJ2H",
-      "Ranking": "#15\n        Heavyweight Division"
-    },
-    {
-      "fighterName": "Blagoy Ivanov",
-      "Division": "Heavyweight Division",
-      "Age": 35,
-      "FighterReach": 73,
-      "HomeTown": "Sofia, Bulgaria",
-      "FightStyle": "MMA",
-      "Record": "19-4-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-05/2960e352-bec7-41a0-803f-3a3336fed367%252FIVANOV_BLAGOY_L_05-07.png?itok=rYiwdvgx",
-      "Ranking": "#14\n        Heavyweight Division"
+      "Ranking": "CHAMPION"
     },
     {
       "fighterName": "Alexandr Romanov",
@@ -526,18 +329,18 @@
       "FightStyle": "Wrestler",
       "Record": "16-1-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-04/318f6bdb-ab1d-4e95-8328-37d1e0d4072f%252FROMANOV_ALEXANDR_L_04-23.png?itok=wikEmFdJ",
-      "Ranking": "#13\n        Heavyweight Division"
+      "Ranking": "#13"
     },
     {
       "fighterName": "Serghei Spivac",
       "Division": "Heavyweight Division",
       "Age": 27,
       "FighterReach": 78,
-      "HomeTown": "Moldova",
+      "HomeTown": "Chisinau, Moldova",
       "FightStyle": "Sambo",
       "Record": "15-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2023-01/SPIVAC_SERGHEI_L_01_22.png?itok=jCx7y7au",
-      "Ranking": "#12\n        Heavyweight Division"
+      "Ranking": "#12"
     },
     {
       "fighterName": "Chris Daukaus",
@@ -548,7 +351,7 @@
       "FightStyle": "Freestyle",
       "Record": "12-6-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-11/DAUKAUS_CHRIS_L_09-25.png?itok=34hCc54A",
-      "Ranking": "#11\n        Heavyweight Division"
+      "Ranking": "#11"
     },
     {
       "fighterName": "Marcin Tybura",
@@ -559,7 +362,7 @@
       "FightStyle": "MMA",
       "Record": "23-7-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-08/0967dceb-67a8-4695-a633-0598ab20fd58%252FTYBURA_MARCIN_L_04-09.png?itok=KK2t5AHI",
-      "Ranking": "#10\n        Heavyweight Division"
+      "Ranking": "#10"
     },
     {
       "fighterName": "Jairzinho Rozenstruik",
@@ -570,7 +373,7 @@
       "FightStyle": "MMA",
       "Record": "12-4-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/1eb95f06-585c-4565-ad55-8a0ca3d84ac8%252FROZENSTRUIK_JAIRZINHO_L_06-04.png?itok=IJW2dU39",
-      "Ranking": "#9\n        Heavyweight Division"
+      "Ranking": "#9"
     },
     {
       "fighterName": "Alexander Volkov",
@@ -581,7 +384,7 @@
       "FightStyle": "Brazilian Jiu-Jitsu",
       "Record": "35-10-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/9e4d4db5-d9dc-475b-893c-f2298d8a0920%252FVOLKOV_ALEXANDER_L_06-04.png?itok=D1ngUh-k",
-      "Ranking": "#8\n        Heavyweight Division"
+      "Ranking": "#8"
     },
     {
       "fighterName": "Derrick Lewis",
@@ -589,10 +392,10 @@
       "Age": 37,
       "FighterReach": 79,
       "HomeTown": "New Orleans, United States",
-      "FightStyle": "null",
+      "FightStyle": "Brawler",
       "Record": "26-10-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/LEWIS_DERRICK_L_07-30.png?itok=E3H-vpT-",
-      "Ranking": "#7\n        Heavyweight Division"
+      "Ranking": "#7"
     },
     {
       "fighterName": "Tom Aspinall",
@@ -603,7 +406,7 @@
       "FightStyle": "Freestyle",
       "Record": "12-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/1f5bd29d-50af-436e-b4ce-996c75742c02%252FASPINALL_TOM_L_03-19.png?itok=pOyw3Gy8",
-      "Ranking": "#6\n        Heavyweight Division"
+      "Ranking": "#6"
     },
     {
       "fighterName": "Tai Tuivasa",
@@ -611,10 +414,10 @@
       "Age": 29,
       "FighterReach": 75,
       "HomeTown": "Kingswood, Australia",
-      "FightStyle": "null",
+      "FightStyle": "Brawler",
       "Record": "15-5-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-09/TUIVASA_TAI_L_09-03.png?itok=s1xlUFMJ",
-      "Ranking": "#5\n        Heavyweight Division"
+      "Ranking": "#5"
     },
     {
       "fighterName": "Curtis Blaydes",
@@ -625,18 +428,18 @@
       "FightStyle": "MMA",
       "Record": "17-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/228e06d2-8a86-42c0-a743-1929f8126eb7%252FBLAYDES_CURTIS_L_03-26.png?itok=TY0Rw6V7",
-      "Ranking": "#4\n        Heavyweight Division"
+      "Ranking": "#4"
     },
     {
       "fighterName": "Sergei Pavlovich",
       "Division": "Heavyweight Division",
       "Age": 30,
       "FighterReach": 84,
-      "HomeTown": "Russia",
-      "FightStyle": "null",
+      "HomeTown": "Orlovsky, Russia",
+      "FightStyle": "Sambo",
       "Record": "17-1-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-06/PAVLOVICH_SERGEI_L_03-19.png?itok=2jGAAbg2",
-      "Ranking": "#3\n        Heavyweight Division"
+      "Ranking": "#3"
     },
     {
       "fighterName": "Stipe Miocic",
@@ -644,10 +447,10 @@
       "Age": 40,
       "FighterReach": 80,
       "HomeTown": "Euclid, United States",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "20-4-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2020-03/MIOCIC_STIPE_L.png?VersionId=AvpdfeJOw_RIVkLQfyNsDDCkr7v26RtH&amp;itok=tBa8SpCC",
-      "Ranking": "#2\n        Heavyweight Division"
+      "Ranking": "#2"
     },
     {
       "fighterName": "Ciryl Gane",
@@ -658,7 +461,7 @@
       "FightStyle": "Muay Thai",
       "Record": "11-1-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-09/GANE_CYRIL_L_09-03.png?itok=Gt5pcNnr",
-      "Ranking": "#1\n        Heavyweight Division"
+      "Ranking": "#1"
     },
     {
       "fighterName": "Khalil Rountree Jr.",
@@ -669,7 +472,7 @@
       "FightStyle": "MMA",
       "Record": "12-5-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-11/ROUNTREE_KHALIL_L_10-29.png?itok=yqBDdTN4",
-      "Ranking": "#15\n        Light Heavyweight Division"
+      "Ranking": "#15"
     },
     {
       "fighterName": "Jimmy Crute",
@@ -680,7 +483,7 @@
       "FightStyle": "MMA",
       "Record": "12-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-06/CRUTE_JIMMY_L_04-24.png?VersionId=null&amp;itok=bclnaDbU",
-      "Ranking": "#14\n        Light Heavyweight Division"
+      "Ranking": "#14"
     },
     {
       "fighterName": "Dominick Reyes",
@@ -688,10 +491,10 @@
       "Age": 32,
       "FighterReach": 77,
       "HomeTown": "Apple Valley, United States",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "12-4-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-11/REYES_DOMINICK_L_11-12.png?itok=FVzb0yst",
-      "Ranking": "#13\n        Light Heavyweight Division"
+      "Ranking": "#13"
     },
     {
       "fighterName": "Johnny Walker",
@@ -702,7 +505,7 @@
       "FightStyle": "MMA",
       "Record": "20-7-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-02/601d454c-9816-4660-8f47-c92f3a3738f3%252FWALKER_JOHNNY_L_02-19.png?itok=-Oj2FjNg",
-      "Ranking": "#12\n        Light Heavyweight Division"
+      "Ranking": "#12"
     },
     {
       "fighterName": "Ryan Spann",
@@ -713,7 +516,7 @@
       "FightStyle": "MMA",
       "Record": "23-7-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-11/SPANN_RYAN_L_09-18.png?itok=qgkO4yqE",
-      "Ranking": "#11\n        Light Heavyweight Division"
+      "Ranking": "#11"
     },
     {
       "fighterName": "Volkan Oezdemir",
@@ -724,7 +527,7 @@
       "FightStyle": "Striker",
       "Record": "18-7-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/OEZDEMIR_VOLKAN_L_07-23.png?itok=f09v5J2c",
-      "Ranking": "#10\n        Light Heavyweight Division"
+      "Ranking": "#10"
     },
     {
       "fighterName": "Paul Craig",
@@ -735,18 +538,18 @@
       "FightStyle": "Kung-Fu",
       "Record": "16-6-1 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2023-01/CRAIG_PAUL_L_01-19.png?itok=OCS6Zj3t",
-      "Ranking": "#9\n        Light Heavyweight Division"
+      "Ranking": "#9"
     },
     {
       "fighterName": "Nikita Krylov",
       "Division": "Light Heavyweight Division",
       "Age": 30,
-      "FighterReach": "null",
-      "HomeTown": "null",
+      "FighterReach": "77",
+      "HomeTown": "Moscow, Russia",
       "FightStyle": "Karate",
       "Record": "29-9-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-03/ce1213ea-c2b7-43bf-ad4e-c3f45c37f8c3%252FKRYLOV_NIKITA_L_03-19.png?itok=QzVjMsrV",
-      "Ranking": "#8\n        Light Heavyweight Division"
+      "Ranking": "#8"
     },
     {
       "fighterName": "Jamahal Hill",
@@ -754,10 +557,10 @@
       "Age": 31,
       "FighterReach": 79,
       "HomeTown": "Chicago, United States",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "11-1-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-08/HILL_JAMAHAL_L_08-06.png?itok=xSG8hecb",
-      "Ranking": "#7\n        Light Heavyweight Division"
+      "Ranking": "CHAMPION"
     },
     {
       "fighterName": "Anthony Smith",
@@ -768,7 +571,7 @@
       "FightStyle": "Freestyle",
       "Record": "36-17-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-08/SMITH_ANTHONY_L_07-30.png?itok=91VPCJmx",
-      "Ranking": "#6\n        Light Heavyweight Division"
+      "Ranking": "#6"
     },
     {
       "fighterName": "Aleksandar Rakić",
@@ -779,7 +582,7 @@
       "FightStyle": "Freestyle",
       "Record": "14-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-06/RAKIC_ALEKSANDAR_L_05-14.png?itok=7hzDVZpj",
-      "Ranking": "#5\n        Light Heavyweight Division"
+      "Ranking": "#5"
     },
     {
       "fighterName": "Jan Błachowicz",
@@ -790,18 +593,18 @@
       "FightStyle": "MMA",
       "Record": "29-9-1 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-05/812dc71b-2116-4b24-bd64-78e8b42447f7%252FBLACHOWICZ_JAN_L_05-14.png?itok=NA_McbC9",
-      "Ranking": "#4\n        Light Heavyweight Division"
+      "Ranking": "#4"
     },
     {
       "fighterName": "Magomed Ankalaev",
       "Division": "Light Heavyweight Division",
       "Age": 30,
       "FighterReach": 75,
-      "HomeTown": "Russia",
-      "FightStyle": "null",
+      "HomeTown": "Dagestan Republic, Russia",
+      "FightStyle": "Wrestler",
       "Record": "18-1-1 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-03/8d73a67c-93a8-47bb-a433-6b752739b666%252FANKALAEV_MAGOMED_L_03-12.png?itok=hJWQCnh4",
-      "Ranking": "#3\n        Light Heavyweight Division"
+      "Ranking": "#3"
     },
     {
       "fighterName": "Glover Teixeira",
@@ -812,7 +615,7 @@
       "FightStyle": "Jiu-Jitsu",
       "Record": "33-9-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/image/fighter_images/Glover_Texeira/TEIXEIRA_GLOVER_L.png?itok=eymFv6-L",
-      "Ranking": "#2\n        Light Heavyweight Division"
+      "Ranking": "#2"
     },
     {
       "fighterName": "Darren Till",
@@ -823,7 +626,7 @@
       "FightStyle": "Muay Thai",
       "Record": "18-5-1 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-12/TILL_DARREN_L_12-10.png?itok=pCJkF50A",
-      "Ranking": "#15\n        Middleweight Division"
+      "Ranking": "#15"
     },
     {
       "fighterName": "Chris Curtis",
@@ -834,7 +637,7 @@
       "FightStyle": "MMA",
       "Record": "30-9-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-06/f78dd9ae-c44e-46fb-a9d2-beef3be4b5ff%252FCURTIS_CHRIS_L_06-25.png?itok=45_snrxO",
-      "Ranking": "#14\n        Middleweight Division"
+      "Ranking": "#14"
     },
     {
       "fighterName": "Kelvin Gastelum",
@@ -842,32 +645,10 @@
       "Age": 31,
       "FighterReach": 71.5,
       "HomeTown": "San Jose, United States",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "17-8-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-06/GASTELUM_KELVIN_L_04-17.png?itok=NACbbv1V",
-      "Ranking": "#13\n        Middleweight Division"
-    },
-    {
-      "fighterName": "Nassourdine Imavov",
-      "Division": "Light Heavyweight Division",
-      "Age": 27,
-      "FighterReach": 75,
-      "HomeTown": "Russia",
-      "FightStyle": "Striker",
-      "Record": "12-4-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-07/71679%252Fprofile-galery%252Ffullbodyleft-picture%252FIMAVOV_NASSOURDINE_L_07-24.png?itok=tx9_29V1",
-      "Ranking": "Light Heavyweight Division"
-    },
-    {
-      "fighterName": "Andre Muniz",
-      "Division": "Middleweight Division",
-      "Age": 32,
-      "FighterReach": 78,
-      "HomeTown": "Montes Claros, Brazil",
-      "FightStyle": "MMA",
-      "Record": "23-4-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/6656baa5-7df3-4c23-9508-fed6d682be6d%252FMUNIZ_ANDRE_L_07-02.png?itok=GtJnXSPo",
-      "Ranking": "#11\n        Middleweight Division"
+      "Ranking": "#13"
     },
     {
       "fighterName": "Dricus Du Plessis",
@@ -875,10 +656,10 @@
       "Age": 28,
       "FighterReach": 76,
       "HomeTown": "Welkom, South Africa",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "18-2-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-07/DU_PLESSUS_DRICUS_L_07-10.png?itok=QK0-grkj",
-      "Ranking": "#10\n        Middleweight Division"
+      "Ranking": "#10"
     },
     {
       "fighterName": "Jack Hermansson",
@@ -889,7 +670,7 @@
       "FightStyle": "MMA",
       "Record": "23-8-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-02/fef3a1eb-edb2-4f3b-be6b-92998eb16134%252FHERMANSSON_JACK_L_02-05.png?itok=QxrSWqlv",
-      "Ranking": "#9\n        Middleweight Division"
+      "Ranking": "#9"
     },
     {
       "fighterName": "Roman Dolidze",
@@ -900,29 +681,29 @@
       "FightStyle": "MMA",
       "Record": "11-1-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-06/4deb3994-f399-4ed8-8373-c30ec9ecae6f%252FDOLIDZE_ROMAN_L_06-18.png?itok=teNxLpDV",
-      "Ranking": "#8\n        Middleweight Division"
+      "Ranking": "#8"
     },
     {
       "fighterName": "Sean Strickland",
-      "Division": "Light Heavyweight Division",
+      "Division": "Middleweight Division",
       "Age": 31,
       "FighterReach": 76,
-      "HomeTown": "United States",
+      "HomeTown": "California, United States",
       "FightStyle": "MMA",
       "Record": "26-5-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2023-01/STRICKLAND_SEAN_L_12-17.png?itok=I8R680yL",
-      "Ranking": "Light Heavyweight Division"
+      "Ranking": "#7"
     },
     {
       "fighterName": "Paulo Costa",
       "Division": "Middleweight Division",
       "Age": 31,
       "FighterReach": 72,
-      "HomeTown": "State of Minas Gerais, Brazil",
+      "HomeTown": "Minas Gerais, Brazil",
       "FightStyle": "Striker",
       "Record": "14-2-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-08/COSTA_PAULO_L_08-20.png?itok=OX5M7ZUU",
-      "Ranking": "#6\n        Middleweight Division"
+      "Ranking": "#6"
     },
     {
       "fighterName": "Derek Brunson",
@@ -930,10 +711,10 @@
       "Age": 38,
       "FighterReach": 77,
       "HomeTown": "Wilmington, United States",
-      "FightStyle": "null",
+      "FightStyle": "Wrestler",
       "Record": "23-8-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-09/67807%252Fprofile-galery%252Ffullbodyleft-picture%252FBRUNSON_DEREK_L_09-04.png?itok=WWFC2D7b",
-      "Ranking": "#5\n        Middleweight Division"
+      "Ranking": "#5"
     },
     {
       "fighterName": "Marvin Vettori",
@@ -944,7 +725,7 @@
       "FightStyle": "MMA",
       "Record": "18-6-1 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-09/VETTORI_MARVIN_L_09-03.png?itok=7lDKr8RH",
-      "Ranking": "#4\n        Middleweight Division"
+      "Ranking": "#4"
     },
     {
       "fighterName": "Jared Cannonier",
@@ -955,7 +736,7 @@
       "FightStyle": "Striker",
       "Record": "16-6-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/c94750b2-8c3a-4dd7-840c-7bfa0293c244%252FCANNONIER_JARED_L_07-02.png?itok=wWRjRMav",
-      "Ranking": "#3\n        Middleweight Division"
+      "Ranking": "#3"
     },
     {
       "fighterName": "Li Jingliang",
@@ -966,7 +747,7 @@
       "FightStyle": "Boxing",
       "Record": "19-8-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-09/JINGLIANG_LI_L_09-10.png?itok=gQI9vwTA",
-      "Ranking": "#15\n        Welterweight Division"
+      "Ranking": "#15"
     },
     {
       "fighterName": "Michel Pereira",
@@ -977,7 +758,7 @@
       "FightStyle": "Striker",
       "Record": "27-11-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-07/PEREIRA_MICHEL_L_07-10.png?itok=NgqUUYNu",
-      "Ranking": "#14\n        Welterweight Division"
+      "Ranking": "#14"
     },
     {
       "fighterName": "Michael Chiesa",
@@ -985,10 +766,10 @@
       "Age": 34,
       "FighterReach": 75.5,
       "HomeTown": "Aurora, United States",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "18-6-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-08/68797%252Fprofile-galery%252Ffullbodyleft-picture%252FCHIESA_MICHAEL_L_08-07.png?itok=MWF2Rk9h",
-      "Ranking": "#13\n        Welterweight Division"
+      "Ranking": "#13"
     },
     {
       "fighterName": "Neil Magny",
@@ -996,10 +777,10 @@
       "Age": 35,
       "FighterReach": 80,
       "HomeTown": "Brooklyn, United States",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "27-11-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-06/cd04a6f0-b291-4b34-84a7-ab332940ca0b%252FMAGNY_NEIL_L_06-25.png?itok=lbbY9EAN",
-      "Ranking": "#12\n        Welterweight Division"
+      "Ranking": "#12"
     },
     {
       "fighterName": "Jorge Masvidal",
@@ -1010,18 +791,18 @@
       "FightStyle": "Boxing",
       "Record": "35-16-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-07/MASVIDAL_JORGE_L_04-24.png?itok=xClc4NJc",
-      "Ranking": "#11\n        Welterweight Division"
+      "Ranking": "#11"
     },
     {
       "fighterName": "Shavkat Rakhmonov",
       "Division": "Welterweight Division",
       "Age": 28,
       "FighterReach": 77,
-      "HomeTown": "Uzbekistan",
-      "FightStyle": "null",
+      "HomeTown": "Shurchi District, Uzbekistan",
+      "FightStyle": "MMA",
       "Record": "16-0-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-06/ec3d59eb-2f08-4a5c-ba06-164d05bb478f%252FRAKHMONOV_SHAVKHAT_L_06-25.png?itok=EpEszo7w",
-      "Ranking": "#10\n        Welterweight Division"
+      "Ranking": "#10"
     },
     {
       "fighterName": "Vicente Luque",
@@ -1032,7 +813,7 @@
       "FightStyle": "Muay Thai",
       "Record": "21-9-1 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-04/71353a42-1d5e-4983-a651-75cc91218919%252FLUQUE_VICENTE_L_04-16.png?itok=30wpAf25",
-      "Ranking": "#9\n        Welterweight Division"
+      "Ranking": "#9"
     },
     {
       "fighterName": "Sean Brady",
@@ -1040,10 +821,10 @@
       "Age": 29,
       "FighterReach": 72,
       "HomeTown": "Philadelphia, United States",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "15-1-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-11/69577%252Fprofile-galery%252Ffullbodyleft-picture%252FBRADY_SEAN_L_11-20.png?itok=DRPjhf3T",
-      "Ranking": "#8\n        Welterweight Division"
+      "Ranking": "#8"
     },
     {
       "fighterName": "Geoff Neal",
@@ -1054,7 +835,7 @@
       "FightStyle": "Striker",
       "Record": "15-4-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-08/NEAL_GEOFF_L_08-06.png?itok=LBKHER0B",
-      "Ranking": "#7\n        Welterweight Division"
+      "Ranking": "#7"
     },
     {
       "fighterName": "Stephen Thompson",
@@ -1065,7 +846,7 @@
       "FightStyle": "Karate",
       "Record": "17-6-1 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-12/THOMPSON_STEPHEN_L_12-03.png?itok=Ix8SmbJQ",
-      "Ranking": "#6\n        Welterweight Division"
+      "Ranking": "#6"
     },
     {
       "fighterName": "Gilbert Burns",
@@ -1076,7 +857,7 @@
       "FightStyle": "Brazilian Jiu-Jitsu",
       "Record": "21-5-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2023-01/BURNS_GILBERT_L_01-19.png?itok=6RntUmTe",
-      "Ranking": "#5\n        Welterweight Division"
+      "Ranking": "#5"
     },
     {
       "fighterName": "Belal Muhammad",
@@ -1084,10 +865,10 @@
       "Age": 34,
       "FighterReach": 72,
       "HomeTown": "Chicago, United States",
-      "FightStyle": "null",
+      "FightStyle": "Wrestler",
       "Record": "22-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-08/622471ec-9987-47a7-bb7c-7dee406e5cb5%252FMUHAMMAD_BELAL_L_04-16.png?itok=o5OUH_cM",
-      "Ranking": "#4\n        Welterweight Division"
+      "Ranking": "#4"
     },
     {
       "fighterName": "Khamzat Chimaev",
@@ -1095,10 +876,10 @@
       "Age": 28,
       "FighterReach": 75,
       "HomeTown": "Sweden",
-      "FightStyle": "null",
+      "FightStyle": "Wrestler",
       "Record": "12-0-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-11/71660%252Fprofile-galery%252Ffullbodyleft-picture%252FCHIMAEV_KHAMZAT_L_10-30.png?itok=V9OsChbC",
-      "Ranking": "#3\n        Welterweight Division"
+      "Ranking": "#3"
     },
     {
       "fighterName": "Colby Covington",
@@ -1106,21 +887,10 @@
       "Age": 34,
       "FighterReach": 72,
       "HomeTown": "United States",
-      "FightStyle": "null",
+      "FightStyle": "Wrestler",
       "Record": "17-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-03/0b2f6b55-7a5d-49f1-9bc3-7076406d904f%252FCOVINGTON_COLBY_L_11-06.png?itok=9qVDWt-k",
-      "Ranking": "#2\n        Welterweight Division"
-    },
-    {
-      "fighterName": "Grant Dawson",
-      "Division": "Lightweight Division",
-      "Age": 28,
-      "FighterReach": 72,
-      "HomeTown": "Cambria, United States",
-      "FightStyle": "null",
-      "Record": "19-1-1 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-11/DAWSON_GRANT_L_11-05.png?itok=Woy6T3r9",
-      "Ranking": "#15\n        Lightweight Division"
+      "Ranking": "#2"
     },
     {
       "fighterName": "Drew Dober",
@@ -1131,7 +901,7 @@
       "FightStyle": "Freestyle",
       "Record": "26-11-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/DOBER_DREW_L_07-30.png?itok=jeYmuGZa",
-      "Ranking": "#14\n        Lightweight Division"
+      "Ranking": "#14"
     },
     {
       "fighterName": "Renato Moicano",
@@ -1142,18 +912,7 @@
       "FightStyle": "Jiu-Jitsu",
       "Record": "17-5-1 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-03/984198d1-4d34-4681-b99d-b9e9449b0405%252FMOICANO_RENATO_L_03-05.png?itok=9e6FPnSL",
-      "Ranking": "#13\n        Lightweight Division"
-    },
-    {
-      "fighterName": "Damir Ismagulov",
-      "Division": "Lightweight Division",
-      "Age": 31,
-      "FighterReach": "null",
-      "HomeTown": "Russia",
-      "FightStyle": "null",
-      "Record": "24-2-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-06/f9d426dd-8ac6-495f-99e3-ee0f234ba507%252FISMAGULOV_DAMIR_L_06-18.png?itok=70joOiF5",
-      "Ranking": "#12\n        Lightweight Division"
+      "Ranking": "#13"
     },
     {
       "fighterName": "Dan Hooker",
@@ -1164,7 +923,7 @@
       "FightStyle": "MMA",
       "Record": "22-12-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-11/HOOKER_DAN_L_11-12.png?itok=FpPcLeKp",
-      "Ranking": "#11\n        Lightweight Division"
+      "Ranking": "#11"
     },
     {
       "fighterName": "Jalin Turner",
@@ -1172,32 +931,32 @@
       "Age": 27,
       "FighterReach": 77,
       "HomeTown": "Los Angeles, United States",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "14-5-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/e22c890b-633a-4f3a-87a6-24fbf20f6d44%252FTURNER_JALIN_L_07-02.png?itok=G7oSUQh-",
-      "Ranking": "#10\n        Lightweight Division"
+      "Ranking": "#10"
     },
     {
       "fighterName": "Rafael Dos Anjos",
-      "Division": "Welterweight Division",
+      "Division": "Lightweight Division",
       "Age": 38,
       "FighterReach": 70,
-      "HomeTown": "Brazil",
+      "HomeTown": "Rio de Janeiro, Brazil",
       "FightStyle": "Grappler",
       "Record": "32-14-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/DOS_ANJOS_RAFAEL_L_07_09.png?itok=pTZyTzQj",
-      "Ranking": "Welterweight Division"
+      "Ranking": "#9"
     },
     {
       "fighterName": "Arman Tsarukyan",
       "Division": "Lightweight Division",
       "Age": 26,
       "FighterReach": 72.5,
-      "HomeTown": "Georgia",
+      "HomeTown": "Akhalkalaki, Georgia",
       "FightStyle": "Kickboxer",
       "Record": "19-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-06/7b15cc81-3b65-488e-8237-3991bc19710a%252FTSARUKYAN_ARMAN_L_06-25.png?itok=nJLauOnB",
-      "Ranking": "#8\n        Lightweight Division"
+      "Ranking": "#8"
     },
     {
       "fighterName": "Mateusz Gamrot",
@@ -1205,10 +964,10 @@
       "Age": 31,
       "FighterReach": 70.5,
       "HomeTown": "Bielsko, Poland",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "21-2-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-06/71373277-e845-4f33-8229-849d0838ed2b%252FGAMROT_MATEUSZ_L_06-25.png?itok=EQG8I-Sj",
-      "Ranking": "#7\n        Lightweight Division"
+      "Ranking": "#7"
     },
     {
       "fighterName": "Rafael Fiziev",
@@ -1219,7 +978,7 @@
       "FightStyle": "Muay Thai",
       "Record": "12-1-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/b3773873-9374-4236-8551-183b96c9498c%252FFIZIEV_RAFAEL_L_07-09.png?itok=rtiMC1XZ",
-      "Ranking": "#6\n        Lightweight Division"
+      "Ranking": "#6"
     },
     {
       "fighterName": "Michael Chandler",
@@ -1230,18 +989,18 @@
       "FightStyle": "Wrestler",
       "Record": "23-8-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-05/1dd9466e-5d52-4a1d-8af9-201e9af35e6a%252FCHANDLER_MICHAEL_L_05-07.png?itok=SGvqtEC7",
-      "Ranking": "#5\n        Lightweight Division"
+      "Ranking": "#5"
     },
     {
       "fighterName": "Beneil Dariush",
       "Division": "Lightweight Division",
       "Age": 33,
       "FighterReach": 72,
-      "HomeTown": "United States",
+      "HomeTown": "California, United States",
       "FightStyle": "MMA",
       "Record": "22-4-1 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-06/DARIUSH_BENEIL_L_05-15.png?VersionId=null&amp;itok=YyqV8QhP",
-      "Ranking": "#4\n        Lightweight Division"
+      "Ranking": "#4"
     },
     {
       "fighterName": "Justin Gaethje",
@@ -1252,40 +1011,18 @@
       "FightStyle": "MMA",
       "Record": "23-4-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-06/GAETHJE_JUSTIN_L_05-07.png?itok=QJG2-nUx",
-      "Ranking": "#3\n        Lightweight Division"
-    },
-    {
-      "fighterName": "Alex Caceres",
-      "Division": "Featherweight Division",
-      "Age": 34,
-      "FighterReach": 73.5,
-      "HomeTown": "United States",
-      "FightStyle": "Freestyle",
-      "Record": "20-13-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-12/CACERES_ALEX_L_12-17.png?itok=-r3PyxFX",
-      "Ranking": "#15\n        Featherweight Division"
+      "Ranking": "#3"
     },
     {
       "fighterName": "Edson Barboza",
       "Division": "Featherweight Division",
       "Age": 36,
       "FighterReach": 75,
-      "HomeTown": "Brazil",
+      "HomeTown": "Rio de Janeiro, Brazil",
       "FightStyle": "Striker",
       "Record": "22-11-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-06/BARBOZA_EDSON_L_05-15.png?VersionId=null&amp;itok=QXXSVXOn",
-      "Ranking": "#14\n        Featherweight Division"
-    },
-    {
-      "fighterName": "Dan Ige",
-      "Division": "Featherweight Division",
-      "Age": 31,
-      "FighterReach": 71,
-      "HomeTown": "San Clemente, United States",
-      "FightStyle": "null",
-      "Record": "16-6-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/0559c91a-ae57-4404-9233-b3e32e704770%252FIGE_DAN_L_06-04.png?itok=yGsbT9JU",
-      "Ranking": "#13\n        Featherweight Division"
+      "Ranking": "#14"
     },
     {
       "fighterName": "Sodiq Yusuff",
@@ -1293,10 +1030,10 @@
       "Age": 29,
       "FighterReach": 71,
       "HomeTown": "Lagos, Nigeria",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "13-2-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-09/YUSUFF_SODIQ_L_10-01.png?itok=WeaF0eXi",
-      "Ranking": "#12\n        Featherweight Division"
+      "Ranking": "#12"
     },
     {
       "fighterName": "Bryce Mitchell",
@@ -1304,10 +1041,10 @@
       "Age": 28,
       "FighterReach": 70,
       "HomeTown": "Texarkana, United States",
-      "FightStyle": "null",
+      "FightStyle": "Wrestler",
       "Record": "15-2-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-12/MITCHELL_BRYCE_L_12-10.png?itok=HeZo2PVE",
-      "Ranking": "#11\n        Featherweight Division"
+      "Ranking": "#11"
     },
     {
       "fighterName": "Movsar Evloev",
@@ -1318,18 +1055,18 @@
       "FightStyle": "Freestyle",
       "Record": "16-0-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/8caa3842-6eaf-45ba-a9e6-62e5912bc305%252FEVLOEV_MOVSAR_L_06-04.png?itok=OpzBG_w1",
-      "Ranking": "#10\n        Featherweight Division"
+      "Ranking": "#10"
     },
     {
       "fighterName": "Ilia Topuria",
       "Division": "Featherweight Division",
       "Age": 25,
       "FighterReach": 69,
-      "HomeTown": "Germany",
-      "FightStyle": "null",
+      "HomeTown": "Halle Westfalen, Germany",
+      "FightStyle": "MMA",
       "Record": "13-0-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-07/TOPURIA_ILIA_L_07-10.png?itok=cxAHen_5",
-      "Ranking": "#9\n        Featherweight Division"
+      "Ranking": "#9"
     },
     {
       "fighterName": "Giga Chikadze",
@@ -1340,7 +1077,7 @@
       "FightStyle": "Karate",
       "Record": "14-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-04/69723%252Fprofile-galery%252Ffullbodyleft-picture%252FCHIKADZE_GIGA_L_05-01.png?VersionId=null&amp;itok=MaDZ0T0W",
-      "Ranking": "#8\n        Featherweight Division"
+      "Ranking": "#8"
     },
     {
       "fighterName": "Calvin Kattar",
@@ -1351,7 +1088,7 @@
       "FightStyle": "Freestyle",
       "Record": "23-7-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-06/ac42f8ef-be39-4cec-9e97-79e5d3ecd610%252FKATTAR_CALVIN_L_06-18.png?itok=okBwWJXf",
-      "Ranking": "#7\n        Featherweight Division"
+      "Ranking": "#7"
     },
     {
       "fighterName": "Chan Sung Jung",
@@ -1362,7 +1099,7 @@
       "FightStyle": "Kickboxer",
       "Record": "17-7-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-08/a23c5ddc-0bb5-492d-a81d-6c25f207859c%252FJUNG_CHAN_SUNG_L_04-09.png?itok=LS4-IDmG",
-      "Ranking": "#6\n        Featherweight Division"
+      "Ranking": "#6"
     },
     {
       "fighterName": "Josh Emmett",
@@ -1373,7 +1110,7 @@
       "FightStyle": "Freestyle",
       "Record": "18-2-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-06/32ce974a-9405-44e8-b735-3218d586ba82%252FEMMETT_JOSH_L_06-18.png?itok=WPd2kcEe",
-      "Ranking": "#5\n        Featherweight Division"
+      "Ranking": "#5"
     },
     {
       "fighterName": "Arnold Allen",
@@ -1384,7 +1121,7 @@
       "FightStyle": "MMA",
       "Record": "19-1-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-11/ALLEN_ARNOLD_L_10-29.png?itok=ikJBEURv",
-      "Ranking": "#4\n        Featherweight Division"
+      "Ranking": "#4"
     },
     {
       "fighterName": "Brian Ortega",
@@ -1392,10 +1129,10 @@
       "Age": 31,
       "FighterReach": 69,
       "HomeTown": "Carson, United States",
-      "FightStyle": "Striker",
+      "FightStyle": "Jiu-Jitsu",
       "Record": "15-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/ORTEGA_BRIAN_L_07-16.png?itok=80gsz5W1",
-      "Ranking": "#3\n        Featherweight Division"
+      "Ranking": "#3"
     },
     {
       "fighterName": "Yair Rodriguez",
@@ -1406,18 +1143,18 @@
       "FightStyle": "Freestyle",
       "Record": "15-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/RODRIGUEZ_YAIR_L_07-16.png?itok=AfuhNqA7",
-      "Ranking": "#2\n        Featherweight Division"
+      "Ranking": "#2"
     },
     {
       "fighterName": "Jack Shore",
       "Division": "Bantamweight Division",
       "Age": 27,
       "FighterReach": 71,
-      "HomeTown": "Abergavenny, Wales, United Kingdom",
+      "HomeTown": "Abergavenny, United Kingdom",
       "FightStyle": "null",
       "Record": "16-1-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-03/2b830d04-ea6c-42e5-94c9-6dfa4a5dcbeb%252FSHORE_JACK_L_03-19.png?itok=iDmLG6-j",
-      "Ranking": "#15\n        Bantamweight Division"
+      "Ranking": "#15"
     },
     {
       "fighterName": "Said Nurmagomedov",
@@ -1428,7 +1165,7 @@
       "FightStyle": "MMA",
       "Record": "17-2-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/52ad3de3-1a39-4d05-8831-f70765ce8baf%252FNURMAGOMEDOV_SAID_L_07-09.png?itok=kOcd9tKN",
-      "Ranking": "#14\n        Bantamweight Division"
+      "Ranking": "#14"
     },
     {
       "fighterName": "Adrian Yanez",
@@ -1439,7 +1176,7 @@
       "FightStyle": "Boxer",
       "Record": "16-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-07/71640%252Fprofile-galery%252Ffullbodyleft-picture%252FYANEZ_ADRIAN_L_07-24.png?itok=9paOsDRy",
-      "Ranking": "#13\n        Bantamweight Division"
+      "Ranking": "#13"
     },
     {
       "fighterName": "Chris Gutierrez",
@@ -1450,7 +1187,7 @@
       "FightStyle": "Freestyle",
       "Record": "18-3-2 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-10/71441%252Fprofile-galery%252Ffullbodyleft-picture%252FGUTIERREZ_CHRIS_L_10-09.png?itok=wvqaqbLC",
-      "Ranking": "#12\n        Bantamweight Division"
+      "Ranking": "#12"
     },
     {
       "fighterName": "Umar Nurmagomedov",
@@ -1458,10 +1195,10 @@
       "Age": 27,
       "FighterReach": 69,
       "HomeTown": "Republic of Dagestan, Russia",
-      "FightStyle": "null",
+      "FightStyle": "Sambo",
       "Record": "16-0-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2023-01/NURMAGOMEDOV_UMAR_L_01-14.png?itok=yhh0bzyJ",
-      "Ranking": "#11\n        Bantamweight Division"
+      "Ranking": "#11"
     },
     {
       "fighterName": "Ricky Simon",
@@ -1469,21 +1206,21 @@
       "Age": 29,
       "FighterReach": 69,
       "HomeTown": "Pendleton, United States",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "20-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/SIMON_RICKY_L_07-16.png?itok=OKBjjIvC",
-      "Ranking": "#10\n        Bantamweight Division"
+      "Ranking": "#10"
     },
     {
       "fighterName": "Pedro Munhoz",
       "Division": "Bantamweight Division",
       "Age": 35,
       "FighterReach": 64.5,
-      "HomeTown": "Brazil",
+      "HomeTown": "Sao Paulo, Brazil",
       "FightStyle": "Muay Thai",
       "Record": "19-7-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-06/e4a08b07-c67d-41ae-9540-bfb0a1180c05%252FMUNHOZ_PEDRO_L_07-02.png?itok=tnxwO4PK",
-      "Ranking": "#9\n        Bantamweight Division"
+      "Ranking": "#9"
     },
     {
       "fighterName": "Yadong Song",
@@ -1494,18 +1231,18 @@
       "FightStyle": "Boxer",
       "Record": "19-7-1 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-08/69674%252Fprofile-galery%252Ffullbodyleft-picture%252FSONG_YADONG_L_08-07.png?itok=ZFXeOlib",
-      "Ranking": "#8\n        Bantamweight Division"
+      "Ranking": "#8"
     },
     {
       "fighterName": "Dominick Cruz",
       "Division": "Bantamweight Division",
       "Age": 37,
       "FighterReach": 68,
-      "HomeTown": "United States",
+      "HomeTown": "San Diego, United States",
       "FightStyle": "Wrestler",
       "Record": "24-4-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-03/7a064993-dfca-4c8e-aca4-8268fc6e711b%252FCRUZ_DOMINICK_L_12-11.png?itok=hesZixtu",
-      "Ranking": "#7\n        Bantamweight Division"
+      "Ranking": "#7"
     },
     {
       "fighterName": "Rob Font",
@@ -1516,7 +1253,7 @@
       "FightStyle": "Striker",
       "Record": "19-6-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-04/96838c46-0a5d-403d-b53d-46178b380f21%252FFONT_ROB_L_04-30.png?itok=hx0krZJK",
-      "Ranking": "#6\n        Bantamweight Division"
+      "Ranking": "#6"
     },
     {
       "fighterName": "Cory Sandhagen",
@@ -1524,10 +1261,10 @@
       "Age": 30,
       "FighterReach": 70,
       "HomeTown": "Aurora, United States",
-      "FightStyle": "null",
+      "FightStyle": "Striker",
       "Record": "15-4-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-09/SANDHAGEN_CORY_L_09-17.png?itok=-v03MCCN",
-      "Ranking": "#5\n        Bantamweight Division"
+      "Ranking": "#5"
     },
     {
       "fighterName": "Marlon Vera",
@@ -1535,10 +1272,10 @@
       "Age": 29,
       "FighterReach": 70.5,
       "HomeTown": "Chone, Ecuador",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "20-7-1 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-08/e4995e09-5df4-428a-8d77-62468730d5f3%252FVERA_MARLON_L_04-30.png?itok=lYJNAhL4",
-      "Ranking": "#4\n        Bantamweight Division"
+      "Ranking": "#4"
     },
     {
       "fighterName": "Merab Dvalishvili",
@@ -1549,7 +1286,7 @@
       "FightStyle": "Freestyle",
       "Record": "15-4-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-08/DVALISHVILI_MERAB_L_08-20.png?itok=whlXJp48",
-      "Ranking": "#3\n        Bantamweight Division"
+      "Ranking": "#3"
     },
     {
       "fighterName": "Petr Yan",
@@ -1560,7 +1297,7 @@
       "FightStyle": "Boxer",
       "Record": "16-4-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-10/YAN_PETR_L_10-22.png?itok=CJITv22A",
-      "Ranking": "#2\n        Bantamweight Division"
+      "Ranking": "#2"
     },
     {
       "fighterName": "Sean O'Malley",
@@ -1568,32 +1305,21 @@
       "Age": 27,
       "FighterReach": 72,
       "HomeTown": "Helena, United States",
-      "FightStyle": "null",
+      "FightStyle": "Striker",
       "Record": "16-1-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/093cd532-5efa-4ac5-afdc-54e1004291b1%252FO%2527MALLEY_SEAN_L_07-02.png?itok=0P0t6KR-",
-      "Ranking": "#1\n        Bantamweight Division"
-    },
-    {
-      "fighterName": "Tagir Ulanbekov",
-      "Division": "Flyweight Division",
-      "Age": 31,
-      "FighterReach": 70,
-      "HomeTown": "Dagestan, Russia",
-      "FightStyle": "Grappler",
-      "Record": "15-2-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-11/ULANBEKOV_TAGIR_L_11-05.png?itok=5ApkEUyI",
-      "Ranking": "#15\n        Flyweight Division"
+      "Ranking": "#1"
     },
     {
       "fighterName": "Jeffrey Molina",
       "Division": "Flyweight Division",
       "Age": 25,
       "FighterReach": 69,
-      "HomeTown": "United States",
+      "HomeTown": "Kansas, United States",
       "FightStyle": "MMA",
       "Record": "11-2-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-08/71609%252Fprofile-galery%252Ffullbodyleft-picture%252FMOLINA_JEFF_L_04-24.png?itok=b8rGAbaH",
-      "Ranking": "#14\n        Flyweight Division"
+      "Ranking": "#14"
     },
     {
       "fighterName": "Muhammad Mokaev",
@@ -1604,18 +1330,7 @@
       "FightStyle": "Wrestler",
       "Record": "9-0-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-03/911ce7a0-a97f-497c-9a2d-b3bbfa3e50d8%252FMOKAEV_MUHAMMAD_L_03-19.png?itok=4J_mStsT",
-      "Ranking": "#13\n        Flyweight Division"
-    },
-    {
-      "fighterName": "Sumudaerji",
-      "Division": "Flyweight Division",
-      "Age": 26,
-      "FighterReach": 72,
-      "HomeTown": "Sichuan, China",
-      "FightStyle": "Striker",
-      "Record": "16-5-0 (W-L-D)",
-      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-06/SUMUDAERJI_L_04-23.png?itok=cE7gc2J5",
-      "Ranking": "#12\n        Flyweight Division"
+      "Ranking": "#13"
     },
     {
       "fighterName": "Tim Elliott",
@@ -1626,7 +1341,7 @@
       "FightStyle": "Freestyle",
       "Record": "19-12-1 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-10/69388%252Fprofile-galery%252Ffullbodyleft-picture%252FELLIOTT_TIM_L_10-09.png?itok=dUPOS4eZ",
-      "Ranking": "#11\n        Flyweight Division"
+      "Ranking": "#11"
     },
     {
       "fighterName": "David Dvorak",
@@ -1637,7 +1352,7 @@
       "FightStyle": "MMA",
       "Record": "20-5-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-12/DVORAK_DAVID_L_12-17.png?itok=OMew-EzH",
-      "Ranking": "#10\n        Flyweight Division"
+      "Ranking": "#10"
     },
     {
       "fighterName": "Manel Kape",
@@ -1648,18 +1363,18 @@
       "FightStyle": "MMA",
       "Record": "18-6-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/3db4f260-1bc8-4496-b77f-51e6a5c30329%252FKAPE_MANEL_L_06-11.png?itok=_8ezdy0K",
-      "Ranking": "#9\n        Flyweight Division"
+      "Ranking": "#9"
     },
     {
       "fighterName": "Matt Schnell",
       "Division": "Flyweight Division",
       "Age": 32,
       "FighterReach": 70,
-      "HomeTown": "United States",
+      "HomeTown": "Mississippi, United States",
       "FightStyle": "Boxing",
       "Record": "16-7-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-03/55dbfdbf-c5c1-479e-b681-44dbcae3e494%252FSCHNELL_MATT_L_02-12.png?itok=qrZx7i5_",
-      "Ranking": "#8\n        Flyweight Division"
+      "Ranking": "#8"
     },
     {
       "fighterName": "Amir Albazi",
@@ -1670,7 +1385,7 @@
       "FightStyle": "Jiu-Jitsu",
       "Record": "16-1-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-08/ALBAZI_AMIR_L_08-20.png?itok=23N3t8Iv",
-      "Ranking": "#7\n        Flyweight Division"
+      "Ranking": "#7"
     },
     {
       "fighterName": "Alex Perez",
@@ -1678,10 +1393,10 @@
       "Age": 30,
       "FighterReach": 65.5,
       "HomeTown": "Hanford, United States",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "24-7-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-12/ddba18e7-dbe8-4d2b-85d0-72f18c6efc3b%252FPEREZ_ALEX_L_12-11.png?itok=ZLpqrynU",
-      "Ranking": "#6\n        Flyweight Division"
+      "Ranking": "#6"
     },
     {
       "fighterName": "Matheus Nicolau",
@@ -1692,7 +1407,7 @@
       "FightStyle": "Boxing",
       "Record": "19-3-1 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-12/NICOLAU_MATHEUS_L_12-03.png?itok=CHHsAOgb",
-      "Ranking": "#5\n        Flyweight Division"
+      "Ranking": "#5"
     },
     {
       "fighterName": "Brandon Royval",
@@ -1703,7 +1418,7 @@
       "FightStyle": "Brawler",
       "Record": "14-6-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-08/71607%252Fprofile-galery%252Ffullbodyleft-picture%252FROYVAL_BRANDON_L_08-21.png?itok=HnwiqTrZ",
-      "Ranking": "#4\n        Flyweight Division"
+      "Ranking": "#4"
     },
     {
       "fighterName": "Kai Kara-France",
@@ -1714,7 +1429,7 @@
       "FightStyle": "Kickboxer",
       "Record": "24-10-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-03/b50842b9-4daf-4430-b5b9-873506c2501c%252FKARA-FRANCE_KAI_L_12-11.png?itok=OCqPaYms",
-      "Ranking": "#3\n        Flyweight Division"
+      "Ranking": "#3"
     },
     {
       "fighterName": "Alexandre Pantoja",
@@ -1725,7 +1440,7 @@
       "FightStyle": "MMA",
       "Record": "25-5-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-08/67251%252Fprofile-galery%252Ffullbodyleft-picture%252FPANTOJA_ALEXANDRE_L_08-21.png?itok=n7c5S4fF",
-      "Ranking": "#2\n        Flyweight Division"
+      "Ranking": "#2"
     },
     {
       "fighterName": "Brandon Moreno",
@@ -1733,10 +1448,10 @@
       "Age": 29,
       "FighterReach": 70,
       "HomeTown": "Tijuana, Mexico",
-      "FightStyle": "null",
+      "FightStyle": "Kickboxer",
       "Record": "21-6-2 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-01/MORENO_BRANDON_L_BELT_01-22.png?itok=njar4_OX",
-      "Ranking": "#1\n        Flyweight Division"
+      "Ranking": "CHAMPION"
     },
     {
       "fighterName": "Max Holloway",
@@ -1747,7 +1462,7 @@
       "FightStyle": "Muay Thai",
       "Record": "23-7-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-07/49b91c96-87a8-43ce-af9b-f9cac2c394d0%252FHOLLOWAY_MAX_L_07-02.png?itok=Kzzm6QwA",
-      "Ranking": "#1\n        Featherweight Division"
+      "Ranking": "#1"
     },
     {
       "fighterName": "Robert Whittaker",
@@ -1755,21 +1470,21 @@
       "Age": 31,
       "FighterReach": 73.5,
       "HomeTown": "Otahuhu, Australia",
-      "FightStyle": "Brazilian Jiu-Jitsu",
+      "FightStyle": "MMA",
       "Record": "25-6-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-09/WHITTAKER_ROBERT_L_09-03.png?itok=CzGz9WWQ",
-      "Ranking": "#2\n        Middleweight Division"
+      "Ranking": "#2"
     },
     {
       "fighterName": "Jon Jones",
       "Division": "Light Heavyweight Division",
       "Age": 35,
-      "FighterReach": "null",
+      "FighterReach": "84.5",
       "HomeTown": "Rochester, United States",
-      "FightStyle": "null",
+      "FightStyle": "MMA",
       "Record": "26-1-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2020-09/JONES_JON_L_12-29.png?VersionId=_V_SgUOaxjt7ja7ddhcJB4m9ALbyeMJz&amp;itok=kMklO45v",
-      "Ranking": "Light Heavyweight Division"
+      "Ranking": "Legend"
     },
     {
       "fighterName": "Dustin Poirier",
@@ -1777,10 +1492,10 @@
       "Age": 33,
       "FighterReach": 72,
       "HomeTown": "Lafayette, United States",
-      "FightStyle": "Jiu-Jitsu",
+      "FightStyle": "Boxer",
       "Record": "29-7-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-11/POIRIER_DUSTIN_L_11-12.png?itok=hVjkh-VD",
-      "Ranking": "#2\n        Lightweight Division"
+      "Ranking": "#2"
     },
     {
       "fighterName": "Deiveson Figueiredo",
@@ -1791,7 +1506,7 @@
       "FightStyle": "Boxing",
       "Record": "21-3-1 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2023-01/FIGUEIREDO_DEIVESON_L_BELT.png?itok=1jno_Rob",
-      "Ranking": "Flyweight Division"
+      "Ranking": "#1"
     },
     {
       "fighterName": "Jiří Procházka",
@@ -1802,29 +1517,29 @@
       "FightStyle": "Muay Thai",
       "Record": "29-3-1 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-05/68263%252Fprofile-galery%252Ffullbodyleft-picture%252FPROCHAZKA_JIRI_L_05-01.png?VersionId=null&amp;itok=q9khMCuN",
-      "Ranking": "#1\n        Light Heavyweight Division"
+      "Ranking": "#1"
     },
     {
       "fighterName": "Aljamain Sterling",
       "Division": "Bantamweight Division",
       "Age": 33,
       "FighterReach": 71,
-      "HomeTown": "United States",
+      "HomeTown": "New York, United States",
       "FightStyle": "Kickboxer",
       "Record": "22-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-10/STERLING_ALJAMAIN_L_BELT_10-22.png?itok=xP5RlV4C",
-      "Ranking": "Bantamweight Division"
+      "Ranking": "CHAMPION"
     },
     {
       "fighterName": "Charles Oliveira",
       "Division": "Lightweight Division",
       "Age": 33,
       "FighterReach": 74,
-      "HomeTown": "State of São Paulo, Brazil",
+      "HomeTown": "São Paulo, Brazil",
       "FightStyle": "Jiu-Jitsu",
       "Record": "33-9-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-10/OLIVEIRA_CHARLES_L_10-22.png?itok=8VRbBx4i",
-      "Ranking": "#1\n        Lightweight Division"
+      "Ranking": "#1"
     },
     {
       "fighterName": "Alex Pereira",
@@ -1835,7 +1550,7 @@
       "FightStyle": "Kickboxer",
       "Record": "7-1-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-11/PEREIRA_ALEX_L_BELTMOCK.png?itok=MKN5FGuV",
-      "Ranking": "Middleweight Division"
+      "Ranking": "CHAMPION"
     },
     {
       "fighterName": "Israel Adesanya",
@@ -1846,7 +1561,7 @@
       "FightStyle": "Freestyle",
       "Record": "23-2-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-11/ADESANYA_ISRAEL_L_11_15.png?itok=xLBhFZCL",
-      "Ranking": "#1\n        Middleweight Division"
+      "Ranking": "#1"
     },
     {
       "fighterName": "Kamaru Usman",
@@ -1857,7 +1572,7 @@
       "FightStyle": "Freestyle",
       "Record": "20-2-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2023-01/USMAN_KAMARU_L_04-24.png?itok=ZnHfv-Pm",
-      "Ranking": "#1\n        Welterweight Division"
+      "Ranking": "#1"
     },
     {
       "fighterName": "Leon Edwards",
@@ -1868,7 +1583,7 @@
       "FightStyle": "MMA",
       "Record": "20-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-08/EDWARDS_LEON_L_BELTMOCK.png?itok=WzY_0axM",
-      "Ranking": "Welterweight Division"
+      "Ranking": "CHAMPION"
     },
     {
       "fighterName": "Islam Makhachev",
@@ -1879,7 +1594,7 @@
       "FightStyle": "Sambo",
       "Record": "23-1-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-10/MAKHACHEV_ISLAM_L_BELTMOCK.png?itok=SzxPwIGS",
-      "Ranking": "Lightweight Division"
+      "Ranking": "CHAMPION"
     }
   ]
 }

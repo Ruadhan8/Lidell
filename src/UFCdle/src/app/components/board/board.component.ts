@@ -43,7 +43,7 @@ export class BoardComponent {
   faArrowDown = faArrowDown;
   showButton: boolean = true;
   splitRandomFighterHometown: string[] = []
-  splitCurrentFighterHometown: string[] = []
+  splitCurrentFighterHometown: any = []
 
 
   constructor(
@@ -61,6 +61,10 @@ export class BoardComponent {
   generateRandomFighter() {
     this.randomFighter =
       this.list[Math.floor(Math.random() * this.list.length)];
+      this.splitRandomFighterHometown = this.randomFighter.HomeTown.split(', ');
+    console.log(this.splitRandomFighterHometown, this.splitCurrentFighterHometown);
+    
+      
   }
 
   startGame() {
@@ -73,11 +77,12 @@ export class BoardComponent {
     this.currentFighter = e.itemData;
     this.compareFighters();
     this.currentFighterList.push(this.currentFighter);
-    console.log(this.splitCurrentFighterHometown);
+    console.log(this.splitCurrentFighterHometown[1], this.splitRandomFighterHometown[1]);
+
   }
 
   compareFighters() {
-    this.splitCurrentFighterHometown = (this.currentFighter.HomeTown.split(','))
+    this.splitCurrentFighterHometown.push(this.currentFighter.HomeTown.split(', '));
     // let currentSplit = this.currentFighter.HomeTown.split(',');
     // this.splitCurrentFighterHometown.push(currentSplit)
   }

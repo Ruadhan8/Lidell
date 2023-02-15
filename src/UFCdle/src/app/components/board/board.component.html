@@ -190,7 +190,12 @@
       </div>
     </div>
     <div class="hometown">{{ currentFighterList[0].HomeTown }}</div>
-    <div class="division">{{ currentFighterList[0].Division }}</div>
+
+    <div class="division" *ngIf="currentFighterList[0]">
+      <div *ngIf="currentFighterList[0].Division != this.randomFighter.Division"> {{currentFighterList[0].Division}}</div>
+      <div class="correct" *ngIf="currentFighterList[0].Division == this.randomFighter.Division"> {{currentFighterList[0].Division}} </div>
+    </div>
+
     <div class="ranking">{{ currentFighterList[0].Ranking }}</div>
 
     <div class="record" *ngIf="currentFighterList[0]">
@@ -201,7 +206,7 @@
 
   <div class="fighter" *ngIf="this.currentFighterList[1]">
     <div class="name" *ngIf="currentFighterList[1]">
-      <div *ngIf="currentFighterList[1].fighterName != this.randomFighter.fighterName">{{ currentFighterList[0].fighterName }}</div>
+      <div *ngIf="currentFighterList[1].fighterName != this.randomFighter.fighterName">{{ currentFighterList[1].fighterName }}</div>
       <div
         class="correct"
         *ngIf="currentFighterList[1].fighterName == this.randomFighter.fighterName"
@@ -298,17 +303,22 @@
       </div>
     </div>
     <div class="hometown">{{ currentFighterList[1].HomeTown }}</div>
-    <div class="division">{{ currentFighterList[1].Division }}</div>
+
+    <div class="division" *ngIf="currentFighterList[1]">
+      <div *ngIf="currentFighterList[1].Division != this.randomFighter.Division"> {{currentFighterList[1].Division}}</div>
+      <div class="correct" *ngIf="currentFighterList[1].Division == this.randomFighter.Division"> {{currentFighterList[1].Division}} </div>
+    </div>
+
     <div class="ranking">{{ currentFighterList[1].Ranking }}</div>
     <div class="record" *ngIf="currentFighterList[1]">
-      <div *ngIf="currentFighterList[1].Record != this.randomFighter.Record"> {{currentFighterList[0].Record}}</div>
-      <div class="correct" *ngIf="currentFighterList[1].Record == this.randomFighter.Record"> {{currentFighterList[0].Record}} </div>
+      <div *ngIf="currentFighterList[1].Record != this.randomFighter.Record"> {{currentFighterList[1].Record}}</div>
+      <div class="correct" *ngIf="currentFighterList[1].Record == this.randomFighter.Record"> {{currentFighterList[1].Record}} </div>
     </div>
   </div>
 
   <div class="fighter" *ngIf="this.currentFighterList[2]">
     <div class="name" *ngIf="currentFighterList[2]">
-      <div *ngIf="currentFighterList[2].fighterName != this.randomFighter.fighterName">{{ currentFighterList[0].fighterName }}</div>
+      <div *ngIf="currentFighterList[2].fighterName != this.randomFighter.fighterName">{{ currentFighterList[2].fighterName }}</div>
       <div
         class="correct"
         *ngIf="currentFighterList[2].fighterName == this.randomFighter.fighterName"
@@ -405,17 +415,22 @@
       </div>
     </div>
     <div class="hometown">{{ currentFighterList[2].HomeTown }}</div>
-    <div class="division">{{ currentFighterList[2].Division }}</div>
+
+    <div class="division" *ngIf="currentFighterList[2]">
+      <div *ngIf="currentFighterList[2].Division != this.randomFighter.Division"> {{currentFighterList[2].Division}}</div>
+      <div class="correct" *ngIf="currentFighterList[2].Division == this.randomFighter.Division"> {{currentFighterList[2].Division}} </div>
+    </div>
+
     <div class="ranking">{{ currentFighterList[2].Ranking }}</div>
     <div class="record" *ngIf="currentFighterList[2]">
-      <div *ngIf="currentFighterList[2].Record != this.randomFighter.Record"> {{currentFighterList[0].Record}}</div>
-      <div class="correct" *ngIf="currentFighterList[2].Record == this.randomFighter.Record"> {{currentFighterList[0].Record}} </div>
+      <div *ngIf="currentFighterList[2].Record != this.randomFighter.Record"> {{currentFighterList[2].Record}}</div>
+      <div class="correct" *ngIf="currentFighterList[2].Record == this.randomFighter.Record"> {{currentFighterList[2].Record}} </div>
     </div>
   </div>
 
   <div class="fighter" *ngIf="this.currentFighterList[3]">
     <div class="name" *ngIf="currentFighterList[3]">
-      <div *ngIf="currentFighterList[3].fighterName != this.randomFighter.fighterName">{{ currentFighterList[0].fighterName }}</div>
+      <div *ngIf="currentFighterList[3].fighterName != this.randomFighter.fighterName">{{ currentFighterList[3].fighterName }}</div>
       <div
         class="correct"
         *ngIf="currentFighterList[3].fighterName == this.randomFighter.fighterName"
@@ -512,17 +527,22 @@
       </div>
     </div>
     <div class="hometown">{{ currentFighterList[3].HomeTown }}</div>
-    <div class="division">{{ currentFighterList[3].Division }}</div>
+
+    <div class="division" *ngIf="currentFighterList[3]">
+      <div *ngIf="currentFighterList[3].Division != this.randomFighter.Division"> {{currentFighterList[3].Division}}</div>
+      <div class="correct" *ngIf="currentFighterList[3].Division == this.randomFighter.Division"> {{currentFighterList[3].Division}} </div>
+    </div>
+
     <div class="ranking">{{ currentFighterList[3].Ranking }}</div>
     <div class="record" *ngIf="currentFighterList[3]">
-      <div *ngIf="currentFighterList[3].Record != this.randomFighter.Record"> {{currentFighterList[0].Record}}</div>
-      <div class="correct" *ngIf="currentFighterList[3].Record == this.randomFighter.Record"> {{currentFighterList[0].Record}} </div>
+      <div *ngIf="currentFighterList[3].Record != this.randomFighter.Record"> {{currentFighterList[3].Record}}</div>
+      <div class="correct" *ngIf="currentFighterList[3].Record == this.randomFighter.Record"> {{currentFighterList[3].Record}} </div>
     </div>
   </div>
 
   <div class="fighter" *ngIf="this.currentFighterList[4]">
     <div class="name" *ngIf="currentFighterList[4]">
-      <div *ngIf="currentFighterList[4].fighterName != this.randomFighter.fighterName">{{ currentFighterList[0].fighterName }}</div>
+      <div *ngIf="currentFighterList[4].fighterName != this.randomFighter.fighterName">{{ currentFighterList[4].fighterName }}</div>
       <div
         class="correct"
         *ngIf="currentFighterList[4].fighterName == this.randomFighter.fighterName"
@@ -619,17 +639,22 @@
       </div>
     </div>
     <div class="hometown">{{ currentFighterList[4].HomeTown }}</div>
-    <div class="division">{{ currentFighterList[4].Division }}</div>
+
+    <div class="division" *ngIf="currentFighterList[4]">
+      <div *ngIf="currentFighterList[4].Division != this.randomFighter.Division"> {{currentFighterList[4].Division}}</div>
+      <div class="correct" *ngIf="currentFighterList[4].Division == this.randomFighter.Division"> {{currentFighterList[4].Division}} </div>
+    </div>
+
     <div class="ranking">{{ currentFighterList[4].Ranking }}</div>
     <div class="record" *ngIf="currentFighterList[4]">
-      <div *ngIf="currentFighterList[4].Record != this.randomFighter.Record"> {{currentFighterList[0].Record}}</div>
-      <div class="correct" *ngIf="currentFighterList[4].Record == this.randomFighter.Record"> {{currentFighterList[0].Record}} </div>
+      <div *ngIf="currentFighterList[4].Record != this.randomFighter.Record"> {{currentFighterList[4].Record}}</div>
+      <div class="correct" *ngIf="currentFighterList[4].Record == this.randomFighter.Record"> {{currentFighterList[4].Record}} </div>
     </div>
   </div>
 
   <div class="fighter" *ngIf="this.currentFighterList[5]">
     <div class="name" *ngIf="currentFighterList[5]">
-      <div *ngIf="currentFighterList[5].fighterName != this.randomFighter.fighterName">{{ currentFighterList[0].fighterName }}</div>
+      <div *ngIf="currentFighterList[5].fighterName != this.randomFighter.fighterName">{{ currentFighterList[5].fighterName }}</div>
       <div
         class="correct"
         *ngIf="currentFighterList[5].fighterName == this.randomFighter.fighterName"
@@ -726,17 +751,22 @@
       </div>
     </div>
     <div class="hometown">{{ currentFighterList[5].HomeTown }}</div>
-    <div class="division">{{ currentFighterList[5].Division }}</div>
+
+    <div class="division" *ngIf="currentFighterList[5]">
+      <div *ngIf="currentFighterList[5].Division != this.randomFighter.Division"> {{currentFighterList[5].Division}}</div>
+      <div class="correct" *ngIf="currentFighterList[5].Division == this.randomFighter.Division"> {{currentFighterList[5].Division}} </div>
+    </div>
+
     <div class="ranking">{{ currentFighterList[5].Ranking }}</div>
     <div class="record" *ngIf="currentFighterList[5]">
-      <div *ngIf="currentFighterList[5].Record != this.randomFighter.Record"> {{currentFighterList[0].Record}}</div>
-      <div class="correct" *ngIf="currentFighterList[5].Record == this.randomFighter.Record"> {{currentFighterList[0].Record}} </div>
+      <div *ngIf="currentFighterList[5].Record != this.randomFighter.Record"> {{currentFighterList[5].Record}}</div>
+      <div class="correct" *ngIf="currentFighterList[5].Record == this.randomFighter.Record"> {{currentFighterList[5].Record}} </div>
     </div>
   </div>
 
   <div class="fighter" *ngIf="this.currentFighterList[6]">
     <div class="name" *ngIf="currentFighterList[6]">
-      <div *ngIf="currentFighterList[6].fighterName != this.randomFighter.fighterName">{{ currentFighterList[0].fighterName }}</div>
+      <div *ngIf="currentFighterList[6].fighterName != this.randomFighter.fighterName">{{ currentFighterList[6].fighterName }}</div>
       <div
         class="correct"
         *ngIf="currentFighterList[6].fighterName == this.randomFighter.fighterName"
@@ -833,17 +863,22 @@
       </div>
     </div>
     <div class="hometown">{{ currentFighterList[6].HomeTown }}</div>
-    <div class="division">{{ currentFighterList[6].Division }}</div>
+
+    <div class="division" *ngIf="currentFighterList[6]">
+      <div *ngIf="currentFighterList[6].Division != this.randomFighter.Division"> {{currentFighterList[6].Division}}</div>
+      <div class="correct" *ngIf="currentFighterList[6].Division == this.randomFighter.Division"> {{currentFighterList[6].Division}} </div>
+    </div>
+
     <div class="ranking">{{ currentFighterList[6].Ranking }}</div>
     <div class="record" *ngIf="currentFighterList[6]">
-      <div *ngIf="currentFighterList[6].Record != this.randomFighter.Record"> {{currentFighterList[0].Record}}</div>
-      <div class="correct" *ngIf="currentFighterList[6].Record == this.randomFighter.Record"> {{currentFighterList[0].Record}} </div>
+      <div *ngIf="currentFighterList[6].Record != this.randomFighter.Record"> {{currentFighterList[6].Record}}</div>
+      <div class="correct" *ngIf="currentFighterList[6].Record == this.randomFighter.Record"> {{currentFighterList[6].Record}} </div>
     </div>
   </div>
 
   <div class="fighter" *ngIf="this.currentFighterList[7]">
     <div class="name" *ngIf="currentFighterList[7]">
-      <div *ngIf="currentFighterList[7].fighterName != this.randomFighter.fighterName">{{ currentFighterList[0].fighterName }}</div>
+      <div *ngIf="currentFighterList[7].fighterName != this.randomFighter.fighterName">{{ currentFighterList[7].fighterName }}</div>
       <div
         class="correct"
         *ngIf="currentFighterList[7].fighterName == this.randomFighter.fighterName"
@@ -940,11 +975,15 @@
       </div>
     </div>
     <div class="hometown">{{ currentFighterList[7].HomeTown }}</div>
-    <div class="division">{{ currentFighterList[7].Division }}</div>
+
+    <div class="division" *ngIf="currentFighterList[7]">
+      <div *ngIf="currentFighterList[7].Division != this.randomFighter.Division"> {{currentFighterList[7].Division}}</div>
+      <div class="correct" *ngIf="currentFighterList[7].Division == this.randomFighter.Division"> {{currentFighterList[7].Division}} </div>
+    </div>
     <div class="ranking">{{ currentFighterList[7].Ranking }}</div>
     <div class="record" *ngIf="currentFighterList[7]">
-      <div *ngIf="currentFighterList[7].Record != this.randomFighter.Record"> {{currentFighterList[0].Record}}</div>
-      <div class="correct" *ngIf="currentFighterList[7].Record == this.randomFighter.Record"> {{currentFighterList[0].Record}} </div>
+      <div *ngIf="currentFighterList[7].Record != this.randomFighter.Record"> {{currentFighterList[7].Record}}</div>
+      <div class="correct" *ngIf="currentFighterList[7].Record == this.randomFighter.Record"> {{currentFighterList[7].Record}} </div>
     </div>
   </div>
 </div>

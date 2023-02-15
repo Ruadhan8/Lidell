@@ -82,3 +82,13 @@ export class BoardComponent {
     // this.splitCurrentFighterHometown.push(currentSplit)
   }
 }
+
+var MensDivisions: string[];
+MensDivisions = ["Flyweight Division",
+"Bantamweight Division",
+"Featherweight Division", 
+"Lightweight Division", 
+"Welterweight Division", 
+"Middleweight Division", 
+"Light Heavyweight Division",
+"Heavyweight Division"]

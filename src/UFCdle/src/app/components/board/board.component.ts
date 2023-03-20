@@ -4,6 +4,7 @@ import { FighterService } from '../../fighter.service';
 import { fighter } from './fighter';
 import { ModalService } from '../modal';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { ConstantPool } from '@angular/compiler';
 
 @Component({
   selector: 'app-board',
@@ -42,8 +43,14 @@ export class BoardComponent {
   faArrowUp = faArrowUp;
   faArrowDown = faArrowDown;
   showButton: boolean = true;
-  splitRandomFighterHometown: string[] = []
-  splitCurrentFighterHometown: string[] = []
+  splitRandomFighterHometown = this.randomFighter.HomeTown.split(',', 2);
+  splitCurrentFighterHometown = this.currentFighter.HomeTown.split(',', 2);
+
+  randomFighterCity = ''
+  randomFighterCountry = ''
+
+  currentFighterCity = ''
+  currentFighterCountry = ''
 
 
   constructor(
@@ -74,21 +81,17 @@ export class BoardComponent {
     this.compareFighters();
     this.currentFighterList.push(this.currentFighter);
     console.log(this.splitCurrentFighterHometown);
+    console.log(this.splitRandomFighterHometown);
+    console.log(this.currentFighterCity);
+
   }
 
   compareFighters() {
     this.splitCurrentFighterHometown = (this.currentFighter.HomeTown.split(','))
-    // let currentSplit = this.currentFighter.HomeTown.split(',');
-    // this.splitCurrentFighterHometown.push(currentSplit)
+    this.splitRandomFighterHometown = (this.randomFighter.HomeTown.split(','))
+    this.randomFighterCity = (this.splitRandomFighterHometown[0])
+    this.randomFighterCountry = (this.splitRandomFighterHometown[1])
+    this.currentFighterCity = (this.splitCurrentFighterHometown[0])
+    this.currentFighterCountry = (this.splitCurrentFighterHometown[1])
   }
 }
-
-var MensDivisions: string[];
-MensDivisions = ["Flyweight Division",
-"Bantamweight Division",
-"Featherweight Division", 
-"Lightweight Division", 
-"Welterweight Division", 
-"Middleweight Division", 
-"Light Heavyweight Division",
-"Heavyweight Division"]

@@ -21,7 +21,6 @@
   <div class="btn">
     <a href="/home/">Home</a>
   </div>
-</div>
 <jw-modal id="modal-1">
   <h1>Guess the mystery fighter</h1>
   <li>You are trying to guess a fighter who is currently on the UFC roster</li>
@@ -38,7 +37,7 @@
 
   <div><button (click)="modalService.close('modal-1')">Close</button></div>
 </jw-modal>
-
+</div>
 <div class="header">
   <h1>UFCDLE</h1>
   <h4>Guess the Fighter</h4>
@@ -189,12 +188,22 @@
         </div>
       </div>
     </div>
-    <div class="hometown">{{ currentFighterList[0].HomeTown }}</div>
-
+    <div class="hometown" *ngIf="currentFighterList[0]">
+      currentFighterHomeTownSplit = currentFighterList[0].HomeTown.split(',');
+      currentFighterCity = currentFighterHomeTownSplit[0];
+      currentFighterCountry = currentFighterHomeTownSplit[1];
+      randomFighterHomeTownSplit = this.randomFighter.HomeTown.split(',');
+      randomFighterCity = randomFighterHomeTownSplit[0];
+      randomFighterCountry = randomFighterHomeTownSplit[1];
+      <div *ngIf="this.randomFighterCity != this.currentFighterCity && this.randomFighterCountry != this.currentFighterCountry && currentFighterList[0].HomeTown != this.randomFighter.HomeTown">{{ currentFighterList[0].HomeTown }}</div>
+      <div class="correct" *ngIf="this.randomFighter.HomeTown == currentFighterList[0].HomeTown"> {{ currentFighterList[0].HomeTown }} </div>
+      <div class="close" *ngIf="this.randomFighterCity == this.currentFighterCity && currentFighterList[0].HomeTown != this.randomFighter.HomeTown || this.randomFighterCountry == this.currentFighterCountry && currentFighterList[0].HomeTown != this.randomFighter.HomeTown">{{currentFighterList[0].HomeTown}}</div>
+    </div>
     <div class="division" *ngIf="currentFighterList[0]">
       <div *ngIf="currentFighterList[0].Division != this.randomFighter.Division"> {{currentFighterList[0].Division}}</div>
       <div class="correct" *ngIf="currentFighterList[0].Division == this.randomFighter.Division"> {{currentFighterList[0].Division}} </div>
     </div>
+
 
     <div class="ranking">{{ currentFighterList[0].Ranking }}</div>
 
@@ -302,7 +311,11 @@
         </div>
       </div>
     </div>
-    <div class="hometown">{{ currentFighterList[1].HomeTown }}</div>
+    <div class="hometown">{{ currentFighterList[1].HomeTown }}
+      <div *ngIf="this.randomFighterCity != this.currentFighterCity && this.randomFighterCountry != this.currentFighterCountry && this.currentFighter.HomeTown != this.randomFighter.HomeTown">{{ currentFighterList[1].HomeTown }}</div>
+      <div class="correct" *ngIf="this.randomFighter.HomeTown == this.currentFighter.HomeTown"> {{ currentFighterList[1].HomeTown }} </div>
+      <div class="close" *ngIf="this.randomFighterCity == this.currentFighterCity && this.currentFighter.HomeTown != this.randomFighter.HomeTown || this.randomFighterCountry == this.currentFighterCountry && this.currentFighter.HomeTown != this.randomFighter.HomeTown">{{currentFighterList[1].HomeTown}}</div>
+    </div>
 
     <div class="division" *ngIf="currentFighterList[1]">
       <div *ngIf="currentFighterList[1].Division != this.randomFighter.Division"> {{currentFighterList[1].Division}}</div>
@@ -414,7 +427,11 @@
         </div>
       </div>
     </div>
-    <div class="hometown">{{ currentFighterList[2].HomeTown }}</div>
+    <div class="hometown">{{ currentFighterList[2].HomeTown }}
+      <div *ngIf="this.randomFighterCity != this.currentFighterCity && this.randomFighterCountry != this.currentFighterCountry && this.currentFighter.HomeTown != this.randomFighter.HomeTown">{{ currentFighterList[2].HomeTown }}</div>
+      <div class="correct" *ngIf="this.randomFighter.HomeTown == this.currentFighter.HomeTown"> {{ currentFighterList[2].HomeTown }} </div>
+      <div class="close" *ngIf="this.randomFighterCity == this.currentFighterCity && this.currentFighter.HomeTown != this.randomFighter.HomeTown || this.randomFighterCountry == this.currentFighterCountry && this.currentFighter.HomeTown != this.randomFighter.HomeTown">{{currentFighterList[2].HomeTown}}</div>
+    </div>
 
     <div class="division" *ngIf="currentFighterList[2]">
       <div *ngIf="currentFighterList[2].Division != this.randomFighter.Division"> {{currentFighterList[2].Division}}</div>
@@ -526,7 +543,11 @@
         </div>
       </div>
     </div>
-    <div class="hometown">{{ currentFighterList[3].HomeTown }}</div>
+    <div class="hometown">{{ currentFighterList[3].HomeTown }}
+      <div *ngIf="this.randomFighterCity != this.currentFighterCity && this.randomFighterCountry != this.currentFighterCountry && this.currentFighter.HomeTown != this.randomFighter.HomeTown">{{ currentFighterList[3].HomeTown }}</div>
+      <div class="correct" *ngIf="this.randomFighter.HomeTown == this.currentFighter.HomeTown"> {{ currentFighterList[3].HomeTown }} </div>
+      <div class="close" *ngIf="this.randomFighterCity == this.currentFighterCity && this.currentFighter.HomeTown != this.randomFighter.HomeTown || this.randomFighterCountry == this.currentFighterCountry && this.currentFighter.HomeTown != this.randomFighter.HomeTown">{{currentFighterList[3].HomeTown}}</div>
+    </div>
 
     <div class="division" *ngIf="currentFighterList[3]">
       <div *ngIf="currentFighterList[3].Division != this.randomFighter.Division"> {{currentFighterList[3].Division}}</div>
@@ -638,7 +659,11 @@
         </div>
       </div>
     </div>
-    <div class="hometown">{{ currentFighterList[4].HomeTown }}</div>
+    <div class="hometown">{{ currentFighterList[4].HomeTown }}
+      <div *ngIf="this.randomFighterCity != this.currentFighterCity && this.randomFighterCountry != this.currentFighterCountry && this.currentFighter.HomeTown != this.randomFighter.HomeTown">{{ currentFighterList[4].HomeTown }}</div>
+      <div class="correct" *ngIf="this.randomFighter.HomeTown == this.currentFighter.HomeTown"> {{ currentFighterList[4].HomeTown }} </div>
+      <div class="close" *ngIf="this.randomFighterCity == this.currentFighterCity && this.currentFighter.HomeTown != this.randomFighter.HomeTown || this.randomFighterCountry == this.currentFighterCountry && this.currentFighter.HomeTown != this.randomFighter.HomeTown">{{currentFighterList[4].HomeTown}}</div>
+    </div>
 
     <div class="division" *ngIf="currentFighterList[4]">
       <div *ngIf="currentFighterList[4].Division != this.randomFighter.Division"> {{currentFighterList[4].Division}}</div>
@@ -750,7 +775,11 @@
         </div>
       </div>
     </div>
-    <div class="hometown">{{ currentFighterList[5].HomeTown }}</div>
+    <div class="hometown">{{ currentFighterList[5].HomeTown }}
+      <div *ngIf="this.randomFighterCity != this.currentFighterCity && this.randomFighterCountry != this.currentFighterCountry && this.currentFighter.HomeTown != this.randomFighter.HomeTown">{{ currentFighterList[5].HomeTown }}</div>
+      <div class="correct" *ngIf="this.randomFighter.HomeTown == this.currentFighter.HomeTown"> {{ currentFighterList[5].HomeTown }} </div>
+      <div class="close" *ngIf="this.randomFighterCity == this.currentFighterCity && this.currentFighter.HomeTown != this.randomFighter.HomeTown || this.randomFighterCountry == this.currentFighterCountry && this.currentFighter.HomeTown != this.randomFighter.HomeTown">{{currentFighterList[5].HomeTown}}</div>
+    </div>
 
     <div class="division" *ngIf="currentFighterList[5]">
       <div *ngIf="currentFighterList[5].Division != this.randomFighter.Division"> {{currentFighterList[5].Division}}</div>
@@ -862,7 +891,11 @@
         </div>
       </div>
     </div>
-    <div class="hometown">{{ currentFighterList[6].HomeTown }}</div>
+    <div class="hometown">{{ currentFighterList[6].HomeTown }}
+      <div *ngIf="this.randomFighterCity != this.currentFighterCity && this.randomFighterCountry != this.currentFighterCountry && this.currentFighter.HomeTown != this.randomFighter.HomeTown">{{ currentFighterList[6].HomeTown }}</div>
+      <div class="correct" *ngIf="this.randomFighter.HomeTown == this.currentFighter.HomeTown"> {{ currentFighterList[6].HomeTown }} </div>
+      <div class="close" *ngIf="this.randomFighterCity == this.currentFighterCity && this.currentFighter.HomeTown != this.randomFighter.HomeTown || this.randomFighterCountry == this.currentFighterCountry && this.currentFighter.HomeTown != this.randomFighter.HomeTown">{{currentFighterList[6].HomeTown}}</div>
+    </div>
 
     <div class="division" *ngIf="currentFighterList[6]">
       <div *ngIf="currentFighterList[6].Division != this.randomFighter.Division"> {{currentFighterList[6].Division}}</div>
@@ -974,7 +1007,11 @@
         </div>
       </div>
     </div>
-    <div class="hometown">{{ currentFighterList[7].HomeTown }}</div>
+    <div class="hometown">{{ currentFighterList[7].HomeTown }}
+      <div *ngIf="this.randomFighterCity != this.currentFighterCity && this.randomFighterCountry != this.currentFighterCountry && this.currentFighter.HomeTown != this.randomFighter.HomeTown">{{ currentFighterList[7].HomeTown }}</div>
+      <div class="correct" *ngIf="this.randomFighter.HomeTown == this.currentFighter.HomeTown"> {{ currentFighterList[7].HomeTown }} </div>
+      <div class="close" *ngIf="this.randomFighterCity == this.currentFighterCity && this.currentFighter.HomeTown != this.randomFighter.HomeTown || this.randomFighterCountry == this.currentFighterCountry && this.currentFighter.HomeTown != this.randomFighter.HomeTown">{{currentFighterList[7].HomeTown}}</div>
+    </div>
 
     <div class="division" *ngIf="currentFighterList[7]">
       <div *ngIf="currentFighterList[7].Division != this.randomFighter.Division"> {{currentFighterList[7].Division}}</div>

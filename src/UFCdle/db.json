@@ -129,9 +129,9 @@
       "FighterReach": 66,
       "HomeTown": "Guadalajara, Mexico",
       "FightStyle": "MMA",
-      "Record": "15-3-0 (W-L-D)",
+      "Record": "16-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-10/GRASSO_ALEXA_L_10-15.png?itok=RyIWekm_",
-      "Ranking": "#4"
+      "Ranking": "CHAMPION"
     },
     {
       "fighterName": "Michelle Waterson-Gomez",
@@ -316,9 +316,9 @@
       "FighterReach": 66.5,
       "HomeTown": "Bishkek, Kyrgyzstan",
       "FightStyle": "Muay Thai",
-      "Record": "23-3-0 (W-L-D)",
+      "Record": "23-4-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/%5Bdate%3Acustom%3AY%5D-%5Bdate%3Acustom%3Am%5D/SHEVCHENKO_VALENTINA_L_BELT_04-24.png?VersionId=null&amp;itok=KpjlJhRW",
-      "Ranking": "CHAMPION"
+      "Ranking": "#1"
     },
     {
       "fighterName": "Alexandr Romanov",
@@ -1477,14 +1477,14 @@
     },
     {
       "fighterName": "Jon Jones",
-      "Division": "Light Heavyweight Division",
+      "Division": "Heavyweight Division",
       "Age": 35,
       "FighterReach": "84.5",
       "HomeTown": "Rochester, United States",
       "FightStyle": "MMA",
-      "Record": "26-1-0 (W-L-D)",
+      "Record": "27-1-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2020-09/JONES_JON_L_12-29.png?VersionId=_V_SgUOaxjt7ja7ddhcJB4m9ALbyeMJz&amp;itok=kMklO45v",
-      "Ranking": "Legend"
+      "Ranking": "CHAMPION"
     },
     {
       "fighterName": "Dustin Poirier",
@@ -1570,7 +1570,7 @@
       "FighterReach": 76,
       "HomeTown": "Auchi, Nigeria",
       "FightStyle": "Freestyle",
-      "Record": "20-2-0 (W-L-D)",
+      "Record": "20-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2023-01/USMAN_KAMARU_L_04-24.png?itok=ZnHfv-Pm",
       "Ranking": "#1"
     },
@@ -1581,7 +1581,7 @@
       "FighterReach": 74,
       "HomeTown": "Kingston, Jamaica",
       "FightStyle": "MMA",
-      "Record": "20-3-0 (W-L-D)",
+      "Record": "21-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-08/EDWARDS_LEON_L_BELTMOCK.png?itok=WzY_0axM",
       "Ranking": "CHAMPION"
     },

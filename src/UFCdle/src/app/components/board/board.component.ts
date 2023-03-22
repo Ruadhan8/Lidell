@@ -58,6 +58,25 @@ export class BoardComponent {
     "Women's Bantamweight Division": 14
 }
 
+rankingsDict: {[key:string]: number} ={
+  "CHAMPION": 0,
+  "#1": 1,
+  "#2": 2,
+  "#3": 3,
+  "#4": 4,
+  "#5": 5,
+  "#6": 6,
+  "#7": 7,
+  "#8": 8,
+  "#9": 9,
+  "#10": 10,
+  "#11": 11,
+  "#12": 12,
+  "#13": 13,
+  "#14": 14,
+  "#15": 15,
+}
+
 
   constructor(
     private fightersService: FighterService,

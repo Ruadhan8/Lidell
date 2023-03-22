@@ -44,6 +44,19 @@ export class BoardComponent {
   showButton: boolean = true;
   splitRandomFighterHometown: string[] = []
   splitCurrentFighterHometown: any = []
+  DivisionDict: { [key: string]: number }= {
+    "Flyweight Division": 1,
+    "Bantamweight Division": 2,
+    "Featherweight Division": 3,
+    "Lightweight Division": 4,
+    "Welterweight Division": 5, 
+    "Middleweight Division": 6, 
+    "Light Heavyweight Division": 7,
+    "Heavyweight Division": 8,
+    "Women's Strawweight Division": 12,
+    "Women's Flyweight Division": 13,
+    "Women's Bantamweight Division": 14
+}
 
 
   constructor(
@@ -78,32 +91,23 @@ export class BoardComponent {
     this.compareFighters();
     this.currentFighterList.push(this.currentFighter);
     console.log(this.splitCurrentFighterHometown[1], this.splitRandomFighterHometown[1]);
+    console.log(mensDivisionDict["Flyweight Division"])
 
   }
 
   compareFighters() {
     this.splitCurrentFighterHometown.push(this.currentFighter.HomeTown.split(', '));
-    // let currentSplit = this.currentFighter.HomeTown.split(',');
-    // this.splitCurrentFighterHometown.push(currentSplit)
   }
 }
 
 
-// compareFighters() {
-//   this.splitCurrentFighterHometown = (this.currentFighter.HomeTown.split(','))
-//   this.splitRandomFighterHometown = (this.randomFighter.HomeTown.split(','))
-//   this.randomFighterCity = (this.splitRandomFighterHometown[0])
-//   this.randomFighterCountry = (this.splitRandomFighterHometown[1])
-//   this.currentFighterCity = (this.splitCurrentFighterHometown[0])
-//   this.currentFighterCountry = (this.splitCurrentFighterHometown[1])
-// }
-// }
-var MensDivisions: string[];
-MensDivisions = ["Flyweight Division",
-"Bantamweight Division",
-"Featherweight Division", 
-"Lightweight Division", 
-"Welterweight Division", 
-"Middleweight Division", 
-"Light Heavyweight Division",
-"Heavyweight Division"]
+var mensDivisionDict = {
+"Flyweight Division": 1,
+"Bantamweight Division": 2,
+"Featherweight Division": 3,
+"Lightweight Division": 4,
+"Welterweight Division": 5, 
+"Middleweight Division": 6, 
+"Light Heavyweight Division": 7,
+"Heavyweight Division": 8
+}

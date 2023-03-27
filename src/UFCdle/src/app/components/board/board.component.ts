@@ -77,7 +77,6 @@ rankingsDict: {[key:string]: number} ={
   "#15": 15,
 }
 
-
   constructor(
     private fightersService: FighterService,
     public modalService: ModalService
@@ -110,23 +109,31 @@ rankingsDict: {[key:string]: number} ={
     this.compareFighters();
     this.currentFighterList.push(this.currentFighter);
     console.log(this.splitCurrentFighterHometown[1], this.splitRandomFighterHometown[1]);
-    console.log(mensDivisionDict["Flyweight Division"])
-
+    this.openModal();
+    this.openFailModal();
   }
 
   compareFighters() {
     this.splitCurrentFighterHometown.push(this.currentFighter.HomeTown.split(', '));
   }
-}
 
+  openModal() {
+    if(this.currentFighter.fighterName == this.randomFighter.fighterName)
+    {
+      return this.modalService.open('modal-2')
+    }
+    else{
+      return 0;
+    }
+  }
 
-var mensDivisionDict = {
-"Flyweight Division": 1,
-"Bantamweight Division": 2,
-"Featherweight Division": 3,
-"Lightweight Division": 4,
-"Welterweight Division": 5, 
-"Middleweight Division": 6, 
-"Light Heavyweight Division": 7,
-"Heavyweight Division": 8
+  openFailModal(){
+    if(this.currentFighterList.length > 7 && this.currentFighter.fighterName != this.randomFighter.fighterName)
+    {
+      return this.modalService.open('modal-3')
+    }
+    else{
+      return 0;
+    }
+  }
 }

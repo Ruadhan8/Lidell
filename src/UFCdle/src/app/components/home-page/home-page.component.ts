@@ -8,12 +8,13 @@ import { io, Socket } from "socket.io-client";
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
+  private socket: any;
 
 
   constructor(public modalService: ModalService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.socket = io('ws://ec2-34-253-67-221.eu-west-1.compute.amazonaws.com:3000/');
   }
 
 }
-const socket: Socket = io('ws://ec2-34-241-144-38.eu-west-1.compute.amazonaws.com:3000/');

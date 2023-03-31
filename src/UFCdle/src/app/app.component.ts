@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { WebSocketService } from './web-socket.service';
 
 @Component({
   selector: 'app-root',
@@ -7,13 +6,8 @@ import { WebSocketService } from './web-socket.service';
   styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent{
   title = 'UFCdle';
-  constructor(private webSocketService: WebSocketService) {}
-  ngOnInit() {
-    this.webSocketService.listen('test event').subscribe((data) => {
-      console.log(data);
-    })
-  }
+  constructor(){}
 
 }

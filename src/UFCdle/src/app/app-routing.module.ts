@@ -8,6 +8,7 @@ import { VerifyEmailComponent } from './components/verify-email/verify-email.com
 import { BoardComponent } from './components/board/board.component';
 import { AuthGuard } from './shared/guard/auth.guard';
 import { HomePageComponent } from './components/home-page/home-page.component';
+import { VersusComponent } from './components/versus/versus.component';
 
 const routes: Routes = [
   { path: 'sign-in', component: SignInComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'verify-email-address', component: VerifyEmailComponent },
   { path: 'board', component: BoardComponent},
   { path: 'home', component: HomePageComponent},
+  {path: 'versus', component:VersusComponent}
 
 ];
 

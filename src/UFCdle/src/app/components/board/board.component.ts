@@ -112,7 +112,9 @@ rankingsDict: {[key:string]: number} ={
     this.openModal();
     this.openFailModal();
   }
-
+  closeGuessFighter(){
+    
+  }
   compareFighters() {
     this.splitCurrentFighterHometown.push(this.currentFighter.HomeTown.split(', '));
   }

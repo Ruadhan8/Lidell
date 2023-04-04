@@ -21,7 +21,8 @@ import { ModalModule } from './components/modal/modal.module';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import {HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { VersusComponent } from './components/versus/versus.component'
+import { VersusComponent } from './components/versus/versus.component';
+
 
 
 @NgModule({

@@ -5,8 +5,8 @@
   "javascript": {
     "framework": "angular",
     "config": {
-      "SourceDir": "",
-      "DistributionDir": "",
+      "SourceDir": "src",
+      "DistributionDir": "dist/ufcdle",
       "BuildCommand": "npm.cmd run-script build",
       "StartCommand": "ng serve"
     }

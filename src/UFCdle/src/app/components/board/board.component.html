@@ -25,10 +25,10 @@
 
 <jw-modal id="modal-1">
   <h1>Guess the mystery fighter</h1>
-  <li>You have 8 guesses, to guess any current UFC fighter</li>
+  <li>You have 8 guesses, to guess any current ranked UFC fighter</li>
   <li>Green in any column indicates a match</li>
   <li>
-    Yellow in the Hometown column indicates a partial match. The Country is the same as the mystery fighter
+    Yellow in the Hometown column indicates a partial match(The Country is the same as the mystery fighter)
   </li>
   <li>
     Yellow in any other column indicates this attribute is within 2 (reach, age, division, ranking, height) of the mystery fighter
@@ -43,26 +43,41 @@
   <button *ngIf="this.showButton" (click)="startGame()" class="startGameButton">
     START GAME
   </button>
+  
 </div>
 <div *ngIf="!this.showButton" class="selectBox">
   <div class="dx-fieldset">
     <div class="dx-field">
       <div class="dx-field-value">
         <dx-select-box
+        [disabled] = "isActive"
           [items]="list"
           displayExpr="fighterName"
           placeholder="Choose Fighter"
           [showClearButton]="false"
-          [searchEnabled]="true"
+          [searchEnabled]= "true"
           [minSearchLength]="1"
           (onItemClick)="guessFighter($event)"
           [showDropDownButton]="false"
         ></dx-select-box>
       </div>
     </div>
-  </div>
-</div>
+    
 
+    <div *ngIf="this.currentFighter.fighterName != this.randomFighter.fighterName">
+      <button hidden (click)="modalService.open('modal-2')" class="result">View result</button>
+    </div>
+    <div *ngIf="this.currentFighter.fighterName == this.randomFighter.fighterName">
+      <button showButton (click)="modalService.open('modal-2')"class="result">View result</button>
+    </div>
+    <div *ngIf="this.currentFighterList.length < 7">
+      <button hidden (click)="modalService.open('modal-3')" class="resultLoss">View result</button>
+    </div>
+    <div *ngIf="this.currentFighterList.length > 7">
+      <button showButton (click)="modalService.open('modal-3')"class="resultLoss">View result</button>
+    </div>
+  </div>
+  </div>
 <div class="board">
   <div class="fighter" *ngIf="this.currentFighterList[0]">
     <div class="topName">
@@ -87,7 +102,7 @@
       <h3><b>RECORD</b></h3>
     </div>
   </div>
- 
+  
   <div class="fighter" *ngIf="this.currentFighterList[0]">
     <div class="name" *ngIf="currentFighterList[0]">
       <div
@@ -321,8 +336,17 @@
       </div>
     </div>
   </div>
-</div>
-<!--
+  <jw-modal id="modal-2">
+    <h1>Congrats</h1>
+    <h2>You solved it in {{ currentFighterList.length }}</h2>
+    <h2>The mystery fighter was:</h2>
+    <div class="fighterName">{{ this.randomFighter.fighterName }}</div>
+    <img
+    src= "{{this.randomFighter.Photo}}"
+    alt="Fighter Image"
+  />
+  </jw-modal>
+
   <div class="fighter" *ngIf="this.currentFighterList[1]">
     <div class="name" *ngIf="currentFighterList[1]">
       <div
@@ -552,6 +576,7 @@
       </div>
     </div>
   </div>
+
   <div class="fighter" *ngIf="this.currentFighterList[2]">
     <div class="name" *ngIf="currentFighterList[2]">
       <div
@@ -1933,16 +1958,6 @@
       </div>
     </div>
   </div>
-  <jw-modal id="modal-2">
-    <h1>Congrats</h1>
-    <h2>You solved it in {{ currentFighterList.length }}</h2>
-    <h2>The mystery fighter was:</h2>
-    <div class="fighterName">{{ this.randomFighter.fighterName }}</div>
-    <img
-    src= "{{this.randomFighter.Photo}}"
-    alt="Fighter Image"
-  />
-  </jw-modal>
   <jw-modal id="modal-3">
     <h1>Sorry you are out of guesses</h1>
     <h2>The correct answer is:</h2>
@@ -1953,4 +1968,3 @@
   />
   </jw-modal>
 </div>
--->

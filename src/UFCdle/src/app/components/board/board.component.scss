@@ -32,6 +32,40 @@ btn-1{
   text-align: center;
 }
 
+button.result {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+button.result:hover {
+  background-color: #3e8e41;
+}
+
+button.resultLoss {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+button.resultLoss:hover {
+  background-color: red;
+}
+
 /* Add styles for the modal */
 jw-modal {
   background-color: white;

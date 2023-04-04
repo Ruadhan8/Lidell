@@ -4,6 +4,7 @@ import { FighterService } from '../../fighter.service';
 import { fighter } from './fighter';
 import { ModalService } from '../modal';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { triggerHandler } from 'devextreme/events';
 
 @Component({
   selector: 'app-board',
@@ -11,6 +12,7 @@ import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./board.component.scss'],
 })
 export class BoardComponent {
+  isActive = false;
   data: any;
   fighters: fighter[] = [];
   list!: any;
@@ -111,9 +113,14 @@ rankingsDict: {[key:string]: number} ={
     console.log(this.splitCurrentFighterHometown[1], this.splitRandomFighterHometown[1]);
     this.openModal();
     this.openFailModal();
-  }
-  closeGuessFighter(){
-    
+
+    if(this.currentFighterList.length > 7 || this.currentFighter.fighterName == this.randomFighter.fighterName){
+      this.isActive = true;
+      console.log("isActive");
+    }
+    else{
+      this.isActive = false;
+    }
   }
   compareFighters() {
     this.splitCurrentFighterHometown.push(this.currentFighter.HomeTown.split(', '));
@@ -122,7 +129,7 @@ rankingsDict: {[key:string]: number} ={
   openModal() {
     if(this.currentFighter.fighterName == this.randomFighter.fighterName)
     {
-      return this.modalService.open('modal-2')
+      return this.modalService.open('modal-2');
     }
     else{
       return 0;
@@ -137,5 +144,7 @@ rankingsDict: {[key:string]: number} ={
     else{
       return 0;
     }
+
+
   }
 }

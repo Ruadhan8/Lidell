@@ -89,11 +89,11 @@ rankingsDict: {[key:string]: number} ={
   ) {}
 
   ngOnInit() {
-    const obs$ = interval(1000);
-    obs$.subscribe((d) =>{
-      console.log(d);
+    // const obs$ = interval(1000);
+    // obs$.subscribe((d) =>{
+    //   console.log(d);
       
-    })
+    // })
 
     this.fightersService
       .getFighters()

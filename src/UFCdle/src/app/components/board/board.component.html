@@ -28,10 +28,12 @@
   <li>You have 8 guesses, to guess any current ranked UFC fighter</li>
   <li>Green in any column indicates a match</li>
   <li>
-    Yellow in the Hometown column indicates a partial match(The Country is the same as the mystery fighter)
+    Yellow in the Hometown column indicates a partial match(The Country is the
+    same as the mystery fighter)
   </li>
   <li>
-    Yellow in any other column indicates this attribute is within 2 (reach, age, division, ranking, height) of the mystery fighter
+    Yellow in any other column indicates this attribute is within 2 (reach, age,
+    division, ranking, height) of the mystery fighter
   </li>
   <div><button (click)="modalService.close('modal-1')">Close</button></div>
 </jw-modal>
@@ -43,41 +45,55 @@
   <button *ngIf="this.showButton" (click)="startGame()" class="startGameButton">
     START GAME
   </button>
-  
 </div>
 <div *ngIf="!this.showButton" class="selectBox">
   <div class="dx-fieldset">
     <div class="dx-field">
       <div class="dx-field-value">
         <dx-select-box
-        [disabled] = "isActive"
+          [disabled]="isActive"
           [items]="this.fightersFromBackend"
           displayExpr="fighterName"
           placeholder="Choose Fighter"
           [showClearButton]="false"
-          [searchEnabled]= "true"
+          [searchEnabled]="true"
           [minSearchLength]="1"
           (onItemClick)="guessFighter($event)"
           [showDropDownButton]="false"
         ></dx-select-box>
       </div>
     </div>
-    
 
-    <div *ngIf="this.currentFighter.fighterName != this.randomFighter.fighterName">
-      <button hidden (click)="modalService.open('modal-2')" class="result">View result</button>
+    <div
+      *ngIf="this.currentFighter.fighterName != this.randomFighter.fighterName"
+    >
+      <button hidden (click)="modalService.open('modal-2')" class="result">
+        View result
+      </button>
     </div>
-    <div *ngIf="this.currentFighter.fighterName == this.randomFighter.fighterName">
-      <button showButton (click)="modalService.open('modal-2')"class="result">View result</button>
+    <div
+      *ngIf="this.currentFighter.fighterName == this.randomFighter.fighterName"
+    >
+      <button showButton (click)="modalService.open('modal-2')" class="result">
+        View result
+      </button>
     </div>
     <div *ngIf="this.currentFighterList.length < 7">
-      <button hidden (click)="modalService.open('modal-3')" class="resultLoss">View result</button>
+      <button hidden (click)="modalService.open('modal-3')" class="resultLoss">
+        View result
+      </button>
     </div>
     <div *ngIf="this.currentFighterList.length > 7">
-      <button showButton (click)="modalService.open('modal-3')"class="resultLoss">View result</button>
+      <button
+        showButton
+        (click)="modalService.open('modal-3')"
+        class="resultLoss"
+      >
+        View result
+      </button>
     </div>
   </div>
-  </div>
+</div>
 <div class="board">
   <div class="fighter" *ngIf="this.currentFighterList[0]">
     <div class="topName">
@@ -90,19 +106,19 @@
       <h3><b>REACH</b></h3>
     </div>
     <div class="topHometown">
-      <h3><b>Hometown</b></h3>
+      <h3><b>HOMETOWN</b></h3>
     </div>
     <div class="topDivision">
-      <h3><b>division</b></h3>
+      <h3><b>DIVISION</b></h3>
     </div>
     <div class="topRanking">
-      <h3><b>rANKING</b></h3>
+      <h3><b>RANKING</b></h3>
     </div>
     <div class="topRecord">
       <h3><b>RECORD</b></h3>
     </div>
   </div>
-  
+
   <div class="fighter" *ngIf="this.currentFighterList[0]">
     <div class="name" *ngIf="currentFighterList[0]">
       <div
@@ -266,34 +282,53 @@
 
     <div class="division" *ngIf="currentFighterList[0]">
       <div
-        *ngIf="currentFighterList[0].division != this.randomFighter.division"
+        class="correct"
+        *ngIf="currentFighterList[0].division == this.randomFighter.division"
       >
         {{ currentFighterList[0].division }}
       </div>
       <div
-      class = "close"
-      *ngIf="DivisionDict[currentFighterList[0].division] == DivisionDict[this.randomFighter.division] - 2
-       || DivisionDict[currentFighterList[0].division] == DivisionDict[this.randomFighter.division] - 1">
-      {{currentFighterList[0].division}}
-       <fa-icon [icon]="faArrowUp"></fa-icon>
+        class="close"
+        *ngIf="
+          DivisionDict[currentFighterList[0].division] ==
+            DivisionDict[this.randomFighter.division] - 2 ||
+          DivisionDict[currentFighterList[0].division] ==
+            DivisionDict[this.randomFighter.division] - 1
+        "
+      >
+        {{ currentFighterList[0].division }}
+        <fa-icon [icon]="faArrowUp"></fa-icon>
       </div>
       <div
-      class = "close"
-      *ngIf="DivisionDict[currentFighterList[0].division] == DivisionDict[this.randomFighter.division] + 2
-       || DivisionDict[currentFighterList[0].division] == DivisionDict[this.randomFighter.division] + 1">
-      {{currentFighterList[0].division}}
-       <fa-icon [icon]="faArrowDown"></fa-icon>
+        class="close"
+        *ngIf="
+          DivisionDict[currentFighterList[0].division] ==
+            DivisionDict[this.randomFighter.division] + 2 ||
+          DivisionDict[currentFighterList[0].division] ==
+            DivisionDict[this.randomFighter.division] + 1
+        "
+      >
+        {{ currentFighterList[0].division }}
+        <fa-icon [icon]="faArrowDown"></fa-icon>
       </div>
-      <div *ngIf="DivisionDict[currentFighterList[0].division] != DivisionDict[this.randomFighter.division] + 2
-       && DivisionDict[currentFighterList[0].division] != DivisionDict[this.randomFighter.division] + 1 
-       && DivisionDict[currentFighterList[0].division] != DivisionDict[this.randomFighter.division] - 2
-       && DivisionDict[currentFighterList[0].division] != DivisionDict[this.randomFighter.division] - 1 
-       && currentFighterList[0].division != this.randomFighter.division">
-      {{currentFighterList[0].division}}
-      </div>    
+      <div
+        *ngIf="
+          DivisionDict[currentFighterList[0].division] !=
+            DivisionDict[this.randomFighter.division] + 2 &&
+          DivisionDict[currentFighterList[0].division] !=
+            DivisionDict[this.randomFighter.division] + 1 &&
+          DivisionDict[currentFighterList[0].division] !=
+            DivisionDict[this.randomFighter.division] - 2 &&
+          DivisionDict[currentFighterList[0].division] !=
+            DivisionDict[this.randomFighter.division] - 1 &&
+          currentFighterList[0].division != this.randomFighter.division
+        "
+      >
+        {{ currentFighterList[0].division }}
+      </div>
     </div>
 
-      <div class="ranking" *ngIf="currentFighterList[0]">
+    <div class="ranking" *ngIf="currentFighterList[0]">
       <div
         class="correct"
         *ngIf="currentFighterList[0].ranking == this.randomFighter.ranking"
@@ -301,26 +336,44 @@
         {{ currentFighterList[0].ranking }}
       </div>
       <div
-      class = "close"
-      *ngIf="rankingsDict[currentFighterList[0].ranking] == rankingsDict[this.randomFighter.ranking] - 2
-       || rankingsDict[currentFighterList[0].ranking] == rankingsDict[this.randomFighter.ranking] - 1">
-      {{currentFighterList[0].ranking}}
-       <fa-icon [icon]="faArrowDown"></fa-icon>
+        class="close"
+        *ngIf="
+          rankingsDict[currentFighterList[0].ranking] ==
+            rankingsDict[this.randomFighter.ranking] - 2 ||
+          rankingsDict[currentFighterList[0].ranking] ==
+            rankingsDict[this.randomFighter.ranking] - 1
+        "
+      >
+        {{ currentFighterList[0].ranking }}
+        <fa-icon [icon]="faArrowDown"></fa-icon>
       </div>
       <div
-      class = "close"
-      *ngIf="rankingsDict[currentFighterList[0].ranking] == rankingsDict[this.randomFighter.ranking] + 2
-       || rankingsDict[currentFighterList[0].ranking] == rankingsDict[this.randomFighter.ranking] + 1">
-      {{currentFighterList[0].ranking}}
-       <fa-icon [icon]="faArrowUp"></fa-icon>
+        class="close"
+        *ngIf="
+          rankingsDict[currentFighterList[0].ranking] ==
+            rankingsDict[this.randomFighter.ranking] + 2 ||
+          rankingsDict[currentFighterList[0].ranking] ==
+            rankingsDict[this.randomFighter.ranking] + 1
+        "
+      >
+        {{ currentFighterList[0].ranking }}
+        <fa-icon [icon]="faArrowUp"></fa-icon>
       </div>
-      <div *ngIf="rankingsDict[currentFighterList[0].ranking] != rankingsDict[this.randomFighter.ranking] + 2
-       && rankingsDict[currentFighterList[0].ranking] != rankingsDict[this.randomFighter.ranking] + 1 
-       && rankingsDict[currentFighterList[0].ranking] != rankingsDict[this.randomFighter.ranking] - 2
-       && rankingsDict[currentFighterList[0].ranking] != rankingsDict[this.randomFighter.ranking] - 1 
-       && currentFighterList[0].ranking != this.randomFighter.ranking">
-      {{currentFighterList[0].ranking}}
-      </div>    
+      <div
+        *ngIf="
+          rankingsDict[currentFighterList[0].ranking] !=
+            rankingsDict[this.randomFighter.ranking] + 2 &&
+          rankingsDict[currentFighterList[0].ranking] !=
+            rankingsDict[this.randomFighter.ranking] + 1 &&
+          rankingsDict[currentFighterList[0].ranking] !=
+            rankingsDict[this.randomFighter.ranking] - 2 &&
+          rankingsDict[currentFighterList[0].ranking] !=
+            rankingsDict[this.randomFighter.ranking] - 1 &&
+          currentFighterList[0].ranking != this.randomFighter.ranking
+        "
+      >
+        {{ currentFighterList[0].ranking }}
+      </div>
     </div>
 
     <div class="record" *ngIf="currentFighterList[0]">
@@ -335,17 +388,13 @@
       </div>
     </div>
   </div>
-  <jw-modal id="modal-2" class = "modal-2">
+  <jw-modal id="modal-2" class="modal-2">
     <h1>Congrats</h1>
     <h2>You solved it in {{ currentFighterList.length }}</h2>
     <h2>The mystery fighter was:</h2>
     <div class="fighterName">{{ this.randomFighter.fighterName }}</div>
-    <img
-    src= "{{this.randomFighter.photo}}"
-    alt="Fighter Image"
-    />
+    <img src="{{ this.randomFighter.photo }}" alt="Fighter Image" />
     <div><button (click)="modalService.close('modal-2')">Close</button></div>
-
   </jw-modal>
 
   <div class="fighter" *ngIf="this.currentFighterList[1]">
@@ -475,7 +524,7 @@
         </div>
       </div>
     </div>
-    <div class="homeTown" *ngIf="this.currentFighterList[1]">
+    <div class="hometown" *ngIf="this.currentFighterList[1]">
       <div
         *ngIf="
           this.splitCurrentFighterHometown[1][1] !=
@@ -509,33 +558,52 @@
     </div>
     <div class="division" *ngIf="currentFighterList[1]">
       <div
-        *ngIf="currentFighterList[1].division != this.randomFighter.division"
+        class="correct"
+        *ngIf="currentFighterList[1].division == this.randomFighter.division"
       >
         {{ currentFighterList[1].division }}
       </div>
       <div
-      class = "close"
-      *ngIf="DivisionDict[currentFighterList[1].division] == DivisionDict[this.randomFighter.division] - 2
-       || DivisionDict[currentFighterList[1].division] == DivisionDict[this.randomFighter.division] - 1">
-      {{currentFighterList[1].division}}
-       <fa-icon [icon]="faArrowUp"></fa-icon>
+        class="close"
+        *ngIf="
+          DivisionDict[currentFighterList[1].division] ==
+            DivisionDict[this.randomFighter.division] - 2 ||
+          DivisionDict[currentFighterList[1].division] ==
+            DivisionDict[this.randomFighter.division] - 1
+        "
+      >
+        {{ currentFighterList[1].division }}
+        <fa-icon [icon]="faArrowUp"></fa-icon>
       </div>
       <div
-      class = "close"
-      *ngIf="DivisionDict[currentFighterList[1].division] == DivisionDict[this.randomFighter.division] + 2
-       || DivisionDict[currentFighterList[1].division] == DivisionDict[this.randomFighter.division] + 1">
-      {{currentFighterList[1].division}}
-       <fa-icon [icon]="faArrowDown"></fa-icon>
+        class="close"
+        *ngIf="
+          DivisionDict[currentFighterList[1].division] ==
+            DivisionDict[this.randomFighter.division] + 2 ||
+          DivisionDict[currentFighterList[1].division] ==
+            DivisionDict[this.randomFighter.division] + 1
+        "
+      >
+        {{ currentFighterList[1].division }}
+        <fa-icon [icon]="faArrowDown"></fa-icon>
       </div>
-      <div *ngIf="DivisionDict[currentFighterList[1].division] != DivisionDict[this.randomFighter.division] + 2
-       && DivisionDict[currentFighterList[1].division] != DivisionDict[this.randomFighter.division] + 1 
-       && DivisionDict[currentFighterList[1].division] != DivisionDict[this.randomFighter.division] - 2
-       && DivisionDict[currentFighterList[1].division] != DivisionDict[this.randomFighter.division] - 1 
-       && currentFighterList[1].division != this.randomFighter.division">
-      {{currentFighterList[1].division}}
-      </div>    
+      <div
+        *ngIf="
+          DivisionDict[currentFighterList[1].division] !=
+            DivisionDict[this.randomFighter.division] + 2 &&
+          DivisionDict[currentFighterList[1].division] !=
+            DivisionDict[this.randomFighter.division] + 1 &&
+          DivisionDict[currentFighterList[1].division] !=
+            DivisionDict[this.randomFighter.division] - 2 &&
+          DivisionDict[currentFighterList[1].division] !=
+            DivisionDict[this.randomFighter.division] - 1 &&
+          currentFighterList[1].division != this.randomFighter.division
+        "
+      >
+        {{ currentFighterList[1].division }}
+      </div>
     </div>
-     <div class="ranking" *ngIf="currentFighterList[1]">
+    <div class="ranking" *ngIf="currentFighterList[1]">
       <div
         class="correct"
         *ngIf="currentFighterList[1].ranking == this.randomFighter.ranking"
@@ -543,26 +611,44 @@
         {{ currentFighterList[1].ranking }}
       </div>
       <div
-      class = "close"
-      *ngIf="rankingsDict[currentFighterList[1].ranking] == rankingsDict[this.randomFighter.ranking] - 2
-       || rankingsDict[currentFighterList[1].ranking] == rankingsDict[this.randomFighter.ranking] - 1">
-      {{currentFighterList[1].ranking}}
-       <fa-icon [icon]="faArrowDown"></fa-icon>
+        class="close"
+        *ngIf="
+          rankingsDict[currentFighterList[1].ranking] ==
+            rankingsDict[this.randomFighter.ranking] - 2 ||
+          rankingsDict[currentFighterList[1].ranking] ==
+            rankingsDict[this.randomFighter.ranking] - 1
+        "
+      >
+        {{ currentFighterList[1].ranking }}
+        <fa-icon [icon]="faArrowDown"></fa-icon>
       </div>
       <div
-      class = "close"
-      *ngIf="rankingsDict[currentFighterList[1].ranking] == rankingsDict[this.randomFighter.ranking] + 2
-       || rankingsDict[currentFighterList[1].ranking] == rankingsDict[this.randomFighter.ranking] + 1">
-      {{currentFighterList[1].ranking}}
-       <fa-icon [icon]="faArrowUp"></fa-icon>
+        class="close"
+        *ngIf="
+          rankingsDict[currentFighterList[1].ranking] ==
+            rankingsDict[this.randomFighter.ranking] + 2 ||
+          rankingsDict[currentFighterList[1].ranking] ==
+            rankingsDict[this.randomFighter.ranking] + 1
+        "
+      >
+        {{ currentFighterList[1].ranking }}
+        <fa-icon [icon]="faArrowUp"></fa-icon>
       </div>
-      <div *ngIf="rankingsDict[currentFighterList[1].ranking] != rankingsDict[this.randomFighter.ranking] + 2
-       && rankingsDict[currentFighterList[1].ranking] != rankingsDict[this.randomFighter.ranking] + 1 
-       && rankingsDict[currentFighterList[1].ranking] != rankingsDict[this.randomFighter.ranking] - 2
-       && rankingsDict[currentFighterList[1].ranking] != rankingsDict[this.randomFighter.ranking] - 1 
-       && currentFighterList[1].ranking != this.randomFighter.ranking">
-      {{currentFighterList[1].ranking}}
-      </div>    
+      <div
+        *ngIf="
+          rankingsDict[currentFighterList[1].ranking] !=
+            rankingsDict[this.randomFighter.ranking] + 2 &&
+          rankingsDict[currentFighterList[1].ranking] !=
+            rankingsDict[this.randomFighter.ranking] + 1 &&
+          rankingsDict[currentFighterList[1].ranking] !=
+            rankingsDict[this.randomFighter.ranking] - 2 &&
+          rankingsDict[currentFighterList[1].ranking] !=
+            rankingsDict[this.randomFighter.ranking] - 1 &&
+          currentFighterList[1].ranking != this.randomFighter.ranking
+        "
+      >
+        {{ currentFighterList[1].ranking }}
+      </div>
     </div>
     <div class="record" *ngIf="currentFighterList[1]">
       <div *ngIf="currentFighterList[1].record != this.randomFighter.record">
@@ -580,13 +666,9 @@
     <h1>Sorry you are out of guesses</h1>
     <h2>The correct answer is:</h2>
     <div class="fighterName">{{ this.randomFighter.fighterName }}</div>
-    <img
-    src= "{{this.randomFighter.photo}}"
-    alt="Fighter Image"
-  />
+    <img src="{{ this.randomFighter.photo }}" alt="Fighter Image" />
     <div><button (click)="modalService.close('modal-3')">Close</button></div>
   </jw-modal>
-
 
   <div class="fighter" *ngIf="this.currentFighterList[2]">
     <div class="name" *ngIf="currentFighterList[2]">
@@ -715,7 +797,7 @@
         </div>
       </div>
     </div>
-    <div class="homeTown" *ngIf="this.currentFighterList[2]">
+    <div class="hometown" *ngIf="this.currentFighterList[2]">
       <div
         *ngIf="
           this.splitCurrentFighterHometown[2][1] !=
@@ -749,33 +831,52 @@
     </div>
     <div class="division" *ngIf="currentFighterList[2]">
       <div
-        *ngIf="currentFighterList[2].division != this.randomFighter.division"
+        class="correct"
+        *ngIf="currentFighterList[2].division == this.randomFighter.division"
       >
         {{ currentFighterList[2].division }}
       </div>
       <div
-      class = "close"
-      *ngIf="DivisionDict[currentFighterList[2].division] == DivisionDict[this.randomFighter.division] - 2
-       || DivisionDict[currentFighterList[2].division] == DivisionDict[this.randomFighter.division] - 1">
-      {{currentFighterList[2].division}}
-       <fa-icon [icon]="faArrowUp"></fa-icon>
+        class="close"
+        *ngIf="
+          DivisionDict[currentFighterList[2].division] ==
+            DivisionDict[this.randomFighter.division] - 2 ||
+          DivisionDict[currentFighterList[2].division] ==
+            DivisionDict[this.randomFighter.division] - 1
+        "
+      >
+        {{ currentFighterList[2].division }}
+        <fa-icon [icon]="faArrowUp"></fa-icon>
       </div>
       <div
-      class = "close"
-      *ngIf="DivisionDict[currentFighterList[2].division] == DivisionDict[this.randomFighter.division] + 2
-       || DivisionDict[currentFighterList[2].division] == DivisionDict[this.randomFighter.division] + 1">
-      {{currentFighterList[2].division}}
-       <fa-icon [icon]="faArrowDown"></fa-icon>
+        class="close"
+        *ngIf="
+          DivisionDict[currentFighterList[2].division] ==
+            DivisionDict[this.randomFighter.division] + 2 ||
+          DivisionDict[currentFighterList[2].division] ==
+            DivisionDict[this.randomFighter.division] + 1
+        "
+      >
+        {{ currentFighterList[2].division }}
+        <fa-icon [icon]="faArrowDown"></fa-icon>
       </div>
-      <div *ngIf="DivisionDict[currentFighterList[2].division] != DivisionDict[this.randomFighter.division] + 2
-       && DivisionDict[currentFighterList[2].division] != DivisionDict[this.randomFighter.division] + 1 
-       && DivisionDict[currentFighterList[2].division] != DivisionDict[this.randomFighter.division] - 2
-       && DivisionDict[currentFighterList[2].division] != DivisionDict[this.randomFighter.division] - 1 
-       && currentFighterList[2].division != this.randomFighter.division">
-      {{currentFighterList[2].division}}
-      </div>    
+      <div
+        *ngIf="
+          DivisionDict[currentFighterList[2].division] !=
+            DivisionDict[this.randomFighter.division] + 2 &&
+          DivisionDict[currentFighterList[2].division] !=
+            DivisionDict[this.randomFighter.division] + 1 &&
+          DivisionDict[currentFighterList[2].division] !=
+            DivisionDict[this.randomFighter.division] - 2 &&
+          DivisionDict[currentFighterList[2].division] !=
+            DivisionDict[this.randomFighter.division] - 1 &&
+          currentFighterList[2].division != this.randomFighter.division
+        "
+      >
+        {{ currentFighterList[2].division }}
+      </div>
     </div>
-     <div class="ranking" *ngIf="currentFighterList[2]">
+    <div class="ranking" *ngIf="currentFighterList[2]">
       <div
         class="correct"
         *ngIf="currentFighterList[2].ranking == this.randomFighter.ranking"
@@ -783,26 +884,44 @@
         {{ currentFighterList[2].ranking }}
       </div>
       <div
-      class = "close"
-      *ngIf="rankingsDict[currentFighterList[2].ranking] == rankingsDict[this.randomFighter.ranking] - 2
-       || rankingsDict[currentFighterList[2].ranking] == rankingsDict[this.randomFighter.ranking] - 1">
-      {{currentFighterList[2].ranking}}
-       <fa-icon [icon]="faArrowDown"></fa-icon>
+        class="close"
+        *ngIf="
+          rankingsDict[currentFighterList[2].ranking] ==
+            rankingsDict[this.randomFighter.ranking] - 2 ||
+          rankingsDict[currentFighterList[2].ranking] ==
+            rankingsDict[this.randomFighter.ranking] - 1
+        "
+      >
+        {{ currentFighterList[2].ranking }}
+        <fa-icon [icon]="faArrowDown"></fa-icon>
       </div>
       <div
-      class = "close"
-      *ngIf="rankingsDict[currentFighterList[2].ranking] == rankingsDict[this.randomFighter.ranking] + 2
-       || rankingsDict[currentFighterList[2].ranking] == rankingsDict[this.randomFighter.ranking] + 1">
-      {{currentFighterList[2].ranking}}
-       <fa-icon [icon]="faArrowUp"></fa-icon>
+        class="close"
+        *ngIf="
+          rankingsDict[currentFighterList[2].ranking] ==
+            rankingsDict[this.randomFighter.ranking] + 2 ||
+          rankingsDict[currentFighterList[2].ranking] ==
+            rankingsDict[this.randomFighter.ranking] + 1
+        "
+      >
+        {{ currentFighterList[2].ranking }}
+        <fa-icon [icon]="faArrowUp"></fa-icon>
       </div>
-      <div *ngIf="rankingsDict[currentFighterList[2].ranking] != rankingsDict[this.randomFighter.ranking] + 2
-       && rankingsDict[currentFighterList[2].ranking] != rankingsDict[this.randomFighter.ranking] + 1 
-       && rankingsDict[currentFighterList[2].ranking] != rankingsDict[this.randomFighter.ranking] - 2
-       && rankingsDict[currentFighterList[2].ranking] != rankingsDict[this.randomFighter.ranking] - 1 
-       && currentFighterList[2].ranking != this.randomFighter.ranking">
-      {{currentFighterList[2].ranking}}
-      </div>    
+      <div
+        *ngIf="
+          rankingsDict[currentFighterList[2].ranking] !=
+            rankingsDict[this.randomFighter.ranking] + 2 &&
+          rankingsDict[currentFighterList[2].ranking] !=
+            rankingsDict[this.randomFighter.ranking] + 1 &&
+          rankingsDict[currentFighterList[2].ranking] !=
+            rankingsDict[this.randomFighter.ranking] - 2 &&
+          rankingsDict[currentFighterList[2].ranking] !=
+            rankingsDict[this.randomFighter.ranking] - 1 &&
+          currentFighterList[2].ranking != this.randomFighter.ranking
+        "
+      >
+        {{ currentFighterList[2].ranking }}
+      </div>
     </div>
     <div class="record" *ngIf="currentFighterList[2]">
       <div *ngIf="currentFighterList[2].record != this.randomFighter.record">
@@ -944,7 +1063,7 @@
         </div>
       </div>
     </div>
-    <div class="homeTown" *ngIf="this.currentFighterList[3]">
+    <div class="hometown" *ngIf="this.currentFighterList[3]">
       <div
         *ngIf="
           this.splitCurrentFighterHometown[3][1] !=
@@ -978,7 +1097,8 @@
     </div>
     <div class="division" *ngIf="currentFighterList[3]">
       <div
-        *ngIf="currentFighterList[3].division != this.randomFighter.division"
+        class="correct"
+        *ngIf="currentFighterList[3].division == this.randomFighter.division"
       >
         {{ currentFighterList[3].division }}
       </div>
@@ -1174,7 +1294,7 @@
         </div>
       </div>
     </div>
-    <div class="homeTown" *ngIf="this.currentFighterList[4]">
+    <div class="hometown" *ngIf="this.currentFighterList[4]">
       <div
         *ngIf="
           this.splitCurrentFighterHometown[4][1] !=
@@ -1208,7 +1328,8 @@
     </div>
     <div class="division" *ngIf="currentFighterList[4]">
       <div
-        *ngIf="currentFighterList[4].division != this.randomFighter.division"
+        class="correct"
+        *ngIf="currentFighterList[4].division == this.randomFighter.division"
       >
         {{ currentFighterList[4].division }}
       </div>
@@ -1403,7 +1524,7 @@
         </div>
       </div>
     </div>
-    <div class="homeTown" *ngIf="this.currentFighterList[5]">
+    <div class="hometown" *ngIf="this.currentFighterList[5]">
       <div
         *ngIf="
           this.splitCurrentFighterHometown[5][1] !=
@@ -1437,7 +1558,8 @@
     </div>
     <div class="division" *ngIf="currentFighterList[5]">
       <div
-        *ngIf="currentFighterList[5].division != this.randomFighter.division"
+        class="correct"
+        *ngIf="currentFighterList[5].division == this.randomFighter.division"
       >
         {{ currentFighterList[5].division }}
       </div>
@@ -1632,7 +1754,7 @@
         </div>
       </div>
     </div>
-    <div class="homeTown" *ngIf="this.currentFighterList[6]">
+    <div class="hometown" *ngIf="this.currentFighterList[6]">
       <div
         *ngIf="
           this.splitCurrentFighterHometown[6][1] !=
@@ -1666,7 +1788,8 @@
     </div>
     <div class="division" *ngIf="currentFighterList[6]">
       <div
-        *ngIf="currentFighterList[6].division != this.randomFighter.division"
+        class="correct"
+        *ngIf="currentFighterList[6].division == this.randomFighter.division"
       >
         {{ currentFighterList[6].division }}
       </div>
@@ -1861,7 +1984,7 @@
         </div>
       </div>
     </div>
-    <div class="homeTown" *ngIf="this.currentFighterList[7]">
+    <div class="hometown" *ngIf="this.currentFighterList[7]">
       <div
         *ngIf="
           this.splitCurrentFighterHometown[7][1] !=
@@ -1895,10 +2018,9 @@
     </div>
     <div class="division" *ngIf="currentFighterList[7]">
       <div
-        *ngIf="currentFighterList[7].division != this.randomFighter.division"
+        class="correct"
+        *ngIf="currentFighterList[7].division == this.randomFighter.division"
       >
-        {{ currentFighterList[7].division }}
-      </div>
       <div
       class = "close"
       *ngIf="DivisionDict[currentFighterList[7].division] == DivisionDict[this.randomFighter.division] - 2
@@ -1963,3 +2085,4 @@
     </div>
   </div>
 </div> -->
+</div>

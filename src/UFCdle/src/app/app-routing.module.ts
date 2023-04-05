@@ -11,6 +11,8 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { VersusComponent } from './components/versus/versus.component';
 
 const routes: Routes = [
+  { path: 'http://idell-20230401214430-hostingbucket-dev.s3-website-eu-west-1.amazonaws.com', redirectTo: '/sign-in', pathMatch: 'full' },
+  { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
   { path: 'sign-in', component: SignInComponent },
   { path: 'register-user', component: SignUpComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },

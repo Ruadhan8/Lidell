@@ -1595,6 +1595,28 @@
       "Record": "23-1-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-10/MAKHACHEV_ISLAM_L_BELTMOCK.png?itok=SzxPwIGS",
       "Ranking": "CHAMPION"
+    },
+    {
+      "fighterName": "Alexander Volkanovski",
+      "Division": "Featherweight Division",
+      "Age": 34,
+      "FighterReach": 71.5,
+      "HomeTown": "Shellharbour, Australia",
+      "FightStyle": "Striker",
+      "Record": "25-2-0 (W-L-D)",
+      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2023-02/VOLKANOVSKI_ALEXANDER_L_02-11.png?itok=ZuyYEOcc",
+      "Ranking": "CHAMPION"
+    },
+    {
+      "fighterName": "Amanda Nunes",
+      "Division": "Women's Bantamweight Division",
+      "Age": 34,
+      "FighterReach": 69,
+      "HomeTown": "Pojuca, Brazil",
+      "FightStyle": "Striker",
+      "Record": "22-5-0 (W-L-D)",
+      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-12/0bc89f79-fead-4048-98a4-daa3e10d1d04%252FNUNES_AMANDA_L_BELT_12-11.png?itok=n_Qiatj-",
+      "Ranking": "CHAMPION"
     }
   ]
 }

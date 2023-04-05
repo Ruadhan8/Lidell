@@ -336,7 +336,7 @@
       </div>
     </div>
   </div>
-  <jw-modal id="modal-2">
+  <jw-modal id="modal-2" class = "modal-2">
     <h1>Congrats</h1>
     <h2>You solved it in {{ currentFighterList.length }}</h2>
     <h2>The mystery fighter was:</h2>
@@ -344,7 +344,9 @@
     <img
     src= "{{this.randomFighter.Photo}}"
     alt="Fighter Image"
-  />
+    />
+    <div><button (click)="modalService.close('modal-2')">Close</button></div>
+
   </jw-modal>
 
   <div class="fighter" *ngIf="this.currentFighterList[1]">
@@ -576,6 +578,17 @@
       </div>
     </div>
   </div>
+  <jw-modal id="modal-3" class="modal-3">
+    <h1>Sorry you are out of guesses</h1>
+    <h2>The correct answer is:</h2>
+    <div class="fighterName">{{ this.randomFighter.fighterName }}</div>
+    <img
+    src= "{{this.randomFighter.Photo}}"
+    alt="Fighter Image"
+  />
+    <div><button (click)="modalService.close('modal-3')">Close</button></div>
+  </jw-modal>
+
 
   <div class="fighter" *ngIf="this.currentFighterList[2]">
     <div class="name" *ngIf="currentFighterList[2]">
@@ -1958,13 +1971,4 @@
       </div>
     </div>
   </div>
-  <jw-modal id="modal-3">
-    <h1>Sorry you are out of guesses</h1>
-    <h2>The correct answer is:</h2>
-    <div class="fighterName">{{ this.randomFighter.fighterName }}</div>
-    <img
-    src= "{{this.randomFighter.Photo}}"
-    alt="Fighter Image"
-  />
-  </jw-modal>
 </div>

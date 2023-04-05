@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  baseApiUrl: "https://localhost:7297",
   firebase: {
     apiKey: "AIzaSyBCIFyiYPy7EGSoSfVdW9Pi9aG77LMyYoI",
     authDomain: "Lidell.firebaseapp.com",

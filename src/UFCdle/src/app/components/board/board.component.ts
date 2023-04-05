@@ -4,7 +4,9 @@ import { FighterService } from '../../fighter.service';
 import { fighter } from './fighter';
 import { ModalService } from '../modal';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
-import { triggerHandler } from 'devextreme/events';
+import { Fighter } from 'src/app/models/fighter.model';
+import { FightersService } from 'src/app/services/fighters.service';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-board',
@@ -14,31 +16,32 @@ import { triggerHandler } from 'devextreme/events';
 export class BoardComponent {
   isActive = false;
   data: any;
-  fighters: fighter[] = [];
+  fighters: any;
+  fightersFromBackend: any;
   list!: any;
   currentFighter: fighter = {
     fighterName: '',
-    Division: '',
-    Age: 0,
-    FighterReach: 0,
-    HomeTown: '',
-    FightStyle: '',
-    Record: '',
-    Photo: '',
-    Ranking: '',
+    division: '',
+    age: 0,
+    fighterReach: 0,
+    homeTown: '',
+    fightStyle: '',
+    record: '',
+    photo: '',
+    ranking: '',
   };
   currentFighterList: any = [];
   searchBox = '';
   randomFighter: fighter = {
     fighterName: '',
-    Division: '',
-    Age: 0,
-    FighterReach: 0,
-    HomeTown: '',
-    FightStyle: '',
-    Record: '',
-    Photo: '',
-    Ranking: '',
+    division: '',
+    age: 0,
+    fighterReach: 0,
+    homeTown: '',
+    fightStyle: '',
+    record: '',
+    photo: '',
+    ranking: '',
   };
 
   faArrowUp = faArrowUp;
@@ -80,34 +83,57 @@ rankingsDict: {[key:string]: number} ={
 }
 
   constructor(
+    private fighterService: FightersService,
     private fightersService: FighterService,
     public modalService: ModalService
   ) {}
 
   ngOnInit() {
+    const obs$ = interval(1000);
+    obs$.subscribe((d) =>{
+      console.log(d);
+      
+    })
+
     this.fightersService
       .getFighters()
       .subscribe((results: any) => (this.list = results));
+
+    this.fighterService.getAllFighters().subscribe({
+      next: (fighters) => {
+        console.log(fighters);
+        this.fightersFromBackend = fighters
+      },
+      error: (error) => {
+        console.log(error);
+      },
+      
+    });
     
   }
 
   generateRandomFighter() {
     this.randomFighter =
-      this.list[Math.floor(Math.random() * this.list.length)];
-      this.splitRandomFighterHometown = this.randomFighter.HomeTown.split(', ');
-    console.log(this.splitRandomFighterHometown, this.splitCurrentFighterHometown);
-    
-      
+      this.fightersFromBackend[Math.floor(Math.random() * this.fightersFromBackend.length)];
+    this.splitRandomFighterHometown = this.randomFighter.homeTown.split(', ');
+    console.log(
+      this.splitRandomFighterHometown,
+      this.splitCurrentFighterHometown
+    );
   }
 
   startGame() {
     this.generateRandomFighter();
     this.showButton = false;
     console.log(this.randomFighter);
+    console.log(this.fightersFromBackend);
+    
   }
 
   guessFighter(e: any) {
+    console.log(e);
     this.currentFighter = e.itemData;
+    
     this.compareFighters();
     this.currentFighterList.push(this.currentFighter);
     console.log(this.splitCurrentFighterHometown[1], this.splitRandomFighterHometown[1]);
@@ -123,7 +149,7 @@ rankingsDict: {[key:string]: number} ={
     }
   }
   compareFighters() {
-    this.splitCurrentFighterHometown.push(this.currentFighter.HomeTown.split(', '));
+    this.splitCurrentFighterHometown.push(this.currentFighter.homeTown.split(', '));
   }
 
   openModal() {
@@ -148,3 +174,23 @@ rankingsDict: {[key:string]: number} ={
 
   }
 }
+// compareFighters() {
+//   this.splitCurrentFighterHometown = (this.currentFighter.HomeTown.split(','))
+//   this.splitRandomFighterHometown = (this.randomFighter.HomeTown.split(','))
+//   this.randomFighterCity = (this.splitRandomFighterHometown[0])
+//   this.randomFighterCountry = (this.splitRandomFighterHometown[1])
+//   this.currentFighterCity = (this.splitCurrentFighterHometown[0])
+//   this.currentFighterCountry = (this.splitCurrentFighterHometown[1])
+// }
+// }
+var MensDivisions: string[];
+MensDivisions = [
+  'Flyweight Division',
+  'Bantamweight Division',
+  'Featherweight Division',
+  'Lightweight Division',
+  'Welterweight Division',
+  'Middleweight Division',
+  'Light Heavyweight Division',
+  'Heavyweight Division',
+];

@@ -8,8 +8,10 @@ import { VerifyEmailComponent } from './components/verify-email/verify-email.com
 import { BoardComponent } from './components/board/board.component';
 import { AuthGuard } from './shared/guard/auth.guard';
 import { HomePageComponent } from './components/home-page/home-page.component';
+import { VersusComponent } from './components/versus/versus.component';
 
 const routes: Routes = [
+  { path: 'http://idell-20230401214430-hostingbucket-dev.s3-website-eu-west-1.amazonaws.com', redirectTo: '/sign-in', pathMatch: 'full' },
   { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
   { path: 'sign-in', component: SignInComponent },
   { path: 'register-user', component: SignUpComponent },
@@ -18,6 +20,7 @@ const routes: Routes = [
   { path: 'verify-email-address', component: VerifyEmailComponent },
   { path: 'board', component: BoardComponent},
   { path: 'home', component: HomePageComponent},
+  {path: 'versus', component:VersusComponent}
 
 ];
 

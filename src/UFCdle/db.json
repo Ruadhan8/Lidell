@@ -129,9 +129,9 @@
       "FighterReach": 66,
       "HomeTown": "Guadalajara, Mexico",
       "FightStyle": "MMA",
-      "Record": "15-3-0 (W-L-D)",
+      "Record": "16-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-10/GRASSO_ALEXA_L_10-15.png?itok=RyIWekm_",
-      "Ranking": "#4"
+      "Ranking": "CHAMPION"
     },
     {
       "fighterName": "Michelle Waterson-Gomez",
@@ -316,9 +316,9 @@
       "FighterReach": 66.5,
       "HomeTown": "Bishkek, Kyrgyzstan",
       "FightStyle": "Muay Thai",
-      "Record": "23-3-0 (W-L-D)",
+      "Record": "23-4-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/%5Bdate%3Acustom%3AY%5D-%5Bdate%3Acustom%3Am%5D/SHEVCHENKO_VALENTINA_L_BELT_04-24.png?VersionId=null&amp;itok=KpjlJhRW",
-      "Ranking": "CHAMPION"
+      "Ranking": "#1"
     },
     {
       "fighterName": "Alexandr Romanov",
@@ -679,7 +679,7 @@
       "FighterReach": 76,
       "HomeTown": "Batumi, Georgia",
       "FightStyle": "MMA",
-      "Record": "11-1-0 (W-L-D)",
+      "Record": "11-2-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-06/4deb3994-f399-4ed8-8373-c30ec9ecae6f%252FDOLIDZE_ROMAN_L_06-18.png?itok=teNxLpDV",
       "Ranking": "#8"
     },
@@ -723,7 +723,7 @@
       "FighterReach": 74,
       "HomeTown": "Trento, Italy",
       "FightStyle": "MMA",
-      "Record": "18-6-1 (W-L-D)",
+      "Record": "19-6-1 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-09/VETTORI_MARVIN_L_09-03.png?itok=7lDKr8RH",
       "Ranking": "#4"
     },
@@ -886,7 +886,7 @@
       "Division": "Welterweight Division",
       "Age": 34,
       "FighterReach": 72,
-      "HomeTown": "United States",
+      "HomeTown": "Miami, United States",
       "FightStyle": "Wrestler",
       "Record": "17-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-03/0b2f6b55-7a5d-49f1-9bc3-7076406d904f%252FCOVINGTON_COLBY_L_11-06.png?itok=9qVDWt-k",
@@ -1262,7 +1262,7 @@
       "FighterReach": 70,
       "HomeTown": "Aurora, United States",
       "FightStyle": "Striker",
-      "Record": "15-4-0 (W-L-D)",
+      "Record": "16-4-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-09/SANDHAGEN_CORY_L_09-17.png?itok=-v03MCCN",
       "Ranking": "#5"
     },
@@ -1273,7 +1273,7 @@
       "FighterReach": 70.5,
       "HomeTown": "Chone, Ecuador",
       "FightStyle": "MMA",
-      "Record": "20-7-1 (W-L-D)",
+      "Record": "20-8-1 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-08/e4995e09-5df4-428a-8d77-62468730d5f3%252FVERA_MARLON_L_04-30.png?itok=lYJNAhL4",
       "Ranking": "#4"
     },
@@ -1284,7 +1284,7 @@
       "FighterReach": 68,
       "HomeTown": "Tbilisi, Georgia",
       "FightStyle": "Freestyle",
-      "Record": "15-4-0 (W-L-D)",
+      "Record": "16-4-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-08/DVALISHVILI_MERAB_L_08-20.png?itok=whlXJp48",
       "Ranking": "#3"
     },
@@ -1295,7 +1295,7 @@
       "FighterReach": 67,
       "HomeTown": "Krasnoyarsk Krai, Russia",
       "FightStyle": "Boxer",
-      "Record": "16-4-0 (W-L-D)",
+      "Record": "16-5-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-10/YAN_PETR_L_10-22.png?itok=CJITv22A",
       "Ranking": "#2"
     },
@@ -1477,14 +1477,14 @@
     },
     {
       "fighterName": "Jon Jones",
-      "Division": "Light Heavyweight Division",
+      "Division": "Heavyweight Division",
       "Age": 35,
       "FighterReach": "84.5",
       "HomeTown": "Rochester, United States",
       "FightStyle": "MMA",
-      "Record": "26-1-0 (W-L-D)",
+      "Record": "27-1-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2020-09/JONES_JON_L_12-29.png?VersionId=_V_SgUOaxjt7ja7ddhcJB4m9ALbyeMJz&amp;itok=kMklO45v",
-      "Ranking": "Legend"
+      "Ranking": "CHAMPION"
     },
     {
       "fighterName": "Dustin Poirier",
@@ -1570,7 +1570,7 @@
       "FighterReach": 76,
       "HomeTown": "Auchi, Nigeria",
       "FightStyle": "Freestyle",
-      "Record": "20-2-0 (W-L-D)",
+      "Record": "20-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2023-01/USMAN_KAMARU_L_04-24.png?itok=ZnHfv-Pm",
       "Ranking": "#1"
     },
@@ -1581,7 +1581,7 @@
       "FighterReach": 74,
       "HomeTown": "Kingston, Jamaica",
       "FightStyle": "MMA",
-      "Record": "20-3-0 (W-L-D)",
+      "Record": "21-3-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-08/EDWARDS_LEON_L_BELTMOCK.png?itok=WzY_0axM",
       "Ranking": "CHAMPION"
     },
@@ -1594,6 +1594,28 @@
       "FightStyle": "Sambo",
       "Record": "23-1-0 (W-L-D)",
       "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-10/MAKHACHEV_ISLAM_L_BELTMOCK.png?itok=SzxPwIGS",
+      "Ranking": "CHAMPION"
+    },
+    {
+      "fighterName": "Alexander Volkanovski",
+      "Division": "Featherweight Division",
+      "Age": 34,
+      "FighterReach": 71.5,
+      "HomeTown": "Shellharbour, Australia",
+      "FightStyle": "Striker",
+      "Record": "25-2-0 (W-L-D)",
+      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2023-02/VOLKANOVSKI_ALEXANDER_L_02-11.png?itok=ZuyYEOcc",
+      "Ranking": "CHAMPION"
+    },
+    {
+      "fighterName": "Amanda Nunes",
+      "Division": "Women's Bantamweight Division",
+      "Age": 34,
+      "FighterReach": 69,
+      "HomeTown": "Pojuca, Brazil",
+      "FightStyle": "Striker",
+      "Record": "22-5-0 (W-L-D)",
+      "Photo": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-12/0bc89f79-fead-4048-98a4-daa3e10d1d04%252FNUNES_AMANDA_L_BELT_12-11.png?itok=n_Qiatj-",
       "Ranking": "CHAMPION"
     }
   ]

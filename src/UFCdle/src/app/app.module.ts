@@ -22,7 +22,8 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import {HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { VersusComponent } from './components/versus/versus.component';
-
+import { DailyComponent } from './components/daily/daily.component';
+import { DatePipe} from '@angular/common';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { VersusComponent } from './components/versus/versus.component';
     BoardComponent,
     HomePageComponent,
     VersusComponent,
+    DailyComponent,
 
 
   ],
@@ -53,9 +55,9 @@ import { VersusComponent } from './components/versus/versus.component';
     DxSelectBoxModule,
     ModalModule,
     HttpClientModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
-  providers: [AuthService],
+  providers: [AuthService, DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

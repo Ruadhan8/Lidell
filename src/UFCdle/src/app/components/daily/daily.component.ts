@@ -1,45 +1,51 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { FighterService } from '../../fighter.service';
 import { fighter } from './fighter';
 import { ModalService } from '../modal';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
-import { FightersService } from 'src/app/services/fighters.service';
+import { interval } from 'rxjs';
 
 @Component({
-  selector: 'app-board',
-  templateUrl: './board.component.html',
-  styleUrls: ['./board.component.scss'],
+  selector: 'app-daily',
+  templateUrl: './daily.component.html',
+  styleUrls: ['./daily.component.scss'],
+  template: '<p>Time remaining: {{timeRemaining}}</p>'
 })
-export class BoardComponent {
+
+
+export class DailyComponent implements OnInit {
+
+  hours!: number;
+  minutes!: number;
+  seconds!: number
   isActive = false;
   data: any;
-  fighters: any;
-  fightersFromBackend: any;
+  fighters: fighter[] = [];
   list!: any;
   currentFighter: fighter = {
     fighterName: '',
-    division: '',
-    age: 0,
-    fighterReach: 0,
-    homeTown: '',
-    fightStyle: '',
-    record: '',
-    photo: '',
-    ranking: '',
+    Division: '',
+    Age: 0,
+    FighterReach: 0,
+    HomeTown: '',
+    FightStyle: '',
+    Record: '',
+    Photo: '',
+    Ranking: '',
   };
   currentFighterList: any = [];
   searchBox = '';
   randomFighter: fighter = {
     fighterName: '',
-    division: '',
-    age: 0,
-    fighterReach: 0,
-    homeTown: '',
-    fightStyle: '',
-    record: '',
-    photo: '',
-    ranking: '',
+    Division: '',
+    Age: 0,
+    FighterReach: 0,
+    HomeTown: '',
+    FightStyle: '',
+    Record: '',
+    Photo: '',
+    Ranking: '',
   };
 
   faArrowUp = faArrowUp;
@@ -79,59 +85,59 @@ rankingsDict: {[key:string]: number} ={
   "#14": 14,
   "#15": 15,
 }
-
   constructor(
-    private fighterService: FightersService,
     private fightersService: FighterService,
     public modalService: ModalService
-  ) {}
+  ){}
+  
 
   ngOnInit() {
-    // const obs$ = interval(1000);
-    // obs$.subscribe((d) =>{
-    //   console.log(d);
-      
-    // })
 
     this.fightersService
       .getFighters()
       .subscribe((results: any) => (this.list = results));
 
-    this.fighterService.getAllFighters().subscribe({
-      next: (fighters) => {
-        console.log(fighters);
-        this.fightersFromBackend = fighters
-      },
-      error: (error) => {
-        console.log(error);
-      },
-      
-    });
+    setInterval(() => {
+      const now = new Date();
+      if (now.getHours() === 0 && now.getMinutes() === 0 && now.getSeconds() === 0) {
+        this.doSomethingAtMidnight();
+      } else {
+        this.countdownToMidnight(now);
+      }
+    }, 1000); // Check every second
     
+  }
+  doSomethingAtMidnight() {
+    // Add your code to do something here
+    this.startGame();
+  }
+
+  countdownToMidnight(now: Date) {
+    const midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+    const diff = midnight.getTime() - now.getTime();
+
+    this.hours = Math.floor(diff / (1000 * 60 * 60));
+    this.minutes = Math.floor((diff / (1000 * 60)) % 60);
+    this.seconds = Math.floor((diff / 1000) % 60);
   }
 
   generateRandomFighter() {
     this.randomFighter =
-      this.fightersFromBackend[Math.floor(Math.random() * this.fightersFromBackend.length)];
-    this.splitRandomFighterHometown = this.randomFighter.homeTown.split(', ');
-    console.log(
-      this.splitRandomFighterHometown,
-      this.splitCurrentFighterHometown
-    );
+      this.list[Math.floor(Math.random() * this.list.length)];
+      this.splitRandomFighterHometown = this.randomFighter.HomeTown.split(', ');
+    console.log(this.splitRandomFighterHometown, this.splitCurrentFighterHometown);
   }
+
 
   startGame() {
     this.generateRandomFighter();
     this.showButton = false;
     console.log(this.randomFighter);
-    console.log(this.fightersFromBackend);
-    
   }
 
+
   guessFighter(e: any) {
-    console.log(e);
     this.currentFighter = e.itemData;
-    
     this.compareFighters();
     this.currentFighterList.push(this.currentFighter);
     console.log(this.splitCurrentFighterHometown[1], this.splitRandomFighterHometown[1]);
@@ -140,14 +146,13 @@ rankingsDict: {[key:string]: number} ={
 
     if(this.currentFighterList.length > 7 || this.currentFighter.fighterName == this.randomFighter.fighterName){
       this.isActive = true;
-      console.log("isActive");
     }
     else{
       this.isActive = false;
     }
   }
   compareFighters() {
-    this.splitCurrentFighterHometown.push(this.currentFighter.homeTown.split(', '));
+    this.splitCurrentFighterHometown.push(this.currentFighter.HomeTown.split(', '));
   }
 
   openModal() {
@@ -169,26 +174,6 @@ rankingsDict: {[key:string]: number} ={
       return 0;
     }
 
-
   }
 }
-// compareFighters() {
-//   this.splitCurrentFighterHometown = (this.currentFighter.HomeTown.split(','))
-//   this.splitRandomFighterHometown = (this.randomFighter.HomeTown.split(','))
-//   this.randomFighterCity = (this.splitRandomFighterHometown[0])
-//   this.randomFighterCountry = (this.splitRandomFighterHometown[1])
-//   this.currentFighterCity = (this.splitCurrentFighterHometown[0])
-//   this.currentFighterCountry = (this.splitCurrentFighterHometown[1])
-// }
-// }
-var MensDivisions: string[];
-MensDivisions = [
-  'Flyweight Division',
-  'Bantamweight Division',
-  'Featherweight Division',
-  'Lightweight Division',
-  'Welterweight Division',
-  'Middleweight Division',
-  'Light Heavyweight Division',
-  'Heavyweight Division',
-];
+

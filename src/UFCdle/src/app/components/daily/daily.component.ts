@@ -22,7 +22,7 @@ export class DailyComponent implements OnInit {
   isActive = false;
   data: any;
   fighters: fighter[] = [];
-  list!: any;
+  list: any;
   currentFighter: fighter = {
     fighterName: '',
     Division: '',
@@ -92,11 +92,13 @@ rankingsDict: {[key:string]: number} ={
   
 
   ngOnInit() {
-
     this.fightersService
       .getFighters()
       .subscribe((results: any) => (this.list = results));
+    
 
+    this.startGame();
+    
     setInterval(() => {
       const now = new Date();
       if (now.getHours() === 0 && now.getMinutes() === 0 && now.getSeconds() === 0) {
@@ -125,13 +127,11 @@ rankingsDict: {[key:string]: number} ={
     this.randomFighter =
       this.list[Math.floor(Math.random() * this.list.length)];
       this.splitRandomFighterHometown = this.randomFighter.HomeTown.split(', ');
-    console.log(this.splitRandomFighterHometown, this.splitCurrentFighterHometown);
   }
 
 
   startGame() {
     this.generateRandomFighter();
-    this.showButton = false;
     console.log(this.randomFighter);
   }
 

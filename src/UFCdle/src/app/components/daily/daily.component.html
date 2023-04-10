@@ -41,8 +41,12 @@
     <h4>Guess the Fighter</h4>
     <h2>Daily mode</h2>
     <h2>New Fighter in: {{hours}}:{{minutes}}:{{seconds}}</h2>
-    </div>
 
+
+    <button *ngIf="this.showButton" (click)="startGame()" class="startGameButton">
+      START GAME
+    </button>
+  </div>
 
   <div *ngIf="!this.showButton" class="selectBox">
     <div class="dx-fieldset">
@@ -588,8 +592,7 @@
       <div><button (click)="modalService.close('modal-3')">Close</button></div>
     </jw-modal>
   
-</div>
-<!--  
+
     <div class="fighter" *ngIf="this.currentFighterList[2]">
       <div class="name" *ngIf="currentFighterList[2]">
         <div
@@ -819,7 +822,7 @@
         </div>
       </div>
     </div>
-  
+
     <div class="fighter" *ngIf="this.currentFighterList[3]">
       <div class="name" *ngIf="currentFighterList[3]">
         <div
@@ -1968,8 +1971,7 @@
           *ngIf="currentFighterList[7].Record == this.randomFighter.Record"
         >
           {{ currentFighterList[7].Record }}
-        </div>
       </div>
     </div>
   </div>
--->
+</div>

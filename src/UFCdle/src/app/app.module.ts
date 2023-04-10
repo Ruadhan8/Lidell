@@ -25,7 +25,6 @@ import { VersusComponent } from './components/versus/versus.component';
 import { DailyComponent } from './components/daily/daily.component';
 import { DatePipe} from '@angular/common';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,8 +37,6 @@ import { DatePipe} from '@angular/common';
     HomePageComponent,
     VersusComponent,
     DailyComponent,
-
-
   ],
   imports: [
     BrowserModule,

@@ -125,6 +125,7 @@ rankingsDict: {[key:string]: number} ={
         this.splitRandomFighterHometown = JSON.parse(randHTown);
         console.log(this.splitRandomFighterHometown);
       }
+
       let currFighter = localStorage.getItem('saveCurrentFighter');
       if(currFighter) {
         this.compareFighters();
@@ -289,7 +290,7 @@ saveSearchBarStatus(){
 }
 
 saveCurrentFighter(){
-  localStorage.setItem("currentFighter", JSON.stringify(this.currentFighter));
+  localStorage.setItem("saveCurrentFighter", JSON.stringify(this.currentFighter));
 }
 
 saveCurrentFighterHomeTown(){

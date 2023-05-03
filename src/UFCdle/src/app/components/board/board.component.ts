@@ -161,7 +161,7 @@ rankingsDict: {[key:string]: number} ={
   }
 
   openFailModal(){
-    if(this.currentFighterList.length > 7 && this.currentFighter.fighterName != this.randomFighter.fighterName)
+    if(this.currentFighterList.length >= 8 && this.currentFighter.fighterName != this.randomFighter.fighterName)
     {
       return this.modalService.open('modal-3')
     }

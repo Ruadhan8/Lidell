@@ -99,7 +99,8 @@ rankingsDict: {[key:string]: number} ={
       setInterval(() => {
         const now = new Date();
         if (now.getHours() === 0 && now.getMinutes() === 0 && now.getSeconds() === 0) {
-          this.doSomethingAtMidnight();
+          localStorage.clear();
+          this.showButton = true;
         } else {
           this.countdownToMidnight(now);
         }
@@ -261,12 +262,6 @@ rankingsDict: {[key:string]: number} ={
       }
     
   }
-  doSomethingAtMidnight() {
-    // Add your code to do something here
-    localStorage.clear();
-    this.showButton = true;
-  }
-
   countdownToMidnight(now: Date) {
     const midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
     const diff = midnight.getTime() - now.getTime();
@@ -275,7 +270,6 @@ rankingsDict: {[key:string]: number} ={
     this.minutes = Math.floor((diff / (1000 * 60)) % 60);
     this.seconds = Math.floor((diff / 1000) % 60);
   }
-
   generateRandomFighter() {
     this.randomFighter =
       this.list[Math.floor(Math.random() * this.list.length)];
@@ -409,7 +403,7 @@ saveFighter7(){
   }
 
   openFailModal(){
-    if(this.currentFighterList.length > 7 && this.currentFighter.fighterName != this.randomFighter.fighterName)
+    if(this.currentFighterList.length >= 8 && this.currentFighter.fighterName != this.randomFighter.fighterName)
     {
       return this.modalService.open('modal-3')
     }

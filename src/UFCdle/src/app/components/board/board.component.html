@@ -1,5 +1,4 @@
 <!-- Top navigation -->
-<!--
 <div class="topnav">
   <div class="btn">
     <a (click)="modalService.open('modal-1')">How To Play</a>
@@ -84,14 +83,8 @@
         View result
       </button>
     </div>
-    <div *ngIf="this.currentFighterList.length > 7">
-      <button
-        showButton
-        (click)="modalService.open('modal-3')"
-        class="resultLoss"
-      >
-        View result
-      </button>
+    <div *ngIf="this.currentFighterList.length > 7 && this.currentFighter.fighterName != this.randomFighter.fighterName">
+      <button showButton (click)="modalService.open('modal-3')"class="resultLoss">View result</button>
     </div>
   </div>
 </div>
@@ -119,7 +112,7 @@
       <h3><b>RECORD</b></h3>
     </div>
   </div>
-
+  
   <div class="fighter" *ngIf="this.currentFighterList[0]">
     <div class="name" *ngIf="currentFighterList[0]">
       <div
@@ -398,7 +391,9 @@
     <div><button (click)="modalService.close('modal-2')">Close</button></div>
   </jw-modal>
 
-  <div class="fighter" *ngIf="this.currentFighterList[1]">
+
+
+    <div class="fighter" *ngIf="this.currentFighterList[1]">
     <div class="name" *ngIf="currentFighterList[1]">
       <div
         *ngIf="
@@ -2087,4 +2082,3 @@
   </div>
 </div> -->
 </div>
--->

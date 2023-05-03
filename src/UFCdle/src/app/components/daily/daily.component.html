@@ -78,7 +78,7 @@
         View result
       </button>
     </div>
-    <div *ngIf="this.currentFighterList.length > 7">
+    <div *ngIf="this.currentFighterList.length > 7 && this.currentFighter.fighterName != this.randomFighter.fighterName">
       <button
         showButton
         (click)="modalService.open('modal-3')"
@@ -660,9 +660,6 @@
       </div>
     </div>
 
-</div>
-
-<!--
     <jw-modal id="modal-3" class="modal-3">
       <h1>Sorry you are out of guesses</h1>
       <h2>The correct answer is:</h2>
@@ -2275,5 +2272,3 @@
       </div>
     </div>
   </div>
-</div>
--->

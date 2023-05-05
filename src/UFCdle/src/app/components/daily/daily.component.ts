@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { FighterService } from '../../fighter.service';
+import { FightersService } from 'src/app/services/fighters.service';
 import { fighter } from '../../fighter';
 import { ModalService } from '../modal';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { interval } from 'rxjs';
-import { SavePageService } from 'src/app/save-page.service';
+import { SavePageService } from 'src/app/services/save-page.service';
 
 @Component({
   selector: 'app-daily',
@@ -25,27 +25,27 @@ export class DailyComponent implements OnInit {
   list: any;
   currentFighter: fighter = {
     fighterName: '',
-    Division: '',
-    Age: 0,
-    FighterReach: 0,
-    HomeTown: '',
-    FightStyle: '',
-    Record: '',
-    Photo: '',
-    Ranking: '',
+    division: '',
+    age: 0,
+    fighterReach: 0,
+    homeTown: '',
+    fightStyle: '',
+    record: '',
+    photo: '',
+    ranking: '',
   };
   currentFighterList: any = [];
   searchBox = '';
   randomFighter: fighter = {
     fighterName: '',
-    Division: '',
-    Age: 0,
-    FighterReach: 0,
-    HomeTown: '',
-    FightStyle: '',
-    Record: '',
-    Photo: '',
-    Ranking: '',
+    division: '',
+    age: 0,
+    fighterReach: 0,
+    homeTown: '',
+    fightStyle: '',
+    record: '',
+    photo: '',
+    ranking: '',
   };
 
   faArrowUp = faArrowUp;
@@ -86,14 +86,14 @@ rankingsDict: {[key:string]: number} ={
   "#15": 15,
 }
   constructor(
-    private fightersService: FighterService,
+    private FighterService: FightersService,
     public modalService: ModalService,
     private SavePageService: SavePageService
   ){}
 
   ngOnInit() {
-    this.fightersService
-      .getFighters()
+    this.FighterService
+      .getAllFighters()
       .subscribe((results: any) => (this.list = results));    
 
       setInterval(() => {
@@ -121,7 +121,7 @@ rankingsDict: {[key:string]: number} ={
         this.randomFighter = JSON.parse(randFighter);
         console.log(this.randomFighter);
       }
-      this.splitRandomFighterHometown = this.randomFighter.HomeTown.split(', ');
+      this.splitRandomFighterHometown = this.randomFighter.homeTown.split(', ');
       if(randHTown){
         this.splitRandomFighterHometown = JSON.parse(randHTown);
         console.log(this.splitRandomFighterHometown);
@@ -273,7 +273,7 @@ rankingsDict: {[key:string]: number} ={
   generateRandomFighter() {
     this.randomFighter =
       this.list[Math.floor(Math.random() * this.list.length)];
-      this.splitRandomFighterHometown = this.randomFighter.HomeTown.split(', ');
+      this.splitRandomFighterHometown = this.randomFighter.homeTown.split(', ');
 
     this.saveRandomFighter();
   // Method to save the randomFighter object in local storage
@@ -389,7 +389,7 @@ saveFighter7(){
     }
   }
   compareFighters() {
-    this.splitCurrentFighterHometown.push(this.currentFighter.HomeTown.split(', '));
+    this.splitCurrentFighterHometown.push(this.currentFighter.homeTown.split(', '));
   }
 
   openModal() {

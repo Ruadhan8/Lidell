@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { FighterService } from './fighter.service';
+import { SavePageService } from './save-page.service';
 
-describe('FighterService', () => {
-  let service: FighterService;
+describe('SavePageService', () => {
+  let service: SavePageService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(FighterService);
+    service = TestBed.inject(SavePageService);
   });
 
   it('should be created', () => {

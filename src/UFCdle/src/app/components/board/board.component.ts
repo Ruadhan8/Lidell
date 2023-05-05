@@ -105,7 +105,7 @@ rankingsDict: {[key:string]: number} ={
       .getFighters()
       .subscribe((results: any) => (this.list = results));
 
-    this.fighterService.getAllFighters().subscribe({
+    this.fightersService.getFighters().subscribe({
       next: (fighters) => {
         console.log(fighters);
         this.fightersFromBackend = fighters

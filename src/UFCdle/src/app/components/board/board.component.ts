@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { FighterService } from '../../fighter.service';
-import { fighter } from './fighter';
+import { fighter } from 'src/app/fighter';
 import { ModalService } from '../modal';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
-import { FightersService } from 'src/app/services/fighters.service';
+import { AuthService } from '../../shared/services/auth.service';
+import { Score } from 'src/app/score';
 
 @Component({
   selector: 'app-board',
@@ -17,6 +18,7 @@ export class BoardComponent {
   fighters: any;
   fightersFromBackend: any;
   list!: any;
+  score!: any;
   currentFighter: fighter = {
     fighterName: '',
     division: '',
@@ -28,6 +30,12 @@ export class BoardComponent {
     photo: '',
     ranking: '',
   };
+
+  scoreRequest: Score = {
+    name: "",
+    score: this.score
+
+  }
   currentFighterList: any = [];
   searchBox = '';
   randomFighter: fighter = {
@@ -81,7 +89,7 @@ rankingsDict: {[key:string]: number} ={
 }
 
   constructor(
-    private fighterService: FightersService,
+    public authService: AuthService,
     private fightersService: FighterService,
     public modalService: ModalService
   ) {}
@@ -134,10 +142,14 @@ rankingsDict: {[key:string]: number} ={
     
     this.compareFighters();
     this.currentFighterList.push(this.currentFighter);
+    console.log(this.score, this.authService.userData.multiFactor.user.displayName);
+    
+    
+    
+    
     console.log(this.splitCurrentFighterHometown[1], this.splitRandomFighterHometown[1]);
     this.openModal();
     this.openFailModal();
-
     if(this.currentFighterList.length > 7 || this.currentFighter.fighterName == this.randomFighter.fighterName){
       this.isActive = true;
       console.log("isActive");
@@ -145,7 +157,48 @@ rankingsDict: {[key:string]: number} ={
     else{
       this.isActive = false;
     }
+    this.checkScore();
+
   }
+
+  checkScore() {
+    if (this.currentFighterList.length == 1) {
+      this.scoreRequest.score = 100;
+    }
+    else if (this.currentFighterList.length == 2) {
+      this.scoreRequest.score = 80;
+    } 
+    else if (this.currentFighterList.length == 3) {
+      this.scoreRequest.score = 70;
+    }
+    else if (this.currentFighterList.length == 4) {
+      this.scoreRequest.score = 50;
+    }
+    else if (this.currentFighterList.length == 5) {
+      this.scoreRequest.score = 40;
+    }
+    else if (this.currentFighterList.length == 6) {
+      this.scoreRequest.score = 30;
+    }
+    else if (this.currentFighterList.length == 7) {
+      this.scoreRequest.score = 20;
+    }
+    else if (this.currentFighterList.length == 8) {
+      this.scoreRequest.score = 10;
+    }
+    else {
+      this.scoreRequest.score = 0;
+    }
+
+    this.scoreRequest.name = this.authService.userData.multiFactor.user.displayName
+    console.log(this.scoreRequest);
+    
+  }
+
+  postScoreToTable() {
+
+  }
+
   compareFighters() {
     this.splitCurrentFighterHometown.push(this.currentFighter.homeTown.split(', '));
   }

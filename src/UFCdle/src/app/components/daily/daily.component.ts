@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { FighterService } from '../../fighter.service';
-import { fighter } from './fighter';
+import { fighter } from '../../fighter';
 import { ModalService } from '../modal';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { interval } from 'rxjs';

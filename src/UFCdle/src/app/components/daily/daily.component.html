@@ -386,7 +386,7 @@
     </div>
     <jw-modal id="modal-2" class="modal-2">
       <h1>Congrats</h1>
-      <h2>You solved it in {{ currentFighterList.length }}</h2>
+      <h2>You solved it in {{ currentFighterList.length }} guesses!</h2>
       <h2>The mystery fighter was:</h2>
       <div class="fighterName">{{ this.randomFighter.fighterName }}</div>
       <img src="{{ this.randomFighter.Photo }}" alt="Fighter Image" />
@@ -935,7 +935,7 @@
       </div>
     </div>
 
-    <div class="fighter" *ngIf="this.currentFighterList[3]">
+    <!-- <div class="fighter" *ngIf="this.currentFighterList[3]">
       <div class="name" *ngIf="currentFighterList[3]">
         <div
           *ngIf="
@@ -2270,5 +2270,5 @@
           {{ currentFighterList[7].Record }}
         </div>
       </div>
-    </div>
-  </div>
+    </div> -->
+  </div> 

@@ -99,7 +99,6 @@ rankingsDict: {[key:string]: number} ={
       setInterval(() => {
         const now = new Date();
         if (now.getHours() === 0 && now.getMinutes() === 0 && now.getSeconds() === 0) {
-          localStorage.clear();
           this.showButton = true;
         } else {
           this.countdownToMidnight(now);

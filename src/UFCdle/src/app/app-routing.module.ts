@@ -10,6 +10,7 @@ import { AuthGuard } from './shared/guard/auth.guard';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { VersusComponent } from './components/versus/versus.component';
 import {DailyComponent } from './components/daily/daily.component';
+import { StatsComponent } from './components/stats/stats.component';
 
 const routes: Routes = [
   { path: 'http://idell-20230401214430-hostingbucket-dev.s3-website-eu-west-1.amazonaws.com', redirectTo: '/sign-in', pathMatch: 'full' },
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'board', component: BoardComponent},
   { path: 'home', component: HomePageComponent},
   {path: 'versus', component:VersusComponent},
-  {path: 'daily', component:DailyComponent}
+  {path: 'daily', component:DailyComponent},
+  { path: 'stats', component:StatsComponent}
 ];
 
 

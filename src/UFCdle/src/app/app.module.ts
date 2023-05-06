@@ -24,6 +24,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { VersusComponent } from './components/versus/versus.component';
 import { DailyComponent } from './components/daily/daily.component';
 import { DatePipe} from '@angular/common';
+import { StatsComponent } from './components/stats/stats.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { DatePipe} from '@angular/common';
     HomePageComponent,
     VersusComponent,
     DailyComponent,
+    StatsComponent,
   ],
   imports: [
     BrowserModule,

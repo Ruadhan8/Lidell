@@ -234,15 +234,7 @@ export class BoardComponent {
     }
   }
 }
-// compareFighters() {
-//   this.splitCurrentFighterHometown = (this.currentFighter.HomeTown.split(','))
-//   this.splitRandomFighterHometown = (this.randomFighter.HomeTown.split(','))
-//   this.randomFighterCity = (this.splitRandomFighterHometown[0])
-//   this.randomFighterCountry = (this.splitRandomFighterHometown[1])
-//   this.currentFighterCity = (this.splitCurrentFighterHometown[0])
-//   this.currentFighterCountry = (this.splitCurrentFighterHometown[1])
-// }
-// }
+
 var MensDivisions: string[];
 MensDivisions = [
   'Flyweight Division',

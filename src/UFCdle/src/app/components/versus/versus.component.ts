@@ -15,7 +15,7 @@ export class VersusComponent implements OnInit  {
 
   onClick(e: any){
     this.someVariable = e.target.value
-    console.log(this.someVariable);
+    //console.log(this.someVariable);
   }
   
   public ngOnInit() {

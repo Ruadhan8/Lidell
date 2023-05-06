@@ -99,7 +99,7 @@ export class BoardComponent {
   ngOnInit() {
     // const obs$ = interval(1000);
     // obs$.subscribe((d) =>{
-    //   console.log(d);
+    //   //console.log(d);
 
     // })
 
@@ -110,20 +110,20 @@ export class BoardComponent {
     this.fighterService.getAllFighters().subscribe({
       next: (fighters) => {
         this.fightersFromBackend = fighters;
-        console.log(this.fightersFromBackend);
+        //console.log(this.fightersFromBackend);
       },
       error: (error) => {
-        console.log(error);
+        //console.log(error);
       },
     });
 
     this.scoreService.getAllScores().subscribe({
       next: (scores) => {
         this.scoresFromBackend = scores;
-        console.log(this.scoresFromBackend);
+        //console.log(this.scoresFromBackend);
       },
       error: (error) => {
-        console.log(error);
+        //console.log(error);
       },
     });
 
@@ -136,31 +136,26 @@ export class BoardComponent {
         Math.floor(Math.random() * this.fightersFromBackend.length)
       ];
     this.splitRandomFighterHometown = this.randomFighter.homeTown.split(', ');
-    console.log(this.randomFighter);
+    //console.log(this.randomFighter);
   }
 
   startGame() {
     this.generateRandomFighter();
     this.showButton = false;
-    console.log(this.randomFighter);
-    console.log(this.fightersFromBackend);
+    //console.log(this.randomFighter);
+    //console.log(this.fightersFromBackend);
   }
 
   guessFighter(e: any) {
-    console.log(e);
+    //console.log(e);
     this.currentFighter = e.itemData;
 
     this.compareFighters();
     this.currentFighterList.push(this.currentFighter);
     this.checkScore();
-    console.log(
-      this.scoreRequest
-    );
 
-    console.log(
-      this.splitCurrentFighterHometown[1],
-      this.splitRandomFighterHometown[1]
-    );
+
+
     this.openModal();
     this.openFailModal();
     if (
@@ -168,7 +163,7 @@ export class BoardComponent {
       this.currentFighter.fighterName == this.randomFighter.fighterName
     ) {
       this.isActive = true;
-      console.log('isActive');
+      //console.log('isActive');
     } else {
       this.isActive = false;
     }
@@ -197,13 +192,13 @@ export class BoardComponent {
     
     this.scoreRequest.name =
     this.authService.userData.multiFactor.user.displayName;
-    console.log(this.scoreRequest);
+    //console.log(this.scoreRequest);
   }
   
   postScoreToTable() {
     this.scoreService.postScore(this.scoreRequest).subscribe({
       next: (score) => {
-        console.log(score);
+        //console.log(score);
       }
     });
   }

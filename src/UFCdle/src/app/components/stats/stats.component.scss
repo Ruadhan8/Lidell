@@ -1,0 +1,90 @@
+/* Add styles for the topnav */
+.topnav {
+    background-color: black !important;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  /* Add styles for the topnav button */
+  .topnav .btn {
+    float: right;
+  }
+  
+  /* Add styles for the topnav button's link */
+  .topnav .btn a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Add hover effect for the topnav button's link */
+  .topnav .btn a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .header {
+    color: black !important;
+    text-align: center;
+    padding: 20px;
+  }
+
+   /* Add styles for the header's title and subtitle */
+   .header h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-style: oblique;
+  }
+  
+  .header h4 {
+    font-size: 30px;
+    font-style: oblique;
+  }
+  .header h2 {
+    font-size: 20px;
+    font-style: oblique;
+  }
+
+  .leaderboard {
+    width: 80vw;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+  }
+  
+  .lead-header {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+    border: .5vw
+  }
+  
+  .row:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .name {
+    flex-basis: 50%;
+    text-align: center;
+  }
+  
+  .score {
+    flex-basis: 50%;
+    text-align: center;
+    border-left: .5vh .3vw solid;
+  }

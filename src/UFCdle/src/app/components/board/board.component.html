@@ -40,7 +40,7 @@
 
 <div class="header">
   <h1>LIDELL</h1>
-  <h4>Guess the Fighter</h4>
+  <h4>Guess The Fighter</h4>
 
   <button *ngIf="this.showButton" (click)="startGame()" class="startGameButton">
     START GAME
@@ -83,14 +83,8 @@
         View result
       </button>
     </div>
-    <div *ngIf="this.currentFighterList.length > 7">
-      <button
-        showButton
-        (click)="modalService.open('modal-3')"
-        class="resultLoss"
-      >
-        View result
-      </button>
+    <div *ngIf="this.currentFighterList.length > 7 && this.currentFighter.fighterName != this.randomFighter.fighterName">
+      <button showButton (click)="modalService.open('modal-3')"class="resultLoss">View result</button>
     </div>
   </div>
 </div>
@@ -118,7 +112,7 @@
       <h3><b>RECORD</b></h3>
     </div>
   </div>
-
+  
   <div class="fighter" *ngIf="this.currentFighterList[0]">
     <div class="name" *ngIf="currentFighterList[0]">
       <div
@@ -387,17 +381,23 @@
         {{ currentFighterList[0].record }}
       </div>
     </div>
+    <div></div>
+
   </div>
-  <jw-modal id="modal-2" class="modal-2">
+ <jw-modal id="modal-2" class="modal-2"> 
     <h1>Congrats</h1>
     <h2>You solved it in {{ currentFighterList.length }}</h2>
     <h2>The mystery fighter was:</h2>
+    <h3>Your Score Was {{this.scoreRequest.playerScore}}</h3>
     <div class="fighterName">{{ this.randomFighter.fighterName }}</div>
     <img src="{{ this.randomFighter.photo }}" alt="Fighter Image" />
     <div><button (click)="modalService.close('modal-2')">Close</button></div>
+    <div><button class="result" onclick="window.location.href = '/stats/'">Show Leaderboard</button> </div>
   </jw-modal>
 
-  <div class="fighter" *ngIf="this.currentFighterList[1]">
+
+
+    <div class="fighter" *ngIf="this.currentFighterList[1]">
     <div class="name" *ngIf="currentFighterList[1]">
       <div
         *ngIf="
@@ -2082,7 +2082,6 @@
       >
         {{ currentFighterList[7].record }}
       </div>
-    </div>
-  </div>
-</div> -->
+    </div> -->
+  <!-- </div> -->
 </div>

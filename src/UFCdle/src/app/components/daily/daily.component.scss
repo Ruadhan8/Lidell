@@ -1,0 +1,364 @@
+/* Add styles for the topnav */
+.topnav {
+    background-color: black !important;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  /* Add styles for the topnav button */
+  .topnav .btn {
+    float: right;
+  }
+  
+  /* Add styles for the topnav button's link */
+  .topnav .btn a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Add hover effect for the topnav button's link */
+  .topnav .btn a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  btn-1{
+    display: none;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+  }
+  
+  button.result {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  button.result:hover {
+    background-color: #3e8e41;
+  }
+  
+  button.resultLoss {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  button.resultLoss:hover {
+    background-color: red;
+  }
+  
+  /* Add styles for the modal */
+  jw-modal {
+    background-color: white;
+    color: black;
+    width: auto;
+  }
+  
+  /* Add styles for the modal's title */
+  jw-modal h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #f44336;
+  }
+  
+  jw-modal h2{
+    text-align: center;
+    font-size: 20px;
+    color: black;
+  }
+  jw-modal div{
+    text-align: center;
+    font-size: 20px;
+    color: black;
+  }
+  jw-modal img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 20%;
+  }
+  
+  /* Add styles for the modal's list items */
+  jw-modal li {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Add styles for the modal's close button */
+  jw-modal button {
+    background-color: #f44336;
+    /* red */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Add hover effect for the modal's close button */
+  jw-modal button:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add styles for the header */
+  .header {
+    color: black !important;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Add styles for the header's title and subtitle */
+  .header h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-style: oblique;
+  }
+  
+  .header h4 {
+    font-size: 30px;
+    font-style: oblique;
+  }
+  .header h2 {
+    font-size: 20px;
+    font-style: oblique;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .board {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 30vh;
+    width: 80vw;
+  
+    .fighter {
+      display: flex;
+      flex-direction: row;
+      // justify-content: space-between;
+      background: #edeae5;
+      // border: 1px solid #f5f2ec;
+      border: 1px solid black;
+  
+  
+      .topName,
+      .topAge,
+      .topReach,
+      .topHometown,
+      .topDivision,
+      .topRanking,
+      .topRecord {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        width: 11.4285714286vw;
+        margin-top: 2vh;
+        color: black;
+      }
+  
+      // .name {
+      //   background: #edeae5;
+      //   // box-sizing: border-box;
+      //   height: 10vh;
+      //   width: 10vw;
+      // }
+      // .age {
+      //   height: 10vh;
+      //   background: #edeae5;
+      //   width: 10vw;
+      // }
+      // .reach {
+      //   background: #edeae5;
+      //   height: 10vh;
+      //   width: 10vw;
+      // }
+      // .hometown {
+      //   background: #edeae5;
+      //   height: 10vh;
+      //   width: 10vw;
+      // }
+      // .division {
+      //   background: #edeae5;
+      //   height: 10vh;
+      //   width: 10vw;
+      // }
+      // .ranking {
+      //   background: #edeae5;
+      //   height: 10vh;
+      //   width: 10vw;
+      // }
+      // .record {
+      //   background: #edeae5;
+      //   height: 10vh;
+      //   width: 10vw;
+      // }
+      .name,
+      .age,
+      .reach,
+      .hometown,
+      .division,
+      .ranking,
+      .record {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #edeae5;
+        height: 10vh;
+        width: 11.4285714286vw;
+        // margin: auto;
+        border: 1px solid black;
+        // .correctName {
+        //   display: flex;
+        //   justify-content: center;
+        //   align-items: center;
+        //   background: #37be75;
+        //   color: white;
+        //   height: 9.8vh;
+        //   width: 11.3vw;
+        //   margin: auto;
+        // }
+        // .correctAge {
+        //   display: flex;
+        //   justify-content: center;
+        //   align-items: center;
+        //   background: #37be75;
+        //   color: white;
+        //   height: 9.8vh;
+        //   width: 11.3vw;
+        //   margin: auto;
+        // }
+        // .closeAge {
+        //   display: flex;
+        //   justify-content: center;
+        //   align-items: center;
+        //   background: #eadd65;
+        //   height: 9.8vh;
+        //   width: 11.3vw;
+        //   margin: auto;
+        // }
+        .correct{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #37be75;
+          color: white;
+          height: 9.8vh;
+          width: 11.3vw;
+          margin: auto;
+        }
+        .close{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #eadd65;
+          height: 9.8vh;
+          width: 11.3vw;
+          margin: auto;
+        }
+      }
+    }
+  }
+  
+  .selectBox {
+    display: flex;
+    justify-content: center;
+  
+    .dx-fieldset {
+      .dx-field {
+        ::ng-deep .dx-field-value {
+          width: 20vw;
+  
+          ::ng-deep .dx-selectbox {
+            background-color: red;
+          }
+        }
+      }
+    }
+  }
+  
+  jw-modal.modal-2 {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  
+  jw-modal.modal-2 h1 {
+    font-size: 28px;
+    color: green;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  jw-modal.modal-2 h2 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  jw-modal.fighterName {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .modal-2 img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  jw-modal.modal-3 {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  
+  jw-modal.modal-3 h1 {
+    font-size: 28px;
+    color: red;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  jw-modal.modal-3 h2 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  
+  .modal-3 img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+  }

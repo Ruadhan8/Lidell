@@ -35,7 +35,7 @@ export class BoardComponent {
 
   scoreRequest: Score = {
     name: '',
-    score: this.score,
+    playerScore: this.score,
   };
   currentFighterList: any = [];
   searchBox = '';
@@ -152,9 +152,9 @@ export class BoardComponent {
 
     this.compareFighters();
     this.currentFighterList.push(this.currentFighter);
+    this.checkScore();
     console.log(
-      this.score,
-      this.authService.userData.multiFactor.user.displayName
+      this.scoreRequest
     );
 
     console.log(
@@ -168,40 +168,38 @@ export class BoardComponent {
       this.currentFighter.fighterName == this.randomFighter.fighterName
     ) {
       this.isActive = true;
-      this.checkScore();
-      this.postScoreToTable();
       console.log('isActive');
     } else {
       this.isActive = false;
     }
   }
-
+  
   checkScore() {
     if (this.currentFighterList.length == 1) {
-      this.scoreRequest.score = 100;
+      this.scoreRequest.playerScore = 100;
     } else if (this.currentFighterList.length == 2) {
-      this.scoreRequest.score = 80;
+      this.scoreRequest.playerScore = 80;
     } else if (this.currentFighterList.length == 3) {
-      this.scoreRequest.score = 70;
+      this.scoreRequest.playerScore = 70;
     } else if (this.currentFighterList.length == 4) {
-      this.scoreRequest.score = 50;
+      this.scoreRequest.playerScore = 50;
     } else if (this.currentFighterList.length == 5) {
-      this.scoreRequest.score = 40;
+      this.scoreRequest.playerScore = 40;
     } else if (this.currentFighterList.length == 6) {
-      this.scoreRequest.score = 30;
+      this.scoreRequest.playerScore = 30;
     } else if (this.currentFighterList.length == 7) {
-      this.scoreRequest.score = 20;
+      this.scoreRequest.playerScore = 20;
     } else if (this.currentFighterList.length == 8) {
-      this.scoreRequest.score = 10;
+      this.scoreRequest.playerScore = 10;
     } else {
-      this.scoreRequest.score = 0;
+      this.scoreRequest.playerScore = 0;
     }
-
+    
     this.scoreRequest.name =
-      this.authService.userData.multiFactor.user.displayName;
+    this.authService.userData.multiFactor.user.displayName;
     console.log(this.scoreRequest);
   }
-
+  
   postScoreToTable() {
     this.scoreService.postScore(this.scoreRequest).subscribe({
       next: (score) => {
@@ -209,27 +207,28 @@ export class BoardComponent {
       }
     });
   }
-
+  
   compareFighters() {
     this.splitCurrentFighterHometown.push(
       this.currentFighter.homeTown.split(', ')
-    );
-  }
-
-  openModal() {
-    if (this.currentFighter.fighterName == this.randomFighter.fighterName) {
-      return this.modalService.open('modal-2');
-    } else {
-      return 0;
+      );
     }
-  }
-
-  openFailModal() {
-    if (
-      this.currentFighterList.length >= 8 &&
-      this.currentFighter.fighterName != this.randomFighter.fighterName
-    ) {
-      return this.modalService.open('modal-3');
+    
+    openModal() {
+      if (this.currentFighter.fighterName == this.randomFighter.fighterName) {
+        this.postScoreToTable();
+        return this.modalService.open('modal-2');
+      } else {
+        return 0;
+      }
+    }
+    
+    openFailModal() {
+      if (
+        this.currentFighterList.length >= 8 &&
+        this.currentFighter.fighterName != this.randomFighter.fighterName
+        ) {
+          return this.modalService.open('modal-3');
     } else {
       return 0;
     }

@@ -1,4 +1,4 @@
-<font size= "7"> READ ME **INPORTANT**</font>
+<font size= "7"> READ ME **IMPORTANT**</font>
 
 We were unable to add our backend files to this directory as there were complications with them being git repositories.
 

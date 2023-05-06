@@ -20,14 +20,14 @@ export class StatsComponent implements OnInit {
     this.scoreService.getAllScores().subscribe({
       next: (scores) => {
         this.scoresFromBackend = scores;
-        // console.log(this.scoresFromBackend);
+        // (this.scoresFromBackend);
         this.getSortedScores() 
       },
       error: (error) => {
-        console.log(error);
+        (error);
       },
     });
-    console.log(this.scoresFromBackend);
+    (this.scoresFromBackend);
   }
 
   getSortedScores() {

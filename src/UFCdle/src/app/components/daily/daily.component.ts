@@ -122,10 +122,10 @@ export class DailyComponent implements OnInit {
     this.scoreService.getAllScores().subscribe({
       next: (scores) => {
         this.scoresFromBackend = scores;
-        console.log(this.scoresFromBackend);
+        (this.scoresFromBackend);
       },
       error: (error) => {
-        console.log(error);
+        (error);
       },
     });
 
@@ -133,7 +133,7 @@ export class DailyComponent implements OnInit {
 
     if (searchStatus) {
       this.isActive = JSON.parse(searchStatus);
-      console.log(this.isActive);
+      (this.isActive);
     }
 
     let randFighter = localStorage.getItem('saveRandomFighter');
@@ -141,138 +141,138 @@ export class DailyComponent implements OnInit {
     if (randFighter) {
       this.showButton = false;
       this.randomFighter = JSON.parse(randFighter);
-      console.log(this.randomFighter);
+      (this.randomFighter);
     }
     this.splitRandomFighterHometown = this.randomFighter.homeTown.split(', ');
     if (randHTown) {
       this.splitRandomFighterHometown = JSON.parse(randHTown);
-      console.log(this.splitRandomFighterHometown);
+      (this.splitRandomFighterHometown);
     }
 
     let currFighter = localStorage.getItem('saveCurrentFighter');
     if (currFighter) {
       this.compareFighters();
       this.currentFighter = JSON.parse(currFighter);
-      console.log(this.currentFighter);
+      (this.currentFighter);
     }
 
     let currentHTown = localStorage.getItem('currentFighterHomeTown');
 
     if (currentHTown) {
       this.splitCurrentFighterHometown = JSON.parse(currentHTown);
-      console.log(this.splitCurrentFighterHometown);
+      (this.splitCurrentFighterHometown);
     }
 
     let currentFighter0 = localStorage.getItem('saveCurrentFighter0');
     if (currentFighter0) {
       this.compareFighters();
       this.currentFighterList[0] = JSON.parse(currentFighter0);
-      console.log(this.currentFighterList[0]);
+      (this.currentFighterList[0]);
     }
 
     let currentHTown0 = localStorage.getItem('saveCurrentFighterHomeTown0');
 
     if (currentHTown0) {
       this.splitCurrentFighterHometown[0] = JSON.parse(currentHTown0);
-      console.log(this.splitCurrentFighterHometown[0]);
+      (this.splitCurrentFighterHometown[0]);
     }
 
     let currentFighter1 = localStorage.getItem('saveCurrentFighter1');
     if (currentFighter1) {
       this.compareFighters();
       this.currentFighterList[1] = JSON.parse(currentFighter1);
-      console.log(this.currentFighterList[1]);
+      (this.currentFighterList[1]);
     }
 
     let currentHTown1 = localStorage.getItem('saveCurrentFighterHomeTown1');
 
     if (currentHTown1) {
       this.splitCurrentFighterHometown[1] = JSON.parse(currentHTown1);
-      console.log(this.splitCurrentFighterHometown[1]);
+      (this.splitCurrentFighterHometown[1]);
     }
 
     let currentFighter2 = localStorage.getItem('saveCurrentFighter2');
     if (currentFighter2) {
       this.compareFighters();
       this.currentFighterList[2] = JSON.parse(currentFighter2);
-      console.log(this.currentFighterList[2]);
+      (this.currentFighterList[2]);
     }
 
     let currentHTown2 = localStorage.getItem('saveCurrentFighterHomeTown2');
 
     if (currentHTown2) {
       this.splitCurrentFighterHometown[2] = JSON.parse(currentHTown2);
-      console.log(this.splitCurrentFighterHometown[2]);
+      (this.splitCurrentFighterHometown[2]);
     }
 
     let currentFighter3 = localStorage.getItem('saveCurrentFighter3');
     if (currentFighter3) {
       this.compareFighters();
       this.currentFighterList[3] = JSON.parse(currentFighter3);
-      console.log(this.currentFighterList[3]);
+      (this.currentFighterList[3]);
     }
 
     let currentHTown3 = localStorage.getItem('saveCurrentFighterHomeTown3');
 
     if (currentHTown3) {
       this.splitCurrentFighterHometown[3] = JSON.parse(currentHTown3);
-      console.log(this.splitCurrentFighterHometown[3]);
+      (this.splitCurrentFighterHometown[3]);
     }
 
     let currentFighter4 = localStorage.getItem('saveCurrentFighter4');
     if (currentFighter4) {
       this.compareFighters();
       this.currentFighterList[4] = JSON.parse(currentFighter4);
-      console.log(this.currentFighterList[4]);
+      (this.currentFighterList[4]);
     }
 
     let currentHTown4 = localStorage.getItem('saveCurrentFighterHomeTown4');
 
     if (currentHTown4) {
       this.splitCurrentFighterHometown[4] = JSON.parse(currentHTown4);
-      console.log(this.splitCurrentFighterHometown[4]);
+      (this.splitCurrentFighterHometown[4]);
     }
 
     let currentFighter5 = localStorage.getItem('saveCurrentFighter5');
     if (currentFighter5) {
       this.compareFighters();
       this.currentFighterList[5] = JSON.parse(currentFighter5);
-      console.log(this.currentFighterList[5]);
+      (this.currentFighterList[5]);
     }
 
     let currentHTown5 = localStorage.getItem('saveCurrentFighterHomeTown5');
 
     if (currentHTown5) {
       this.splitCurrentFighterHometown[5] = JSON.parse(currentHTown5);
-      console.log(this.splitCurrentFighterHometown[5]);
+      (this.splitCurrentFighterHometown[5]);
     }
 
     let currentFighter6 = localStorage.getItem('saveCurrentFighter6');
     if (currentFighter6) {
       this.compareFighters();
       this.currentFighterList[6] = JSON.parse(currentFighter6);
-      console.log(this.currentFighterList[6]);
+      (this.currentFighterList[6]);
     }
 
     let currentHTown6 = localStorage.getItem('saveCurrentFighterHomeTown6');
 
     if (currentHTown6) {
       this.splitCurrentFighterHometown[6] = JSON.parse(currentHTown6);
-      console.log(this.splitCurrentFighterHometown[6]);
+      (this.splitCurrentFighterHometown[6]);
     }
 
     let currentFighter7 = localStorage.getItem('saveCurrentFighter7');
     if (currentFighter7) {
       this.compareFighters();
       this.currentFighterList[7] = JSON.parse(currentFighter7);
-      console.log(this.currentFighterList[7]);
+      (this.currentFighterList[7]);
     }
 
     let currentHTown7 = localStorage.getItem('saveCurrentFighterHomeTown7');
 
     if (currentHTown7) {
       this.splitCurrentFighterHometown[7] = JSON.parse(currentHTown7);
-      console.log(this.splitCurrentFighterHometown[7]);
+      (this.splitCurrentFighterHometown[7]);
     }
   }
   countdownToMidnight(now: Date) {
@@ -427,7 +427,7 @@ export class DailyComponent implements OnInit {
   startGame() {
     this.generateRandomFighter();
     this.showButton = false;
-    console.log(this.randomFighter);
+    (this.randomFighter);
   }
 
   guessFighter(e: any) {
@@ -435,7 +435,7 @@ export class DailyComponent implements OnInit {
     this.compareFighters();
     this.currentFighterList.push(this.currentFighter);
     this.checkScore();
-    console.log(
+    (
       this.splitCurrentFighterHometown[1],
       this.splitRandomFighterHometown[1]
     );
@@ -494,13 +494,13 @@ export class DailyComponent implements OnInit {
 
     this.scoreRequest.name =
       this.authService.userData.multiFactor.user.displayName;
-    console.log(this.scoreRequest);
+    (this.scoreRequest);
   }
 
   postScoreToTable() {
     this.scoreService.postScore(this.scoreRequest).subscribe({
       next: (score) => {
-        console.log(score);
+        (score);
       },
     });
   }
